@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AssessmentDayOfMonth__c</fullName>
+    <defaultValue>16</defaultValue>
+    <externalId>false</externalId>
+    <inlineHelpText>The default day of the month to perform this student's assessment.  This value copies to the Student Program level</inlineHelpText>
+    <label>Assessment Day of Month</label>
+    <precision>2</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

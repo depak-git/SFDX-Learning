@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NextAutoPaymentDate__c</fullName>
+    <description>The next date of the auto payment</description>
+    <externalId>false</externalId>
+    <inlineHelpText>The next date of the auto payment</inlineHelpText>
+    <label>Next Auto Payment Date</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Date</type>
+</CustomField>

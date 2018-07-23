@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CampusServiceEmail__c</fullName>
+    <description>This field will be presented to the students for customer service contact information</description>
+    <externalId>false</externalId>
+    <inlineHelpText>This field will be presented to the students for customer service contact information</inlineHelpText>
+    <label>Campus Service Email</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Email</type>
+    <unique>false</unique>
+</CustomField>

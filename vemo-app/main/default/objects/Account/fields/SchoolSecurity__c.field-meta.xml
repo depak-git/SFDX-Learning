@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SchoolSecurity__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>This field is used to share this student with the School Account with a matching School Security Field. For example a Student with a School Security of Purdue will be shared with the School Account that has a value of "Purdue" in its School Security field</inlineHelpText>
+    <label>School Security</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetName>School</valueSetName>
+    </valueSet>
+</CustomField>

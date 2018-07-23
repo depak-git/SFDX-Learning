@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PotentialAnnualVemoRevenue__c</fullName>
+    <description>Outside-in rough computation of potential Vemo revenue from school. 
+
+
+Potential = Total Discount X Budget % for ISAs X Expected Recovery Rate X Vemo Share of Collections
+
+
+Total Discount = Student Enrollment X Tuition X Avg Tuition Discount Rate
+
+
+Budget for ISAs = 10%
+
+
+Expected Recovery Rate = 50%
+
+
+Vemo Share of Collections = 10% (7.5 - 12.5 range)</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Outside-in rough computation of potential Vemo revenue from school.</inlineHelpText>
+    <label>Potential Annual Vemo Revenue</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Currency</type>
+</CustomField>

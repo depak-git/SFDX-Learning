@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>StewardshipProcess__c</fullName>
+    <externalId>false</externalId>
+    <label>Stewardship Process</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Create Payment DonorGUID</fullName>
+                <default>false</default>
+                <label>Create Payment DonorGUID</label>
+            </value>
+            <value>
+                <fullName>Create Disbursement DonorGUID</fullName>
+                <default>false</default>
+                <label>Create Disbursement DonorGUID</label>
+            </value>
+            <value>
+                <fullName>Create Both Disbursement &amp; Payment DonorGUID</fullName>
+                <default>false</default>
+                <label>Create Both Disbursement &amp; Payment DonorGUID</label>
+            </value>
+            <value>
+                <fullName>DonorGUID Created</fullName>
+                <default>false</default>
+                <label>DonorGUID Created</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

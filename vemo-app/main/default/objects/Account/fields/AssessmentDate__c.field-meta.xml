@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AssessmentDate__c</fullName>
+    <description>The date when this account will next be assessed.  The assessment process will run on any account where the assessment is today or in the past.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>The date when this account will next be assessed.  The assessment process will run on any account where the assessment is today or in the past.</inlineHelpText>
+    <label>(Deprecate)Assessment Date</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Date</type>
+</CustomField>
