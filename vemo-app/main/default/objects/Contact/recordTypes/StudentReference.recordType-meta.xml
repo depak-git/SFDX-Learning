@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>StudentReference</fullName>
+    <active>true</active>
+    <label>Student Reference</label>
+    <picklistValues>
+        <picklist>CommunityStatus__c</picklist>
+        <values>
+            <fullName>Enroll</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Enrolled</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Enrolled</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>LeadSource</picklist>
+        <values>
+            <fullName>Advertisement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Customer Event</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Employee Referral</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Google AdWords</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Partner</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Purchased List</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Trade Show</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Webinar</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Website</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Name</picklist>
+        <values>
+            <fullName>Dr%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mr%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mrs%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ms%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Prof%2E</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>PreferredMethodOfCommunication__c</picklist>
+        <values>
+            <fullName>Call</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Email</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Letter</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Text</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>PrimarySchoolEnrollmentStatus__c</picklist>
+        <values>
+            <fullName>Full Time</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Half Time</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Less than Half Time</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Three Quarter Time</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>PrimarySchoolGradeLevel__c</picklist>
+        <values>
+            <fullName>Fifth Year Senior</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Freshman</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Junior</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Senior</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>RecordStatus__c</picklist>
+        <values>
+            <fullName>Approved</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pending Approval</fullName>
+            <default>true</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Relationship__c</picklist>
+        <values>
+            <fullName>Other Non Relative</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other Relative</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Parent</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Spouse</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Residency__c</picklist>
+        <values>
+            <fullName>Naturalized Citizen</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Non-Immigrant with a US Student Visa</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Non-Immigrant with a US Work Visa</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Non-US Citizen%2FNon-Permanent Resident</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Permanent Resident</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Refugee%2FAsylee</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Temporary resident</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>US Citizen</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>TimeZone__c</picklist>
+        <values>
+            <fullName>%28GMT-0%29 Greenwhich Mean Time %28GMT%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28GMT-1%29 Cape Verde Time %28Atlantic%2FCape_Verde%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28GMT-10%29 Hawaii-Aleutian Standard Time %28Pacific%2FHonolulu%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28GMT-11%29 Niue Time %28Pacific%2FNiue%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28GMT-11%29 Samoa Standard Time %28Pacific%2FPago_Pago%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28GMT-2%29 Argentine Time %28America%2FBuenos_Aires%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28GMT-2%29 South Georgia Standard Time %28Atlantic%2FSouth_Georgia%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28GMT-3%29 Brasilia Summer Time %28America%2FSao_Paulo%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28GMT-3%29 Chile Summer Time %28America%2FSantiago%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28GMT-3%3A30%29 Newfoundland Standard Time %28America%2FSt_Johns%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28GMT-4%29 Atlantic Standard Time %28America%2FHalifax%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28GMT-4%29 Atlantic Standard Time %28America%2FPuerto_Rico%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28GMT-4%29 Atlantic Standard Time %28Atlantic%2FBermuda%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28GMT-4%3A30%29 Venezuela Time %28America%2FCaracas%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28GMT-5%29 Colombia Time %28America%2FBogota%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28GMT-5%29 Eastern Standard Time %28America%2FIndianapolis%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28GMT-5%29 Eastern Standard Time %28America%2FNew_York%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28GMT-5%29 Eastern Standard Time %28America%2FPanama%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28GMT-5%29 Peru Time %28America%2FLima%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28GMT-6%29 Central Standard Time %28America%2FChicago%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28GMT-6%29 Central Standard Time %28America%2FEl_Salvador%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28GMT-6%29 Central Standard Time %28America%2FMexico_City%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28GMT-7%29 Mountain Standard Time %28America%2FDenver%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28GMT-7%29 Mountain Standard Time %28America%2FPhoenix%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28GMT-8%29 Pacific Standard Time %28America%2FLos_Angeles%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28GMT-8%29 Pacific Standard Time %28America%2FTijuana%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28GMT-9%29 Alaska Standard Time %28America%2FAnchorage%29</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>
