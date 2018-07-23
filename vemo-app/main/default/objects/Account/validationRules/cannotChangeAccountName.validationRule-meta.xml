@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>cannotChangeAccountName</fullName>
+    <active>true</active>
+    <errorConditionFormula>$Setup.GlobalSettings__c.ValidationRules__c &amp;&amp;
+ !$Setup.ApprovalSettings__c.AccountNameChangeAllowed__c &amp;&amp; 
+!($Profile.Name = "System Administrator") &amp;&amp;
+ PRIORVALUE(Name) != Name &amp;&amp; 
+!($User.Username = "Automated Process")</errorConditionFormula>
+    <errorDisplayField>Name</errorDisplayField>
+    <errorMessage>This user cannot change the account name</errorMessage>
+</ValidationRule>

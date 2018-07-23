@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AssessmentDayRange</fullName>
+    <active>true</active>
+    <description>The day of the month that the assessor job will run for this account. Valid values 1 thru 28. Default value = 16.</description>
+    <errorConditionFormula>IsPersonAccount &amp;&amp;
+OR(AssessmentDayOfMonth__c>28, 
+AssessmentDayOfMonth__c&lt;1,
+ ISNULL(AssessmentDayOfMonth__c))</errorConditionFormula>
+    <errorDisplayField>AssessmentDayOfMonth__c</errorDisplayField>
+    <errorMessage>Assessment Day of the Month must be between 1 and 28</errorMessage>
+</ValidationRule>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All_Students</fullName>
+    <columns>VemoAccountNumber__c</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>PC_ADDRESS2_STREET</columns>
+    <columns>PC_ADDRESS2_CITY</columns>
+    <columns>PC_ADDRESS2_ZIP</columns>
+    <columns>PC_PHONE3</columns>
+    <columns>PC_EMAIL</columns>
+    <columns>ACCOUNT.LAST_UPDATE</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>ACCOUNT.RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>PersonAccount.Student</value>
+    </filters>
+    <label>All Students</label>
+</ListView>
