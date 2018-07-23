@@ -1,0 +1,99 @@
+# List files or directories below to ignore them when running force:source:push, force:source:pull, and force:source:status
+# More information: https:\\developer.salesforce.com\docs\atlas.en-us.sfdx_dev.meta\sfdx_dev\sfdx_dev_exclude_source.htm
+#
+##############################################################################
+# Pull Errors
+Admin.profile
+Trial Customer Portal User.profile
+
+##############################################################################
+# Push Errors
+
+# Record Types
+vemo-app\main\default\objects\Account\recordTypes\Business_Account.recordType-meta.xml
+
+# Settings
+vemo-app\main\default\settings\Name.settings-meta.xml
+vemo-app\main\default\settings\Address.settings-meta.xml
+vemo-app\main\default\settings\Quote.settings-meta.xml
+
+# Managed Package Errors
+vemo-app\main\default\objects\Account\webLinks\APXTConga4__Conga_Composer_OAuth.webLink-meta.xml
+vemo-app\main\default\objects\Account\webLinks\APXTConga4__Conga_Mail_Merge.webLink-meta.xml
+vemo-app\main\default\objects\Account\webLinks\echosign_dev1__Send_to_EchoSign.webLink-meta.xml
+vemo-app\main\default\objects\Case\webLinks\APXTConga4__Conga_Composer_OAuth.webLink-meta.xml
+vemo-app\main\default\objects\Case\webLinks\APXTConga4__Conga_Mail_Merge.webLink-meta.xml
+vemo-app\main\default\objects\Contact\webLinks\APXTConga4__Conga_Composer_OAuth.webLink-meta.xml
+vemo-app\main\default\objects\Contact\webLinks\APXTConga4__Conga_Mail_Merge.webLink-meta.xml
+vemo-app\main\default\objects\Contact\webLinks\echosign_dev1__Send_to_EchoSign.webLink-meta.xml
+vemo-app\main\default\objects\Opportunity\webLinks\APXTConga4__Conga_Composer_OAuth.webLink-meta.xml
+vemo-app\main\default\objects\Opportunity\webLinks\APXTConga4__Conga_Mail_Merge.webLink-meta.xml
+vemo-app\main\default\objects\Opportunity\webLinks\echosign_dev1__Conga_Send_to_EchoSign.webLink-meta.xml
+vemo-app\main\default\objects\Opportunity\webLinks\echosign_dev1__Send_to_EchoSign.webLink-meta.xml
+
+# Community Errors
+vemo-app\main\default\objects\CreditCheck__c\listViews\Purdue.listView-meta.xml
+vemo-app\main\default\objects\CreditCheck__c\listViews\Purude.listView-meta.xml
+
+# Profile Errors
+vemo-app\main\default\profiles\1%2E0 - Vemo Default.profile-meta.xml
+vemo-app\main\default\profiles\8%2E0 - College Admin Default.profile-meta.xml
+vemo-app\main\default\profiles\Admin.profile-meta.xml
+vemo-app\main\default\profiles\Adobe Sign Callback Profile.profile-meta.xml
+vemo-app\main\default\profiles\Chatter External User.profile-meta.xml
+vemo-app\main\default\profiles\Chatter Free User.profile-meta.xml
+vemo-app\main\default\profiles\Chatter Moderator User.profile-meta.xml
+vemo-app\main\default\profiles\ContractManager.profile-meta.xml
+vemo-app\main\default\profiles\Customer Community Login User.profile-meta.xml
+vemo-app\main\default\profiles\Customer Community Plus User.profile-meta.xml
+vemo-app\main\default\profiles\Guest License User.profile-meta.xml
+vemo-app\main\default\profiles\MarketingProfile.profile-meta.xml
+vemo-app\main\default\profiles\ReadOnly.profile-meta.xml
+vemo-app\main\default\profiles\SolutionManager.profile-meta.xml
+vemo-app\main\default\profiles\Standard.profile-meta.xml
+vemo-app\main\default\profiles\Vemo School Administration Portal Profile.profile-meta.xml
+
+# Layout Errors
+vemo-app\main\default\layouts\EmailMessage-Email Message Layout.layout-meta.xml
+vemo-app\main\default\layouts\WorkBadgeDefinition-Badge Layout 192.layout-meta.xml
+vemo-app\main\default\layouts\Account-School Customer Layout.layout-meta.xml
+vemo-app\main\default\layouts\Account-School Prospect Layout.layout-meta.xml
+vemo-app\main\default\layouts\Account-System Admin.layout-meta.xml
+vemo-app\main\default\layouts\Account-Account Layout.layout-meta.xml
+vemo-app\main\default\layouts\Campaign-Campaign Layout.layout-meta.xml
+vemo-app\main\default\layouts\Case-Case Layout.layout-meta.xml
+vemo-app\main\default\layouts\Case-Certification Layout.layout-meta.xml
+vemo-app\main\default\layouts\Case-Origination.layout-meta.xml
+vemo-app\main\default\layouts\Case-School Certification Layout.layout-meta.xml
+vemo-app\main\default\layouts\Case-School Originated Case Layout.layout-meta.xml
+vemo-app\main\default\layouts\CollaborationGroup-Group Layout.layout-meta.xml
+vemo-app\main\default\layouts\Contact-Authorized Third Parties Layout.layout-meta.xml
+vemo-app\main\default\layouts\Contact-Contact Layout.layout-meta.xml
+vemo-app\main\default\layouts\Contact-Student Reference Layout.layout-meta.xml
+vemo-app\main\default\layouts\Event-Event Layout.layout-meta.xml
+vemo-app\main\default\layouts\Global-Global Layout.layout-meta.xml
+vemo-app\main\default\layouts\Lead-Lead Layout.layout-meta.xml
+vemo-app\main\default\layouts\Opportunity-Opportunity Layout.layout-meta.xml
+vemo-app\main\default\layouts\Opportunity-System Admin.layout-meta.xml
+vemo-app\main\default\layouts\Task-Task Layout.layout-meta.xml
+vemo-app\main\default\layouts\ProfileSkillUser-Skill User Layout.layout-meta.xml
+vemo-app\main\default\layouts\ProfileSkill-Skill Layout.layout-meta.xml
+vemo-app\main\default\layouts\WorkThanks-Thanks Layout.layout-meta.xml
+vemo-app\main\default\layouts\ProfileSkillEndorsement-Endorsement Layout.layout-meta.xml
+vemo-app\main\default\layouts\WorkBadgeDefinition-Badge Definition Layout.layout-meta.xml
+vemo-app\main\default\layouts\WorkBadge-Badge Received Layout 192.layout-meta.xml
+vemo-app\main\default\layouts\WorkBadge-Badge Layout.layout-meta.xml
+vemo-app\main\default\layouts\WorkAccess-Access Layout.layout-meta.xml
+vemo-app\main\default\layouts\Account-Investor Layout.layout-meta.xml
+vemo-app\main\default\layouts\StudentProgram__c-School Student Program Layout.layout-meta.xml
+
+
+##############################################################################
+# Convert To mdapi Errors
+
+package.xml
+vemo-mdapi-qa\package.xml
+vemo-app\main\default\testSuites\
+vemo-app\main\default\layouts\
+vemo-app\main\default\email\
+vemo-mdapi-qa\layouts\SocialPost-Social Post Layout.layout

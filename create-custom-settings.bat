@@ -1,0 +1,2 @@
+ApprovalSettings.createApprovalSettings();
+GlobalSettings.createDefaultSettigns();
