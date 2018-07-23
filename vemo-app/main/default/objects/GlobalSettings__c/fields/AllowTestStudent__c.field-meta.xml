@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AllowTestStudent__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>If this field is checked, the api will allow login to bypass the decryption process of the VEMO_AUTH param</description>
+    <externalId>false</externalId>
+    <inlineHelpText>If this field is checked, the api will allow login to bypass the decryption process of the VEMO_AUTH param</inlineHelpText>
+    <label>Allow testStudent via API</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Purude</fullName>
+    <columns>NAME</columns>
+    <columns>Student__c</columns>
+    <columns>ConsentIPAddress__c</columns>
+    <columns>ConsentDateTimeStamp__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>SchoolSecurity__c</field>
+        <operation>equals</operation>
+        <value>Purdue</value>
+    </filters>
+    <label>Purdue</label>
+    <sharedTo>
+        <allInternalUsers/>
+        <portalRoleAndSubordinates>TestCustomerCustomerManager</portalRoleAndSubordinates>
+    </sharedTo>
+</ListView>

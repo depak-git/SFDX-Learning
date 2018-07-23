@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All</fullName>
+    <columns>NAME</columns>
+    <columns>Type__c</columns>
+    <columns>Status__c</columns>
+    <columns>ParentID__c</columns>
+    <columns>ParentObjectType__c</columns>
+    <columns>AttachmentCleanURL__c</columns>
+    <columns>AttachmentID__c</columns>
+    <filterScope>Everything</filterScope>
+    <label>All</label>
+</ListView>

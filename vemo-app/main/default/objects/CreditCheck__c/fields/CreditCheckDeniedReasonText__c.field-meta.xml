@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CreditCheckDeniedReasonText__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>If Status is Denied, this indicates one or more reason categories for the denial (formatted so it can be included in email communications).</inlineHelpText>
+    <label>Credit Check Denied Reason Text</label>
+    <length>32768</length>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Html</type>
+    <visibleLines>25</visibleLines>
+</CustomField>
