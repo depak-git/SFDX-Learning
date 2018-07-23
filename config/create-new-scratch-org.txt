@@ -1,0 +1,3 @@
+SandboxSetup.newData();
+ApprovalSettings.createApprovalSettings();
+GlobalSettings.createDefaultSettings();

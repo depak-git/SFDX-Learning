@@ -1,0 +1,13 @@
+{
+    "Username": "api-user@vemo.scratch<x>",
+    "LastName": "User",
+    "Email": "<email address@domain>",
+    "Alias": "apiuser",
+    "TimeZoneSidKey": "America/Denver",
+    "LocaleSidKey": "en_US",
+    "EmailEncodingKey": "UTF-8",
+    "LanguageLocaleKey": "en_US",
+    "profileName": "Standard User",
+    "permsets": ["DXAdmin"],
+    "generatePassword": true
+}

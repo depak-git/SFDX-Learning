@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+    <types>
+        <members>Vemo_Education</members>
+        <members>Vemo_Finance</members>
+        <members>Vemo_Sales</members>
+        <members>Admin</members>
+        <name>CustomApplication</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>RemoteSiteSetting</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>Letterhead</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>Group</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>ConnectedApp</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>CustomTab</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>ApexClass</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>ApexComponent</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>ApexPage</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>StaticResource</name>
+    </types>
+    <types>
+        <members>GenericDocumentViewApp</members>
+        <members>GenericDocumentViewComp</members>
+        <members>LedgerComponent</members>
+        <members>Mashup</members>
+        <members>MashupApp</members>
+        <name>AuraDefinitionBundle</name>
+    </types>
+    <types>
+        <members>Address</members>
+        <members>Name</members>
+        <name>Settings</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>GlobalValueSet</name>
+    </types>
+    <types>
+        <members>CaseStatus</members>
+        <members>CaseOrigin</members>
+        <members>CasePriority</members>
+        <members>CaseReason</members>
+        <members>CaseType</members>
+        <members>OpportunityStage</members>
+        <members>AccountSource</members>
+        <members>LeadSource</members>
+        <name>StandardValueSet</name>
+    </types>
+    <types>
+        <members>Case.Default</members>
+        <members>Case.Certification</members>
+        <members>Opportunity.Default</members>
+        <name>BusinessProcess</name>
+    </types>
+    <types>
+        <members>Certification</members>
+        <members>Origination</members>
+        <members>Servicing</members>
+        <name>Queue</name>
+    </types>
+    <types>
+        <members>Account.Default</members>
+        <members>Account.SchoolAvailableProspect</members>
+        <members>Account.SchoolCustomer</members>
+        <members>Account.Business_Account</members>
+        <members>PersonAccount.PersonAccount</members>
+        <members>PersonAccount.Student</members>
+        <members>Case.Origination</members>
+        <members>Case.SchoolOriginated</members>
+        <members>Case.Certification</members>
+        <members>Case.Default</members>
+        <members>Contact.AuthorizedThirdParty</members>
+        <members>Contact.StudentReference</members>
+        <members>Contact.Default</members>
+        <members>Opportunity.Default</members>
+        <name>RecordType</name>
+    </types>    
+    <types>
+        <members>Case.Origin</members>
+        <members>Case.Status</members>
+        <members>Opportunity.StageName</members>
+        <members>Contact.LeadSource</members>
+        <members>Opportunity.LeadSource</members>
+        <members>PersonAccount.AccountSource</members>
+        <members>Account.AccountSource</members>
+<members>Account.AssessAccount__c</members>
+<members>Account.AssessmentDate__c</members>
+<members>Account.AssessmentDayOfMonth__c</members>
+<members>Account.AverageTuitionDiscountRate__c</members>
+<members>Account.BypassApproval__c</members>
+<members>Account.CampusServiceAvailability__c</members>
+<members>Account.CampusServiceEmail__c</members>
+<members>Account.CampusServiceMobile__c</members>
+<members>Account.CampusServiceName__c</members>
+<members>Account.CertificationProcess__c</members>
+<members>Account.DescriptionBlock__c</members>
+<members>Account.DetailBlock__c</members>
+<members>Account.DisplayName__c</members>
+<members>Account.DueDate__c</members>
+<members>Account.DueDayOfTheMonth__c</members>
+<members>Account.EntryPoint__c</members>
+<members>Account.Error__c</members>
+<members>Account.FAMSystem__c</members>
+<members>Account.GUID__c</members>
+<members>Account.InstitutionShortName__c</members>
+<members>Account.InstitutionState__c</members>
+<members>Account.IPEDSID__c</members>
+<members>Account.NextAutoPaymentDate__c</members>
+<members>Account.NumberOfStudentsReceivingDiscounts__c</members>
+<members>Account.PotentialAnnualVemoRevenue__c</members>
+<members>Account.RecordLabel__c</members>
+<members>Account.RecordLink__c</members>
+<members>Account.SchoolLevel__c</members>
+<members>Account.SchoolLogoDocumentID__c</members>
+<members>Account.SchoolLogoURL__c</members>
+<members>Account.SchoolSecurity__c</members>
+<members>Account.SchoolType__c</members>
+<members>Account.StewardshipDisbursementDonorGUID__c</members>
+<members>Account.StewardshipPaymentDonorGUID__c</members>
+<members>Account.StewardshipProcess__c</members>
+<members>Account.StudentEnrollment__c</members>
+<members>Account.TitleBlock__c</members>
+<members>Account.Tuition__c</members>
+<members>Account.UnpaidFees__c</members>
+<members>Account.VemoAccountNumber__c</members>
+<members>Account.VemoProductsServicesUsed__c</members>
+<members>Account.WebsiteStatus__c</members>
+<members>Account.WebStyle__c</members>
+<members>Contact.AuthorizedForStudent__c</members>
+<members>Contact.Student__c</members>
+<members>Contact.Age__c</members>
+<members>Contact.AuthSystemUserID__c</members>
+<members>Contact.AutoPayment__c</members>
+<members>Contact.AutoPaymentDateActivated__c</members>
+<members>Contact.AutoPaymentDayOfMonth1__c</members>
+<members>Contact.AutoPaymentDayOfMonth2__c</members>
+<members>Contact.AutoPaymentFrequency__c</members>
+<members>Contact.BypassApproval__c</members>
+<members>Contact.BypassAutomation__c</members>
+<members>Contact.CommonLineID__c</members>
+<members>Contact.CommunityStatus__c</members>
+<members>Contact.Credit__c</members>
+<members>Contact.CumulativeIncomeShare__c</members>
+<members>Contact.CumulativeIncomeShareCap__c</members>
+<members>Contact.DateIncomeVerified__c</members>
+<members>Contact.DriversLicenseOrStateID__c</members>
+<members>Contact.PrimarySchoolEnrollmentStatus__c</members>
+<members>Contact.GenerateBill__c</members>
+<members>Contact.PrimarySchoolGradeLevel__c</members>
+<members>Contact.PrimarySchoolGraduationDate__c</members>
+<members>Contact.HasOptedOutOfText__c</members>
+<members>Contact.PendingBirthdate__c</members>
+<members>Contact.PendingDriversLicenseOrStateID__c</members>
+<members>Contact.PendingEmail__c</members>
+<members>Contact.PendingFirstName__c</members>
+<members>Contact.PendingLastName__c</members>
+<members>Contact.PendingMailingCity__c</members>
+<members>Contact.PendingMailingCountry__c</members>
+<members>Contact.PendingMailingCountryCode__c</members>
+<members>Contact.PendingMailingPostalCode__c</members>
+<members>Contact.PendingMailingState__c</members>
+<members>Contact.PendingMailingStateCode__c</members>
+<members>Contact.PendingMailingStreet__c</members>
+<members>Contact.PendingMiddleName__c</members>
+<members>Contact.PendingResidency__c</members>
+<members>Contact.PreferredMethodOfCommunication__c</members>
+<members>Contact.PrivacyOptOut__c</members>
+<members>Contact.RecalculateCumulativeIncomeShare__c</members>
+<members>Contact.RecordLabel__c</members>
+<members>Contact.RecordLink__c</members>
+<members>Contact.RecordStatus__c</members>
+<members>Contact.Relationship__c</members>
+<members>Contact.Residency__c</members>
+<members>Contact.PrimarySchool__c</members>
+<members>Contact.PrimarySchoolEmail__c</members>
+<members>Contact.SchoolProgramOfStudy__c</members>
+<members>Contact.SSNTaxID__c</members>
+<members>Contact.PrimarySchoolStudentID__c</members>
+<members>Contact.TimeZone__c</members>
+<members>Contact.VerifiedAnnualIncome__c</members>
+<members>Opportunity.LossReasonText__c</members>
+<members>Opportunity.ProgramOutline__c</members>
+<members>Opportunity.RecordLabel__c</members>
+<members>Opportunity.RecordLink__c</members>
+<members>Opportunity.TargetLaunchDate__c</members>
+<members>Opportunity.VemoProducts__c</members>
+<members>Case.ApplicationAllocatedAmount__c</members>
+<members>Case.ApplicationEnrollmentStatus__c</members>
+<members>Case.ApplicationExpectedGraduationDate__c</members>
+<members>Case.ApplicationGradeLevel__c</members>
+<members>Case.ApplicationIncomeShare__c</members>
+<members>Case.ApplicationSchoolProgramOfStudy__c</members>
+<members>Case.ApplicationPaymentCap__c</members>
+<members>Case.ApplicationPaymentTerm__c</members>
+<members>Case.ApplicationProgramOfStudyDescription__c</members>
+<members>Case.ApplicationRequestedAmount__c</members>
+<members>Case.ApplicationResidency__c</members>
+<members>Case.CertificationChanges__c</members>
+<members>Case.CertificationProcess__c</members>
+<members>Case.CertifiedAllocatedAmount__c</members>
+<members>Case.CertifiedEnrollmentStatus__c</members>
+<members>Case.CertifiedExpectedGraduationDate__c</members>
+<members>Case.CertifiedGradeLevel__c</members>
+<members>Case.CertifiedIncomeShare__c</members>
+<members>Case.CertifiedSchoolProgramOfStudy__c</members>
+<members>Case.CertifiedPaymentCap__c</members>
+<members>Case.CertifiedPaymentTerm__c</members>
+<members>Case.CertifiedProgramOfStudyDescription__c</members>
+<members>Case.CertifiedResidency__c</members>
+<members>Case.CertifiedEligibleToReapply__c</members>
+<members>Case.PaymentInstruction__c</members>
+<members>Case.RecordLabel__c</members>
+<members>Case.RecordLink__c</members>
+<members>Case.School__c</members>
+<members>Case.Agreement__c</members>
+        <name>CustomField</name>
+    </types>
+    <types>
+        <members>Account</members>
+        <members>ApprovalSettings__c</members>
+        <members>Bill__c</members>
+        <members>Case</members>
+        <members>Config_Annual_Income_Level__c</members>
+        <members>Config_Loan_Alternative__c</members>
+        <members>Contact</members>
+        <members>ContractTerm__c</members>
+        <members>CreditCheck__c</members>
+        <members>DefermentRule__c</members>
+        <members>Deferment__c</members>
+        <members>EmploymentHistory__c</members>
+        <members>Fee__c</members>
+        <members>GenericDocument__c</members>
+        <members>GlobalSettings__c</members>
+        <members>IncomeBand__c</members>
+        <members>IncomeVerification__c</members>
+        <members>KeyValuePair__c</members>
+        <members>Log__c</members>
+        <members>Notification__c</members>
+        <members>Opportunity</members>
+        <members>OutboundEmail__c</members>
+        <members>PaymentAllocation__c</members>
+        <members>PaymentAllocationDetail__c</members>
+        <members>PaymentInstruction__c</members>
+        <members>PaymentMethod__c</members>
+        <members>PersonAccount</members>
+        <members>ProgramEligibility__c</members>
+        <members>ProgramOfStudy__c</members>
+        <members>Program_Config__c</members>
+        <members>Program__c</members>
+        <members>SESSettings__c</members>
+        <members>SandboxSetupUsers__c</members>
+        <members>SchoolProgramsOfStudy__c</members>
+        <members>SecureSetting__c</members>
+        <members>StewardshipACHBatchDetail__c</members>
+        <members>StewardshipACHBatch__c</members>
+        <members>StewardshipTechnologySettings__c</members>
+        <members>StudentProgramAmountDue__c</members>
+        <members>StudentProgramAudit__c</members>
+        <members>StudentProgramMonthlyStatus__c</members>
+        <members>StudentProgram__c</members>
+        <members>Student_ISA_Payment__c</members>
+        <members>Studnet_Loan_Alternative_Payment__c</members>
+        <members>TransactionBatch__c</members>
+        <members>TransactionSchedule__c</members>
+        <members>Transaction__c</members>
+        <members>TriggerSettings__c</members>
+        <members>VemoAdobeSignSettings__c</members>
+        <name>CustomObject</name>
+    </types>
+    <version>42.0</version>
+</Package>
