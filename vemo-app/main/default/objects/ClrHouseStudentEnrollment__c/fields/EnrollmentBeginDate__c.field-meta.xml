@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>EnrollmentBeginDate__c</fullName>
+    <externalId>false</externalId>
+    <formula>DATE(VALUE(LEFT(Enrollment_begin__c,4)),VALUE(MID( Enrollment_begin__c,5,2)),VALUE(RIGHT( Enrollment_begin__c,2)))</formula>
+    <label>Enrollment Begin Date</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Date</type>
+</CustomField>
