@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CertificationChanges__c</fullName>
+    <externalId>false</externalId>
+    <formula>if( ApplicationRequestedAmount__c != CertifiedAllocatedAmount__c, true, false) || 
+if( Text(ApplicationEnrollmentStatus__c) != Text(CertifiedEnrollmentStatus__c) , true, false) || 
+if( ApplicationExpectedGraduationDate__c != CertifiedExpectedGraduationDate__c , true, false) || 
+if( ApplicationSchoolProgramOfStudy__c != CertifiedSchoolProgramOfStudy__c , true, false) || 
+if( Text(ApplicationResidency__c) != Text(CertifiedResidency__c) , true, false) || 
+if( Text(ApplicationGradeLevel__c) != Text(CertifiedGradeLevel__c) , true, false)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>(DEPRECATE)Certification Changes</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

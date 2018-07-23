@@ -1,0 +1,377 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Default</fullName>
+    <active>true</active>
+    <businessProcess>Default</businessProcess>
+    <description>Default Record Type</description>
+    <label>Default</label>
+    <picklistValues>
+        <picklist>ApplicationEnrollmentStatus__c</picklist>
+        <values>
+            <fullName>Full Time</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Half Time</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Less than Half Time</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Three Quarter Time</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>ApplicationGradeLevel__c</picklist>
+        <values>
+            <fullName>Fifth Year Senior</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Freshman</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Junior</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Senior</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>ApplicationResidency__c</picklist>
+        <values>
+            <fullName>Naturalized Citizen</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Non-Immigrant with a US Student Visa</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Non-Immigrant with a US Work Visa</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Non-US Citizen%2FNon-Permanent Resident</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Permanent Resident</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Refugee%2FAsylee</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Temporary resident</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>US Citizen</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>CertificationProcess__c</picklist>
+        <values>
+            <fullName>Cancelled</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Certified</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>CertifiedEnrollmentStatus__c</picklist>
+        <values>
+            <fullName>Full Time</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Half Time</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Less than Half Time</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Three Quarter Time</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>CertifiedGradeLevel__c</picklist>
+        <values>
+            <fullName>Fifth Year Senior</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Freshman</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Junior</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Senior</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>CertifiedResidency__c</picklist>
+        <values>
+            <fullName>Naturalized Citizen</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Non-Immigrant with a US Student Visa</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Non-Immigrant with a US Work Visa</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Non-US Citizen%2FNon-Permanent Resident</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Permanent Resident</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Refugee%2FAsylee</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Temporary resident</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>US Citizen</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Origin</picklist>
+        <values>
+            <fullName>Chat</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Email</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fax</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Internal Request</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mail</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mobile App</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Phone</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Report</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>System</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Text</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Web</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Priority</picklist>
+        <values>
+            <fullName>High</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Low</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Medium</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Urgent</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Reason</picklist>
+        <values>
+            <fullName>Billing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Credit Appeal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Credit Question</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Death%2FPermanent Disability</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Deferment Request</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Demographic Update</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Disbursement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Disbursement Changes</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Disbursement Confirmation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Funding Question</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>General Question</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ISA Amount Change</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ISA Cancel - Chose Another Product</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ISA Cancel - Withdrew from School</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Invoice</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Missing or incomplete info</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Monthly Reconciliation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New Program Request</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Payment Questions</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pool Utilization</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Processing Issue</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Program Update</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Report</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Return Mail%2FEmail</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Return%2FRefund</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Stop Payment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Student Outreach Notification</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Student Update</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Type</picklist>
+        <values>
+            <fullName>Feature Request</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Problem</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Question</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

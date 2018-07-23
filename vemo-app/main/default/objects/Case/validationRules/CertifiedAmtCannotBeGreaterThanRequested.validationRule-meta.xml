@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CertifiedAmtCannotBeGreaterThanRequested</fullName>
+    <active>true</active>
+    <errorConditionFormula>CertifiedAllocatedAmount__c > ApplicationRequestedAmount__c</errorConditionFormula>
+    <errorDisplayField>CertifiedAllocatedAmount__c</errorDisplayField>
+    <errorMessage>The Certified Allocated Amount cannot exceed the Requested Amount from the Application</errorMessage>
+</ValidationRule>

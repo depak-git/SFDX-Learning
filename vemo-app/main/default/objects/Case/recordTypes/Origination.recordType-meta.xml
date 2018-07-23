@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Origination</fullName>
+    <active>true</active>
+    <businessProcess>Default</businessProcess>
+    <description>Origination</description>
+    <label>Origination</label>
+    <picklistValues>
+        <picklist>ApplicationEnrollmentStatus__c</picklist>
+        <values>
+            <fullName>Full Time</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Half Time</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Less than Half Time</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Three Quarter Time</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>ApplicationGradeLevel__c</picklist>
+        <values>
+            <fullName>Fifth Year Senior</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Freshman</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Junior</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Senior</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>ApplicationResidency__c</picklist>
+        <values>
+            <fullName>Naturalized Citizen</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Non-Immigrant with a US Student Visa</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Non-Immigrant with a US Work Visa</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Non-US Citizen%2FNon-Permanent Resident</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Permanent Resident</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Refugee%2FAsylee</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Temporary resident</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>US Citizen</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>CertificationProcess__c</picklist>
+        <values>
+            <fullName>Cancelled</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Certified</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>CertifiedEnrollmentStatus__c</picklist>
+        <values>
+            <fullName>Full Time</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Half Time</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Less than Half Time</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Three Quarter Time</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>CertifiedGradeLevel__c</picklist>
+        <values>
+            <fullName>Fifth Year Senior</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Freshman</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Junior</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Senior</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>CertifiedResidency__c</picklist>
+        <values>
+            <fullName>Naturalized Citizen</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Non-Immigrant with a US Student Visa</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Non-Immigrant with a US Work Visa</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Non-US Citizen%2FNon-Permanent Resident</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Permanent Resident</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Refugee%2FAsylee</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Temporary resident</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>US Citizen</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Origin</picklist>
+        <values>
+            <fullName>Email</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fax</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Phone</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Web</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Priority</picklist>
+        <values>
+            <fullName>High</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Low</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Medium</fullName>
+            <default>true</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Reason</picklist>
+        <values>
+            <fullName>Billing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New Program Request</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pool Utilization</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Program Update</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Student Outreach Notification</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Type</picklist>
+        <values>
+            <fullName>Feature Request</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Problem</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Question</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>
