@@ -1,0 +1,12 @@
+<apex:component controller="RenderAgreementAmountsCTRL">
+	<apex:pageBlock id="amount_due_block" title="Amount Due" mode="detail">
+		<apex:pageBlockSection columns="3">
+			<br/><apex:outputText value="Reconciliation"/><apex:outputText value="Monthly Amount"/>
+			<apex:outputText value="Due To Date:"/><apex:outputText value="{!agreement.reconciliationDueToDate}"/><apex:outputText value="{!agreement.monthlyAmountDueToDate}"/>
+			<apex:outputText value="Paid To Date:"/> <apex:outputText value="{!agreement.reconciliationPaidToDate}"/><apex:outputText value="{!agreement.monthlyAmountPaidToDate}"/>
+			<apex:outputText value="Due:"/> <apex:outputText value="{!agreement.reconciliationDue}"/><apex:outputText value="{!agreement.monthlyAmountDue}"/>
+			<apex:outputText value="Current Due:"/> <apex:outputText value="{!agreement.reconciliationCurrentDue}"/><apex:outputText value="{!agreement.monthlyAmountCurrentDue}"/>
+			<apex:outputText value="Past Due:"/> <apex:outputText value="{!agreement.reconciliationPastDue}"/><apex:outputText value="{!agreement.monthlyAmountPastDue}"/>
+		</apex:pageBlockSection>
+	</apex:pageBlock>
+</apex:component>
