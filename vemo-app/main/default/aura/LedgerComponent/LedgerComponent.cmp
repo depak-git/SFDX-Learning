@@ -1,0 +1,93 @@
+<aura:component controller="LedgerViewController" implements="flexipage:availableForRecordHome,force:hasRecordId">
+	<aura:attribute name="studentID" type="Id"/> 
+    <aura:attribute name="allJournalEntries" type="LedgerViewController.JournalEntry[]"/>    
+    <aura:attribute name="toDisplayJournalEntries" type="LedgerViewController.JournalEntry[]"/>     
+    <aura:attribute name="redirectURL" type="String" default=""/>
+    <aura:attribute name="fullView" type="Boolean" default="false"/>
+    <aura:attribute name="student" type="LedgerViewController.Student"/>
+    <aura:attribute name="totalEntries" type="Integer"/>
+    <aura:attribute name="Spinner" type="boolean" default="false"/>
+    <!-- waiting handler for spinners-->
+    <!-- <aura:handler event="aura:waiting" action="{!c.showSpinner}"/> -->
+    <!-- <aura:handler event="aura:doneWaiting" action="{!c.hideSpinner}"/> -->
+    
+    <!-- called when the component initializes -->
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}" />
+    <div class="slds-scrollable">
+    
+    <!-- showing Spinners While Loading -->
+    <aura:if isTrue="{!v.Spinner}">
+        <div aura:id="spinnerId" class="slds-spinner_container">
+           <div class="slds-spinner--brand  slds-spinner slds-spinner--large slds-is-relative" role="alert">
+             <span class="slds-assistive-text">Loading</span>
+             <div class="slds-spinner__dot-a"></div>
+             <div class="slds-spinner__dot-b"></div>
+           </div>
+        </div>
+    </aura:if>
+        
+    <!-- show name only when opened in full View -->   
+    <aura:if isTrue="{!v.fullView}">
+    	<p style="font-size:22px;font-weight:bold">{!v.student.name}</p>
+    </aura:if>
+     
+    <!-- main ledger entries table -->    
+    <table class="slds-table slds-table_bordered slds-table_cell-buffer slds-table_striped">
+        <thead>
+            <tr class="slds-text-title_caps">
+                <th>
+                    <strong>Date</strong>
+                </th>
+                <th>
+                    <strong>Amount</strong>
+                </th>
+                <th>
+                    <strong>Fully Allocated</strong>
+                </th>
+            	<th>
+                    <strong>Contract</strong>
+                </th>
+                <th>
+                    <strong>Entry Type</strong>
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <aura:iteration items="{!v.toDisplayJournalEntries}" var="entry">
+                <tr>
+                    <td>
+                    	<ui:outputDate format="MM-dd-yyyy" value="{!entry.transactionDate}"/>
+                    </td>
+                    <td>
+                        <a href="{!entry.linkToRecord}" target="_blank"><ui:outputCurrency format="$ .00" value="{!entry.transactionAmount}"/></a>
+                    </td>
+                    <td>
+                    	<aura:if isTrue="{!entry.isPaymentInstruction}">
+                            <ui:outputCheckbox value="{!entry.isFullyAllocated}"/>
+                        </aura:if> 
+                    </td>
+                    <td>
+                        <ui:outputURL value="{!'/'+entry.agreementID}" target="_blank" label="{!entry.programName}"/>
+                    </td>
+                    <td>
+                        {!entry.entryType}
+                    </td>
+                </tr>
+            </aura:iteration>
+        </tbody>
+    </table>
+        <br/>
+    <!-- link takes you to full view -->    
+    <center>
+        <aura:if isTrue="{!(!v.fullView)}">
+            <aura:if isTrue="{!(v.totalEntries>0)}">
+        	    <ui:outputURL value="{!v.redirectURL}" label="{!'Go to List ('+v.totalEntries+')'}" target="_blank"/>
+        		<aura:set attribute="else">
+      				No Entries Found!
+    			</aura:set>
+            </aura:if>
+        </aura:if> 
+    </center>
+        
+    </div>
+</aura:component>

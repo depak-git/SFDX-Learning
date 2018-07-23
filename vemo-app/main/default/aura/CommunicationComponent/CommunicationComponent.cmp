@@ -1,0 +1,214 @@
+<aura:component controller="StudentCommunicationsCTRL" implements="flexipage:availableForRecordHome,force:hasRecordId">
+    <aura:attribute name="schoolID" type="Id"/> 
+    <aura:attribute name="allCommunicationEntries" type="object"/>    
+    <aura:attribute name="toDisplayCommunicationEntries" type="object"/> 
+    <aura:attribute name="toDate" type="Date"/> 
+    <aura:attribute name="fromDate" type="Date"/> 
+    
+    <aura:attribute name="redirectURL" type="String" default=""/>
+    <aura:attribute name="fullView" type="Boolean" default="false"/>
+    <!--<aura:attribute name="student" type="LedgerViewController.Student"/>-->
+    <aura:attribute name="totalEntries" type="Integer"/>
+    <aura:attribute name="Spinner" type="boolean" default="false"/>
+    <aura:attribute name="studentMap" type="Map" />
+    
+    <!-- <aura:attribute name="studentList" type="object"/> -->
+    <aura:attribute name="paginationList" type="object"/>
+    <aura:attribute name="pageSize" type="Integer" default="10"/>
+ 	<aura:attribute name="totalSize" type="Integer"/>
+    <!-- <aura:attribute name="start" type="Integer" />
+ 	<aura:attribute name="end" type="Integer"/>
+    <aura:attribute name="previousStart" type="Integer" />
+    <aura:attribute name="previousEnd" type="Integer"/> -->
+    <aura:attribute name="pageNumber" type="Integer" default="1"/>
+    <aura:attribute name="totalPages" type="Integer" default="1"/>
+    
+    <aura:attribute name="selectedValue" type="String" default="null"/>
+    <aura:attribute name="selectedStudent" type="String" default=""/>
+    <aura:attribute name="studentSearchList" type="Account" default="null"/>
+    
+
+    
+    
+    <!-- waiting handler for spinners-->
+    <aura:handler event="aura:waiting" action="{!c.showSpinner}"/>
+    <aura:handler event="aura:doneWaiting" action="{!c.hideSpinner}"/>
+    
+    <aura:attribute type="String"       name="sortField" />
+    <aura:attribute type="Boolean"		name="sortAsc" />
+    
+    <!-- called when the component initializes -->
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}" />   
+    
+    <div class="slds-list_horizontal slds-wrap" style="height: 65px;">
+        <a label="Refresh"  onclick="{!c.doInit}" class="submit_btn">
+            <lightning:icon iconName="action:refresh" variant="refresh" size="x-small"/>
+        </a>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <ui:inputDate aura:id="fromDate" value="{!v.fromDate}" label="From Date" format="MM-DD-YYYY" displayDatePicker="true"/>
+        <ui:inputDate aura:id="toDate" value="{!v.toDate}" label="To Date" format="MM-DD-YYYY" displayDatePicker="true"/>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        
+        <lightning:button class="submit_btn" variant="brand" label="Submit" onclick="{!c.handleClick }" />
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <div style="height: 10rem;" onmouseleave="{!c.onblur}">
+            <div class="slds-form-element">
+               <label class="slds-form-element__label" for="combobox-unique-id-30">Student</label>
+               <div class="slds-form-element__control">
+                   <div class="slds-combobox_container slds-has-inline-listbox slds-has-input-focus divcls">
+                   	<div class="slds-combobox slds-dropdown-trigger slds-dropdown-trigger_click slds-is-open" aria-expanded="true" aria-haspopup="listbox" role="combobox">
+                       <div class="slds-combobox__form-element slds-input-has-icon slds-input-has-icon_right" role="none">
+                           <span class="slds-icon_container  slds-combobox__input-entity-icon" title="record">
+                               <lightning:icon class="slds-icon slds-icon slds-icon_small slds-icon-text-default" iconName="standard:account" size="x-small" alternativeText="standard:account"/>
+                           	   <span class="slds-assistive-text"></span>
+                       	   </span>
+                           <ui:inputText value="{!v.selectedStudent}" updateOn="keyup" keyup="{!c.studentSearch}"  class="slds-lookup__search-input slds-input leftPaddingClass" aura:id="stud"  placeholder="Search Student" />
+                       </div>
+                        <aura:if isTrue="{!v.studentSearchList.length > 0}">                            
+                        	<div id="listbox-unique-id" role="listbox"  >
+                               <ul class="slds-listbox slds-listbox_vertical slds-dropdown slds-dropdown_fluid" role="presentation">
+                                   <aura:iteration items="{!v.studentSearchList}" var="item">
+                                       <li role="presentation" class="slds-listbox__item" onclick="{! c.studentChange}" data-id="{!item.Id}" data-name="{!item.Name}">
+                                           <div id="listbox-option-unique-id-01" class="slds-media slds-listbox__option slds-listbox__option_entity slds-listbox__option_has-meta" role="option">
+                                               <span id="listbox-option-unique-id-01" class="slds-media slds-listbox__option slds-listbox__option_entity slds-listbox__option_has-meta" role="option">
+                                                 <span class="slds-media__figure">
+                                                     <span class="slds-icon_container" title="Description of icon when needed">
+                                                       <lightning:icon iconName="standard:account" class="slds-icon slds-icon_small" size="small" alternativeText="standard:account"/>
+                                                       <span class="slds-assistive-text">Description of icon</span>
+                                                     </span>
+                                                 </span>    
+                                                 <span class="slds-media__body">  
+                                                     <span class="slds-listbox__option-text slds-listbox__option-text_entity">{!item.Name}</span>
+                                                 </span>
+                                                </span>
+                                           </div>
+                                       </li> 
+                                   </aura:iteration>
+                               	</ul>
+                            </div>
+                        </aura:if>                        
+                       </div>                    
+                   </div>
+               </div>
+           </div>
+       </div>	
+    </div>    
+    
+    <div class="slds-scrollable">
+    
+    <!-- showing Spinners While Loading -->
+    <aura:if isTrue="{!v.Spinner}">
+        <div aura:id="spinnerId" class="slds-spinner_container">
+           <div class="slds-spinner--brand  slds-spinner slds-spinner--large slds-is-relative" role="alert">
+             <span class="slds-assistive-text">Loading</span>
+             <div class="slds-spinner__dot-a"></div>
+             <div class="slds-spinner__dot-b"></div>
+           </div>
+        </div>
+    </aura:if>
+        
+    <!-- show name only when opened in full View -->   
+    <!--<aura:if isTrue="{!v.fullView}">
+    	<p style="font-size:22px;font-weight:bold">{!v.student.name}</p>
+    </aura:if>-->
+     
+    <!-- main ledger entries table -->    
+    <table class="slds-table slds-table_bordered slds-table_cell-buffer slds-table_striped">
+        <thead>
+            <tr class="slds-text-title_caps">
+                <!-- <th onclick="{!c.sortByType}">
+                    <strong>TYPE</strong>
+                </th> -->
+                <th onclick="{!c.sortByStudent}">
+                    <strong>STUDENT</strong>
+                </th>
+                <!--<th onclick="{!c.sortByProgram}">
+                    <strong>PROGRAM</strong>
+                </th>-->
+            	<th onclick="{!c.sortBySubject}">
+                    <strong>SUBJECT</strong>
+                </th>
+                <!--<th>
+                    <strong>RELATED TO</strong>
+                </th>-->
+                <th onclick="{!c.sortByCreated}">
+                    <strong>CREATED</strong>
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <aura:iteration items="{!v.paginationList}" var="entry">
+                <tr>
+                    <!-- <td>
+                        {!entry.type}
+                    </td> -->
+                    <td>
+                        {!entry.student}
+                    </td>
+                    <!--<td>
+                        {!entry.program}
+                    </td>-->
+                    <td>
+                        {!entry.subject}
+                    </td>
+                    <!--<td>
+                        {!entry.relatedTo}
+                    </td>-->
+                    <td>
+                    	<ui:outputDate format="MM-dd-yyyy" value="{!entry.createdDate}"/>
+                    </td>
+                    <td>
+                        <aura:if isTrue="{!entry.objectName == 'Notification'}">
+                        	<ui:outputURL value="{!'/apex/NotificationDetail?id='+entry.recordId+'&amp;record=notification'}" target="_blank" label="View Detail"/>
+                        </aura:if>
+                        <aura:if isTrue="{!entry.objectName == 'Activity'}">
+                        	<ui:outputURL value="{!'/apex/ActivityDetail?id='+entry.recordId+'&amp;record=activity&amp;accId='+entry.studentId}" target="_blank" label="View Detail"/>
+                        </aura:if>
+                    </td>
+                    
+                </tr>
+            </aura:iteration>
+        </tbody>
+    </table>
+        <br/>
+    <!-- link takes you to full view -->    
+    <center>
+        <aura:if isTrue="{!(!v.fullView)}">
+            <aura:if isTrue="{!(v.totalEntries>0)}">
+        	    <!--<ui:outputURL value="{!v.redirectURL}" label="{!'Go to Students Communication List ('+v.totalEntries+')'}" target="_blank"/>-->
+        		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                
+                <lightning:button label="Previous" disabled="{!v.pageNumber == 1}"  onclick="{!c.previous}" >
+                    <lightning:icon iconName="utility:left" variant="left"/>
+                </lightning:button>
+                <b> Previous : Next </b> 
+                
+                <lightning:button label="Next" disabled="{!v.pageNumber == v.totalPages}" onclick="{!c.next}" >
+                    <lightning:icon iconName="utility:right" variant="right"/>
+                </lightning:button>
+                
+                <div class="outputClass">
+                    <ui:outputText value="Page " />
+                    <ui:inputText value="{!v.pageNumber}" class="inputClass" change="{!c.changePageNumber}"/>                        
+                    <ui:outputText value=" of " />
+                    <ui:outputText value="{!v.totalPages}" />              
+                </div>
+                
+                
+                <aura:set attribute="else">
+      				No Entries Found!
+    			</aura:set>
+            </aura:if>
+            
+        </aura:if> 
+        
+    </center>
+    
+              
+    </div>
+</aura:component>

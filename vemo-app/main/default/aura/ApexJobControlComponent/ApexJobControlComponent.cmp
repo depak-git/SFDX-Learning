@@ -1,0 +1,178 @@
+<aura:component controller="ApexJobControl" implements="flexipage:availableForRecordHome" access="global" >
+    
+    <aura:attribute name="jobName" type="String" default="Assess Student Contracts"/>
+    <aura:attribute name="jobList" type="Object" />
+    <aura:attribute name="showComponent" type="boolean" default="false"/>
+    <!--<aura:attribute name="jobType" type="String" default=""/>
+    <aura:attribute name="batchJob" type="String" default=""/>
+    <aura:attribute name="scheduleJob" type="String" default=""/>
+    <aura:attribute name="hour" type="String" default=""/>-->
+    <aura:attribute name="mode" type="boolean" default="false"/>
+    <aura:attribute name="schedulerActive" type="boolean" default="false"/>
+    <aura:attribute name="ApexJobControlVar" type="ApexJobControl__c" default="false"/>
+    <aura:attribute name="detailView" type="Boolean" default="false"/>
+    <aura:attribute name="message2show" type="string" default=""/>
+    
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}" />
+    
+    
+    
+      
+    
+  <div class="demo-only" >
+      <aura:if isTrue="{!!v.showComponent}">
+          	<header class="slds-modal__header">        
+            	<h2 id="modal-heading-01" class="slds-text-heading_medium slds-hyphenate">                    
+                    Apex Jobs
+              	</h2>
+            </header>
+          <div class="slds-modal__content slds-p-around_medium" id="modal-content-id-1">
+              <ul class="slds-list--dotted">
+                  <aura:iteration items="{!v.jobList}" var="item">
+                      <li class="slds-item">
+                        <h3>               	
+                            <a><span data-name="{!item.Name}" onclick="{!c.getDetail}">{!item.Name}</span></a>
+                        </h3>
+                      </li>
+                  </aura:iteration>
+              </ul>
+          </div>
+      </aura:if>
+      <aura:if isTrue="{!v.showComponent}">
+    	<div >            
+        	<header class="slds-modal__header">
+                <table>
+                    <tr>
+                        <td style="float:left">
+                            <lightning:button class="slds-button slds-button_neutral" label="Back" onclick="{!c.doInit}"/>
+                        </td>
+                        <td>
+                        <h2 id="modal-heading-01" class="slds-text-heading_medium slds-hyphenate">
+                            <aura:if isTrue="{!v.message2show != ''}">
+                                <div class="demo-only" style="height: 4rem;">
+                                  <div class="slds-notify_container slds-is-relative">
+                                    <div class="slds-notify slds-notify_toast slds-theme_success" role="alert">
+                                      <span class="slds-assistive-text">success</span>      
+                                      <div class="slds-notify__content">
+                                        <h2 class="slds-text-heading_small ">{!v.message2show}</h2>
+                                      </div>    
+                                    </div>
+                                  </div>
+                                </div>
+                            </aura:if>
+                            Job Control</h2>
+                            </td>
+                        </tr>
+                    </table>
+                    </header>
+      		<div class="slds-modal__content slds-p-around_medium" id="modal-content-id-1">
+                <table>
+                    <tr>
+                        <td>Job Name:</td>
+                        <td><ui:outputText value="{!v.jobName}" class="slds-input" /><!-- updateOn="keyup" keyup="{!c.getDetail}"  --></td>
+                    </tr>                    
+                    <aura:if isTrue="{!v.detailView}">
+                        <br/>
+                        <tr>
+                            <td>BatchJob.JobType:</td>
+                            <td><ui:outputText value="{!v.ApexJobControlVar.BatchJobJobType__c}" class="slds-input"/></td>
+                        </tr>
+                        <br/>
+                        <tr>
+                            <td>Batch Job:</td>
+                            <td><ui:outputText value="{!v.ApexJobControlVar.BatchJob__c}" class="slds-input"/></td>
+                        </tr>
+                        <br/>
+                        <tr>
+                            <td>Schedule Job:</td>
+                            <td><ui:outputText value="{!v.ApexJobControlVar.ScheduleJob__c}" class="slds-input"/></td>
+                        </tr>
+                        <br/>
+                        <tr>
+                            <td>
+                                <lightning:button class="slds-button slds-button_neutral" label="Run Now" onclick="{!c.runNow}"/>
+                            </td>
+                            <td>
+                                <table>
+                                    <tr>
+                                        <td style="width: 50%;">
+                                            <!--<lightning:button class="slds-button slds-button_neutral" label="Hourly" disabled="{!v.mode}"/>
+                                            &nbsp;&nbsp;
+                                            <lightning:button class="slds-button slds-button_neutral" label="Daily" disabled="{!!v.mode}"/>-->
+                                            <fieldset class="slds-form-element">                                              
+                                              <div class="slds-form-element__control">
+                                                <div class="slds-radio_button-group">
+                                                  <span class="slds-button slds-radio_button">
+                                                    <input type="radio" name="radio" id="hourly" value="hourly" onclick="{!c.hourlyMode}" checked="{!!v.mode}" disabled="{!v.schedulerActive}"/>
+                                                    <label class="slds-radio_button__label " for="hourly">
+                                                      <span class="slds-radio_faux">Hourly</span>
+                                                    </label>
+                                                  </span>
+                                                  <span class="slds-button slds-radio_button">
+                                                    <input type="radio" name="radio" id="daily" value="daily" onclick="{!c.dailyMode}" checked="{!v.mode}" disabled="{!v.schedulerActive}"/>
+                                                    <label class="slds-radio_button__label" for="daily">
+                                                      <span class="slds-radio_faux">Daily</span>
+                                                    </label>
+                                                  </span>                                                  
+                                                </div>
+                                              </div>
+                                            </fieldset>
+                                        </td>
+                                        <td style="width: 50%;">                                            
+                                            <table>
+                                                <tr>
+                                                    <td style="width: 20%;">Hours:</td>
+                                                    <td style="width: 80%;">
+                                                        <aura:if isTrue="{!v.mode}">
+                                                            <aura:if isTrue="{!!v.schedulerActive}">
+                                                                <ui:inputNumber value="{!v.ApexJobControlVar.Hour__c}" class="slds-input" placeholder="0"/>
+                                                                <aura:set attribute="else">
+                                                                    <ui:inputText value="{!v.ApexJobControlVar.Hour__c}" class="slds-input" disabled="true" placeholder="0"/>
+                                                                </aura:set>
+                                                            </aura:if>
+                                                            <aura:set attribute="else">
+                                                                <ui:inputText value="{!v.ApexJobControlVar.Hour__c}" class="slds-input" disabled="true" placeholder="0"/>
+                                                            </aura:set>
+                                                        </aura:if>
+                                                    </td>
+                                                </tr>
+                                            </table>                                                
+                                        </td>
+                                    </tr>                                    
+                                </table>
+                            </td>
+                        </tr>
+                        <br/>
+                        <tr>
+                            <td>&nbsp;</td>
+                            <td>                                
+                                <table>
+                                    <tr>
+                                        <td>                                            
+                                            <div class="demo-only slds-size_1-of-2">
+                                              <div class="slds-form-element">
+                                                <label class="slds-checkbox_toggle slds-grid">
+                                                  <span class="slds-form-element__label slds-m-bottom_none">Activate the scheduler</span>
+                                                  <ui:inputCheckbox click="{!c.activateTheScheduler}" value="{!v.ApexJobControlVar.SchedulerActive__c}"/>
+                                                  <!--<input type="checkbox" name="checkbox-toggle-2" value="checkbox-toggle-2" aria-describedby="checkbox-toggle-2" />-->
+                                                  <span id="checkbox-toggle-19" class="slds-checkbox_faux_container" aria-live="assertive">
+                                                    <span class="slds-checkbox_faux"></span>
+                                                    <span class="slds-checkbox_on">Enabled</span>
+                                                    <span class="slds-checkbox_off">Disabled</span>
+                                                  </span>
+                                                </label>
+                                              </div>
+                                            </div>                                            
+                                        </td>
+                                        <td></td>
+                                    </tr>                                    
+                                </table>
+                            </td>
+                        </tr>
+                    </aura:if>
+                </table>
+        	</div>        
+    	</div>
+      </aura:if>
+  </div>	
+</aura:component>

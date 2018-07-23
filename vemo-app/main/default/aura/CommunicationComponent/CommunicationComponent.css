@@ -1,0 +1,23 @@
+.THIS .outputClass {
+    float :right;
+    font-weight: bold;
+}
+.THIS .inputClass {
+    text-align: center;
+    font-weight: bold;
+    width: 10%;
+}
+.THIS .submit_btn{
+    top: 9px; 
+}
+.THIS .leftPaddingClass {
+   padding-left: 2rem;
+}
+
+.THIS .divcls {
+   width: 150%;
+}
+
+.THIS .pillSize{
+width:100%;
+}

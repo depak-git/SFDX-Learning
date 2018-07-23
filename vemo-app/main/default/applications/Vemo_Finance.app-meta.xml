@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomApplication xmlns="http://soap.sforce.com/2006/04/metadata">
+    <defaultLandingTab>standard-home</defaultLandingTab>
+    <label>Vemo Finance</label>
+    <logo>SharedDocuments/Vemo_Logo_2.jpg</logo>
+    <tabs>StewardshipACHBatch__c</tabs>
+    <tabs>StewardshipACHBatchDetail__c</tabs>
+    <tabs>TransactionSchedule__c</tabs>
+    <tabs>TransactionBatch__c</tabs>
+    <tabs>Transaction__c</tabs>
+    <tabs>PaymentInstruction__c</tabs>
+    <tabs>PaymentMethod__c</tabs>
+</CustomApplication>
