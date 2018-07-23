@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Dejeu</fullName>
+    <columns>NAME</columns>
+    <columns>AccountCredit__c</columns>
+    <columns>DueDate__c</columns>
+    <columns>Student__c</columns>
+    <columns>TotalAmountCurrentDue__c</columns>
+    <columns>TotalAmountDue__c</columns>
+    <columns>TotalAmountPastDue__c</columns>
+    <columns>TotalMonthlyAmountCurrentDue__c</columns>
+    <columns>TotalMonthlyAmountDue__c</columns>
+    <columns>TotalMonthlyAmountPastDue__c</columns>
+    <columns>TotalReconciliationCurrentDue__c</columns>
+    <columns>TotalReconciliationDue__c</columns>
+    <columns>TotalReconciliationPastDue__c</columns>
+    <columns>RemainingTerm__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Student__c</field>
+        <operation>contains</operation>
+        <value>Dejeu</value>
+    </filters>
+    <label>Dejeu</label>
+</ListView>
