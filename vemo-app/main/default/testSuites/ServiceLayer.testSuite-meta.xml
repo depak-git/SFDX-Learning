@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ApexTestSuite xmlns="http://soap.sforce.com/2006/04/metadata">
+    <testClassName>AdobeSignService_TEST</testClassName>
+    <testClassName>AgreementService_TEST</testClassName>
+    <testClassName>ApexEmailServicesHandler_TEST</testClassName>
+    <testClassName>CaseService_TEST</testClassName>
+    <testClassName>CongaService_TEST</testClassName>
+    <testClassName>CreditCheckService_TEST</testClassName>
+    <testClassName>DisbursementService_TEST</testClassName>
+    <testClassName>LogService_TEST</testClassName>
+    <testClassName>OfferService_TEST</testClassName>
+    <testClassName>ProgramOfStudyService_TEST</testClassName>
+    <testClassName>ProgramService_TEST</testClassName>
+    <testClassName>SchoolService_TEST</testClassName>
+    <testClassName>StudentService_TEST</testClassName>
+    <testClassName>TransactionService_TEST</testClassName>
+</ApexTestSuite>

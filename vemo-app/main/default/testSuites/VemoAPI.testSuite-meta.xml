@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ApexTestSuite xmlns="http://soap.sforce.com/2006/04/metadata">
+    <testClassName>VemoAPIAgreementResource_TEST</testClassName>
+    <testClassName>VemoAPIAttachmentResource_TEST</testClassName>
+    <testClassName>VemoAPICaseResource_TEST</testClassName>
+    <testClassName>VemoAPICreditCheckResource_TEST</testClassName>
+    <testClassName>VemoAPIDisbursementRefundResource_TEST</testClassName>
+    <testClassName>VemoAPIDisbursementResource_TEST</testClassName>
+    <testClassName>VemoAPIOfferResource_TEST</testClassName>
+    <testClassName>VemoAPIProgramOfStudyResource_TEST</testClassName>
+    <testClassName>VemoAPIProgramResource_TEST</testClassName>
+    <testClassName>VemoAPIReferenceResource_TEST</testClassName>
+    <testClassName>VemoAPISchoolResource_TEST</testClassName>
+    <testClassName>VemoAPIStudentResource_TEST</testClassName>
+    <testClassName>VemoAPI_TEST</testClassName>
+</ApexTestSuite>
