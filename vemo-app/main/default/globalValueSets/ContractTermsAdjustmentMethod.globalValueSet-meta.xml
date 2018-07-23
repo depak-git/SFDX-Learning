@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Income Share</fullName>
+        <default>false</default>
+        <label>Income Share</label>
+    </customValue>
+    <customValue>
+        <fullName>Payment Term</fullName>
+        <default>false</default>
+        <label>Payment Term</label>
+    </customValue>
+    <masterLabel>Contract Terms Adjustment Method</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

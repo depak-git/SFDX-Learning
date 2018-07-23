@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>None</fullName>
+        <default>false</default>
+        <label>None</label>
+    </customValue>
+    <customValue>
+        <fullName>Purdue</fullName>
+        <default>false</default>
+        <label>Purdue</label>
+    </customValue>
+    <customValue>
+        <fullName>Test School</fullName>
+        <default>false</default>
+        <label>Test School</label>
+    </customValue>
+    <customValue>
+        <fullName>Coalition for Queens</fullName>
+        <default>false</default>
+        <label>Coalition for Queens</label>
+    </customValue>
+    <customValue>
+        <fullName>Education Equity</fullName>
+        <default>false</default>
+        <label>Education Equity</label>
+    </customValue>
+    <customValue>
+        <fullName>Hack Reactor</fullName>
+        <default>false</default>
+        <label>Hack Reactor</label>
+    </customValue>
+    <customValue>
+        <fullName>Holberton</fullName>
+        <default>false</default>
+        <label>Holberton</label>
+    </customValue>
+    <customValue>
+        <fullName>ISDE</fullName>
+        <default>false</default>
+        <label>ISDE</label>
+    </customValue>
+    <customValue>
+        <fullName>Learners Guild</fullName>
+        <default>false</default>
+        <label>Learners Guild</label>
+    </customValue>
+    <customValue>
+        <fullName>Make School</fullName>
+        <default>false</default>
+        <label>Make School</label>
+    </customValue>
+    <customValue>
+        <fullName>MissionU</fullName>
+        <default>false</default>
+        <label>MissionU</label>
+    </customValue>
+    <customValue>
+        <fullName>Thinkful</fullName>
+        <default>false</default>
+        <label>Thinkful</label>
+    </customValue>
+    <customValue>
+        <fullName>UnCollege</fullName>
+        <default>false</default>
+        <label>UnCollege</label>
+    </customValue>
+    <customValue>
+        <fullName>General Assembly</fullName>
+        <default>false</default>
+        <label>General Assembly</label>
+    </customValue>
+    <customValue>
+        <fullName>Watson</fullName>
+        <default>false</default>
+        <label>Watson</label>
+    </customValue>
+    <customValue>
+        <fullName>Coder Camps</fullName>
+        <default>false</default>
+        <label>Coder Camps</label>
+    </customValue>
+    <customValue>
+        <fullName>NYCDA</fullName>
+        <default>false</default>
+        <label>NYCDA</label>
+    </customValue>
+    <customValue>
+        <fullName>Point Loma</fullName>
+        <default>false</default>
+        <label>Point Loma</label>
+    </customValue>
+    <customValue>
+        <fullName>Sales2Job</fullName>
+        <default>false</default>
+        <label>Sales2Job</label>
+    </customValue>
+    <customValue>
+        <fullName>Powderhouse Studios</fullName>
+        <default>false</default>
+        <label>Powderhouse Studios</label>
+    </customValue>
+    <customValue>
+        <fullName>Southern Careers Institute</fullName>
+        <default>false</default>
+        <label>Southern Careers Institute</label>
+    </customValue>
+    <customValue>
+        <fullName>Lackawanna College</fullName>
+        <default>false</default>
+        <label>Lackawanna College</label>
+    </customValue>
+    <customValue>
+        <fullName>Studio Institute Global</fullName>
+        <default>false</default>
+        <label>Studio Institute Global</label>
+    </customValue>
+    <customValue>
+        <fullName>Kenzie</fullName>
+        <default>false</default>
+        <label>Kenzie</label>
+    </customValue>
+    <customValue>
+        <fullName>Sollers</fullName>
+        <default>false</default>
+        <label>Sollers</label>
+    </customValue>
+    <customValue>
+        <fullName>Coding Dojo</fullName>
+        <default>false</default>
+        <label>Coding Dojo</label>
+    </customValue>
+    <customValue>
+        <fullName>Clarkson University</fullName>
+        <default>false</default>
+        <label>Clarkson University</label>
+    </customValue>
+    <customValue>
+        <fullName>Messiah College</fullName>
+        <default>false</default>
+        <label>Messiah College</label>
+    </customValue>
+    <customValue>
+        <fullName>Berkeley College</fullName>
+        <default>false</default>
+        <label>Berkeley College</label>
+    </customValue>
+    <customValue>
+        <fullName>Haverton</fullName>
+        <default>false</default>
+        <label>Haverton</label>
+    </customValue>
+    <customValue>
+        <fullName>SNHU</fullName>
+        <default>false</default>
+        <label>SNHU</label>
+    </customValue>
+    <masterLabel>School</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>
