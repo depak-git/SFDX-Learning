@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>SERV004_LatePayment90daysATOM2</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Vemo</letterhead>
+    <name>Delinquency_Letter - 90 Days</name>
+    <style>freeForm</style>
+    <subject>Your Income Share Agreement account is more than 90 days past due</subject>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

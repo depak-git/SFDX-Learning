@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>SERV_ATOM1_ATOM2_Transfer_Create_Account</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Vemo</letterhead>
+    <name>Create Account ATOM1 to ATOM2 Transfer</name>
+    <style>freeForm</style>
+    <subject>Time to set up your new Vemo Education account!</subject>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

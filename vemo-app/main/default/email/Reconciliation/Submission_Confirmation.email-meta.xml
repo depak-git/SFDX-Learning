@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Vemo</letterhead>
+    <name>Submission Confirmation</name>
+    <style>freeForm</style>
+    <subject>Reconciliation Submission Confirmation</subject>
+    <textOnly>Your reconciliation for id: {!Reconciliation__c.Id} is complete. (text)</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>ORIG007_DisbursementConfirmation_FundsToSchool</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Vemo</letterhead>
+    <name>All Schools Disbursement Confirmation</name>
+    <style>freeForm</style>
+    <subject>Vemo Education has disbursed funds to your school.</subject>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

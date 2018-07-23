@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>ORIG021_DisbursementConfirmation_StudentCheck_StudentInitiated</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Vemo</letterhead>
+    <name>All Schools Student Disbursement By Check</name>
+    <style>freeForm</style>
+    <subject>Vemo Education has sent you funds for your Income Share Agreement.</subject>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

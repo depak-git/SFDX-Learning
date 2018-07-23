@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Letter alerting students in payment on the ATOM2 system to set up new account on ATOM2 system - students who did not originate on ATOM1</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Vemo</letterhead>
+    <name>NewAccountSetUpATOM2_StudentsInPayment_NonOrigination</name>
+    <style>freeForm</style>
+    <subject>Create your new online Vemo servicing account!</subject>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>
