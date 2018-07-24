@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>oauthEndpoint__c</fullName>
+    <defaultValue>"https://secure.na1.echosign.com/public/oauth"</defaultValue>
+    <externalId>false</externalId>
+    <label>oauthEndpoint</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Url</type>
+</CustomField>
