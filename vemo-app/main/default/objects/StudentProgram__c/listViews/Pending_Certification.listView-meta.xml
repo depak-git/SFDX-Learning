@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Pending_Certification</fullName>
+    <booleanFilter>(1 AND 2) OR 3</booleanFilter>
+    <columns>VemoContractNumber__c</columns>
+    <columns>NAME</columns>
+    <columns>Student__c</columns>
+    <columns>Program__c</columns>
+    <columns>ProgramName__c</columns>
+    <columns>FundingAmountStudent__c</columns>
+    <columns>IncomeShareStudent__c</columns>
+    <columns>PaymentTermStudent__c</columns>
+    <columns>PaymentCapStudent__c</columns>
+    <columns>SubmittedDate__c</columns>
+    <columns>CertificationDraftStatus__c</columns>
+    <columns>LAST_UPDATE</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Status__c</field>
+        <operation>equals</operation>
+        <value>Application Complete</value>
+    </filters>
+    <filters>
+        <field>PreCertified__c</field>
+        <operation>equals</operation>
+        <value>0</value>
+    </filters>
+    <filters>
+        <field>Status__c</field>
+        <operation>equals</operation>
+        <value>Draft</value>
+    </filters>
+    <label>Pending Certification</label>
+</ListView>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>In_Servicing</fullName>
+    <columns>VemoContractNumber__c</columns>
+    <columns>NAME</columns>
+    <columns>Student__c</columns>
+    <columns>Program__c</columns>
+    <columns>ProgramName__c</columns>
+    <columns>Status__c</columns>
+    <columns>FundingAmountPostCertification__c</columns>
+    <columns>IncomeSharePostCertification__c</columns>
+    <columns>PaymentTermPostCertification__c</columns>
+    <columns>PaymentCapPostCertification__c</columns>
+    <columns>LAST_UPDATE</columns>
+    <columns>Servicing__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Servicing__c</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <label>In Servicing</label>
+</ListView>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Status_Grace</fullName>
+    <columns>VemoContractNumber__c</columns>
+    <columns>NAME</columns>
+    <columns>Student__c</columns>
+    <columns>Program__c</columns>
+    <columns>LAST_UPDATE</columns>
+    <columns>CREATED_DATE</columns>
+    <columns>SchoolName__c</columns>
+    <columns>ProgramName__c</columns>
+    <columns>Servicing__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Status__c</field>
+        <operation>equals</operation>
+        <value>Grace</value>
+    </filters>
+    <label>Status | Grace</label>
+    <sharedTo>
+        <allInternalUsers/>
+    </sharedTo>
+</ListView>

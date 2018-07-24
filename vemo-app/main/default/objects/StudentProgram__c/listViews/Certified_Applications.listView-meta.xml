@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Certified_Applications</fullName>
+    <columns>VemoContractNumber__c</columns>
+    <columns>NAME</columns>
+    <columns>Student__c</columns>
+    <columns>Program__c</columns>
+    <columns>ProgramName__c</columns>
+    <columns>FundingAmountCertification__c</columns>
+    <columns>IncomeShareCertification__c</columns>
+    <columns>PaymentTermCertification__c</columns>
+    <columns>PaymentCapCertification__c</columns>
+    <columns>LAST_UPDATE</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Status__c</field>
+        <operation>equals</operation>
+        <value>Certified</value>
+    </filters>
+    <label>Certified Applications</label>
+</ListView>

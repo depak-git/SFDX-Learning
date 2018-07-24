@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Credit_Review</fullName>
+    <columns>VemoContractNumber__c</columns>
+    <columns>NAME</columns>
+    <columns>Student__c</columns>
+    <columns>Program__c</columns>
+    <columns>ProgramName__c</columns>
+    <columns>FundingAmountStudent__c</columns>
+    <columns>IncomeShareStudent__c</columns>
+    <columns>PaymentTermStudent__c</columns>
+    <columns>PaymentCapStudent__c</columns>
+    <columns>LAST_UPDATE</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>CreditCheckProcess__c</field>
+        <operation>equals</operation>
+        <value>In Progress</value>
+    </filters>
+    <label>Credit Review</label>
+    <sharedTo>
+        <allInternalUsers/>
+    </sharedTo>
+</ListView>
