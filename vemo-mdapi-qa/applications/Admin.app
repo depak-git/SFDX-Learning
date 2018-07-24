@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomApplication xmlns="http://soap.sforce.com/2006/04/metadata">
+    <defaultLandingTab>standard-home</defaultLandingTab>
+    <label>Admin</label>
+    <tabs>Notification__c</tabs>
+    <tabs>OutboundEmail__c</tabs>
+    <tabs>Authorize_Adobe</tabs>
+    <tabs>Log__c</tabs>
+    <tabs>StewardshipACHBatchDetail__c</tabs>
+    <tabs>StewardshipACHBatch__c</tabs>
+    <tabs>SecureSetting__c</tabs>
+    <tabs>Migration_Tool</tabs>
+</CustomApplication>

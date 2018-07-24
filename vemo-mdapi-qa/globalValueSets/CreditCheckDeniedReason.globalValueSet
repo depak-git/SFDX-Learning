@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Educational Loan Default</fullName>
+        <default>false</default>
+        <label>Educational Loan Default</label>
+    </customValue>
+    <customValue>
+        <fullName>Bankruptcy</fullName>
+        <default>false</default>
+        <label>Bankruptcy</label>
+    </customValue>
+    <customValue>
+        <fullName>Collection</fullName>
+        <default>false</default>
+        <label>Collection</label>
+    </customValue>
+    <customValue>
+        <fullName>Unsatisfied Suit or Judgement</fullName>
+        <default>false</default>
+        <label>Unsatisfied Suit or Judgement</label>
+    </customValue>
+    <customValue>
+        <fullName>Major Derogatory Public Record</fullName>
+        <default>false</default>
+        <label>Major Derogatory Public Record</label>
+    </customValue>
+    <customValue>
+        <fullName>Unpaid Tax Liens</fullName>
+        <default>false</default>
+        <label>Unpaid Tax Liens</label>
+    </customValue>
+    <customValue>
+        <fullName>Business or Administrative Error</fullName>
+        <default>false</default>
+        <label>Business or Administrative Error</label>
+    </customValue>
+    <customValue>
+        <fullName>Technical Error</fullName>
+        <default>false</default>
+        <label>Technical Error</label>
+    </customValue>
+    <customValue>
+        <fullName>Insufficient FICO score</fullName>
+        <default>false</default>
+        <label>Insufficient FICO score</label>
+    </customValue>
+    <masterLabel>Credit Check Denied Reason</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

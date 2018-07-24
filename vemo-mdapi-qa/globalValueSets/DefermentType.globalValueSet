@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Enrolled in School</fullName>
+        <default>false</default>
+        <label>Enrolled in School</label>
+    </customValue>
+    <customValue>
+        <fullName>Below minimum income, working full-time</fullName>
+        <default>false</default>
+        <label>Below minimum income, working full-time</label>
+    </customValue>
+    <customValue>
+        <fullName>Below minimum income, working part-time</fullName>
+        <default>false</default>
+        <label>Below minimum income, working part-time</label>
+    </customValue>
+    <customValue>
+        <fullName>Unemployed, seeking employment</fullName>
+        <default>false</default>
+        <label>Unemployed, seeking employment</label>
+    </customValue>
+    <customValue>
+        <fullName>Unemployed, not seeking employment</fullName>
+        <default>false</default>
+        <label>Unemployed, not seeking employment</label>
+    </customValue>
+    <customValue>
+        <fullName>Administrative Deferment</fullName>
+        <default>false</default>
+        <label>Administrative Deferment</label>
+    </customValue>
+    <customValue>
+        <fullName>Not in Labor Force</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Not in Labor Force</label>
+    </customValue>
+    <customValue>
+        <fullName>Unemployed, Actively Seeking Employment</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Unemployed, Actively Seeking Employment</label>
+    </customValue>
+    <customValue>
+        <fullName>In-School Enrollment</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>In-School Enrollment</label>
+    </customValue>
+    <customValue>
+        <fullName>Below Minimum Income Threshold</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Below Minimum Income Threshold</label>
+    </customValue>
+    <masterLabel>Deferment Type</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

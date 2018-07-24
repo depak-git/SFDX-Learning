@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>(GMT-0) Greenwhich Mean Time (GMT)</fullName>
+        <default>false</default>
+        <label>(GMT-0) Greenwhich Mean Time (GMT)</label>
+    </customValue>
+    <customValue>
+        <fullName>(GMT-1) Cape Verde Time (Atlantic/Cape_Verde)</fullName>
+        <default>false</default>
+        <label>(GMT-1) Cape Verde Time (Atlantic/Cape_Verde)</label>
+    </customValue>
+    <customValue>
+        <fullName>(GMT-2) South Georgia Standard Time (Atlantic/South_Georgia)</fullName>
+        <default>false</default>
+        <label>(GMT-2) South Georgia Standard Time (Atlantic/South_Georgia)</label>
+    </customValue>
+    <customValue>
+        <fullName>(GMT-2) Argentine Time (America/Buenos_Aires)</fullName>
+        <default>false</default>
+        <label>(GMT-2) Argentine Time (America/Buenos_Aires)</label>
+    </customValue>
+    <customValue>
+        <fullName>(GMT-3) Brasilia Summer Time (America/Sao_Paulo)</fullName>
+        <default>false</default>
+        <label>(GMT-3) Brasilia Summer Time (America/Sao_Paulo)</label>
+    </customValue>
+    <customValue>
+        <fullName>(GMT-3:30) Newfoundland Standard Time (America/St_Johns)</fullName>
+        <default>false</default>
+        <label>(GMT-3:30) Newfoundland Standard Time (America/St_Johns)</label>
+    </customValue>
+    <customValue>
+        <fullName>(GMT-4) Atlantic Standard Time (America/Halifax)</fullName>
+        <default>false</default>
+        <label>(GMT-4) Atlantic Standard Time (America/Halifax)</label>
+    </customValue>
+    <customValue>
+        <fullName>(GMT-4) Atlantic Standard Time (America/Puerto_Rico)</fullName>
+        <default>false</default>
+        <label>(GMT-4) Atlantic Standard Time (America/Puerto_Rico)</label>
+    </customValue>
+    <customValue>
+        <fullName>(GMT-3) Chile Summer Time (America/Santiago)</fullName>
+        <default>false</default>
+        <label>(GMT-3) Chile Summer Time (America/Santiago)</label>
+    </customValue>
+    <customValue>
+        <fullName>(GMT-4) Atlantic Standard Time (Atlantic/Bermuda)</fullName>
+        <default>false</default>
+        <label>(GMT-4) Atlantic Standard Time (Atlantic/Bermuda)</label>
+    </customValue>
+    <customValue>
+        <fullName>(GMT-4:30) Venezuela Time (America/Caracas)</fullName>
+        <default>false</default>
+        <label>(GMT-4:30) Venezuela Time (America/Caracas)</label>
+    </customValue>
+    <customValue>
+        <fullName>(GMT-5) Colombia Time (America/Bogota)</fullName>
+        <default>false</default>
+        <label>(GMT-5) Colombia Time (America/Bogota)</label>
+    </customValue>
+    <customValue>
+        <fullName>(GMT-5) Eastern Standard Time (America/Indianapolis)</fullName>
+        <default>false</default>
+        <label>(GMT-5) Eastern Standard Time (America/Indianapolis)</label>
+    </customValue>
+    <customValue>
+        <fullName>(GMT-5) Peru Time (America/Lima)</fullName>
+        <default>false</default>
+        <label>(GMT-5) Peru Time (America/Lima)</label>
+    </customValue>
+    <customValue>
+        <fullName>(GMT-5) Eastern Standard Time (America/New_York)</fullName>
+        <default>false</default>
+        <label>(GMT-5) Eastern Standard Time (America/New_York)</label>
+    </customValue>
+    <customValue>
+        <fullName>(GMT-5) Eastern Standard Time (America/Panama)</fullName>
+        <default>false</default>
+        <label>(GMT-5) Eastern Standard Time (America/Panama)</label>
+    </customValue>
+    <customValue>
+        <fullName>(GMT-6) Central Standard Time (America/Chicago)</fullName>
+        <default>false</default>
+        <label>(GMT-6) Central Standard Time (America/Chicago)</label>
+    </customValue>
+    <customValue>
+        <fullName>(GMT-6) Central Standard Time (America/El_Salvador)</fullName>
+        <default>false</default>
+        <label>(GMT-6) Central Standard Time (America/El_Salvador)</label>
+    </customValue>
+    <customValue>
+        <fullName>(GMT-6) Central Standard Time (America/Mexico_City)</fullName>
+        <default>false</default>
+        <label>(GMT-6) Central Standard Time (America/Mexico_City)</label>
+    </customValue>
+    <customValue>
+        <fullName>(GMT-7) Mountain Standard Time (America/Denver)</fullName>
+        <default>false</default>
+        <label>(GMT-7) Mountain Standard Time (America/Denver)</label>
+    </customValue>
+    <customValue>
+        <fullName>(GMT-7) Mountain Standard Time (America/Phoenix)</fullName>
+        <default>false</default>
+        <label>(GMT-7) Mountain Standard Time (America/Phoenix)</label>
+    </customValue>
+    <customValue>
+        <fullName>(GMT-8) Pacific Standard Time (America/Los_Angeles)</fullName>
+        <default>false</default>
+        <label>(GMT-8) Pacific Standard Time (America/Los_Angeles)</label>
+    </customValue>
+    <customValue>
+        <fullName>(GMT-8) Pacific Standard Time (America/Tijuana)</fullName>
+        <default>false</default>
+        <label>(GMT-8) Pacific Standard Time (America/Tijuana)</label>
+    </customValue>
+    <customValue>
+        <fullName>(GMT-9) Alaska Standard Time (America/Anchorage)</fullName>
+        <default>false</default>
+        <label>(GMT-9) Alaska Standard Time (America/Anchorage)</label>
+    </customValue>
+    <customValue>
+        <fullName>(GMT-10) Hawaii-Aleutian Standard Time (Pacific/Honolulu)</fullName>
+        <default>false</default>
+        <label>(GMT-10) Hawaii-Aleutian Standard Time (Pacific/Honolulu)</label>
+    </customValue>
+    <customValue>
+        <fullName>(GMT-11) Niue Time (Pacific/Niue)</fullName>
+        <default>false</default>
+        <label>(GMT-11) Niue Time (Pacific/Niue)</label>
+    </customValue>
+    <customValue>
+        <fullName>(GMT-11) Samoa Standard Time (Pacific/Pago_Pago)</fullName>
+        <default>false</default>
+        <label>(GMT-11) Samoa Standard Time (Pacific/Pago_Pago)</label>
+    </customValue>
+    <masterLabel>Time Zone</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

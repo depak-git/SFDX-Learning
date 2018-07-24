@@ -1,0 +1,386 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableChangeDataCapture>false</enableChangeDataCapture>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>ControlledByParent</externalSharingModel>
+    <label>Payment Method</label>
+    <nameField>
+        <displayFormat>PM-{00000000}</displayFormat>
+        <label>Payment Method Number</label>
+        <trackHistory>false</trackHistory>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Payment Methods</pluralLabel>
+    <recordTypeTrackHistory>false</recordTypeTrackHistory>
+    <searchLayouts/>
+    <sharingModel>ControlledByParent</sharingModel>
+    <visibility>Public</visibility>
+    <fields>
+        <fullName>BankAccountCategory__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Personal or Business</inlineHelpText>
+        <label>Bank Account Category</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>BankAccountCategory</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>BankAccountNumber__c</fullName>
+        <externalId>false</externalId>
+        <label>Bank Account Number</label>
+        <length>50</length>
+        <maskChar>asterisk</maskChar>
+        <maskType>lastFour</maskType>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>EncryptedText</type>
+    </fields>
+    <fields>
+        <fullName>BankAccountType__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Checking or Savings</inlineHelpText>
+        <label>Bank Account Type</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>BankAccountType</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>BankName__c</fullName>
+        <externalId>false</externalId>
+        <label>Bank Name</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>BankRoutingNumber__c</fullName>
+        <externalId>false</externalId>
+        <label>Bank Routing Number</label>
+        <length>50</length>
+        <maskChar>asterisk</maskChar>
+        <maskType>lastFour</maskType>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>EncryptedText</type>
+    </fields>
+    <fields>
+        <fullName>CreditCardNumber__c</fullName>
+        <externalId>false</externalId>
+        <label>Credit Card Number</label>
+        <length>50</length>
+        <maskChar>asterisk</maskChar>
+        <maskType>creditCard</maskType>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>EncryptedText</type>
+    </fields>
+    <fields>
+        <fullName>Customer__c</fullName>
+        <externalId>false</externalId>
+        <label>Customer</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Payment Methods</relationshipLabel>
+        <relationshipName>Payment_Methods</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>Description__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Optional description - helpful in case Customer has multiple accounts at one bank.</inlineHelpText>
+        <label>Description</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Inactive__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <inlineHelpText>Is this payment method inactive?</inlineHelpText>
+        <label>Inactive</label>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Primary__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <inlineHelpText>Is this the Customer&#39;s primary payment method?</inlineHelpText>
+        <label>Primary</label>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>PurgePII__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>If this field is checked, the routing and account number will be purged from salesforce</description>
+        <externalId>false</externalId>
+        <inlineHelpText>If this field is checked, the routing and account number will be purged from salesforce</inlineHelpText>
+        <label>Purge PII</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>StewardshipDisbursementAccountGUID__c</fullName>
+        <externalId>false</externalId>
+        <label>Stewardship Disbursement AccountGUID</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>StewardshipPaymentAccountGUID__c</fullName>
+        <externalId>false</externalId>
+        <label>Stewardship Payment AccountGUID</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>StewardshipProcess__c</fullName>
+        <externalId>false</externalId>
+        <label>Stewardship Process</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>The account has been cancelled.</fullName>
+                    <default>false</default>
+                    <label>The account has been cancelled.</label>
+                </value>
+                <value>
+                    <fullName>Create Payment AccountGUID</fullName>
+                    <default>false</default>
+                    <label>Create Payment AccountGUID</label>
+                </value>
+                <value>
+                    <fullName>Cancel Payment Account</fullName>
+                    <default>false</default>
+                    <label>Cancel Payment Account</label>
+                </value>
+                <value>
+                    <fullName>Create Disbursement AccountGUID</fullName>
+                    <default>false</default>
+                    <label>Create Disbursement AccountGUID</label>
+                </value>
+                <value>
+                    <fullName>Cancel Disbursement Account</fullName>
+                    <default>false</default>
+                    <label>Cancel Disbursement Account</label>
+                </value>
+                <value>
+                    <fullName>Create Both Payment and Disbusement AccountGUID</fullName>
+                    <default>false</default>
+                    <label>Create Both Payment and Disbusement AccountGUID</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>UseForDisbursements__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <inlineHelpText>Can this payment method be used for disbursements?</inlineHelpText>
+        <label>Use For Disbursements</label>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>UseForRecurring__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <inlineHelpText>Can this payment method be used for recurring payments?</inlineHelpText>
+        <label>Use For Recurring</label>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <recordTypes>
+        <fullName>BankAccount</fullName>
+        <active>true</active>
+        <label>Bank Account</label>
+        <picklistValues>
+            <picklist>BankAccountCategory__c</picklist>
+            <values>
+                <fullName>Business</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Personal</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>BankAccountType__c</picklist>
+            <values>
+                <fullName>Checking</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Savings</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>CreditCard</fullName>
+        <active>true</active>
+        <label>Credit Card</label>
+        <picklistValues>
+            <picklist>BankAccountCategory__c</picklist>
+            <values>
+                <fullName>Business</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Personal</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>BankAccountType__c</picklist>
+            <values>
+                <fullName>Checking</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Savings</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <listViews>
+        <fullName>All</fullName>
+        <columns>NAME</columns>
+        <columns>BankAccountCategory__c</columns>
+        <columns>BankAccountType__c</columns>
+        <columns>BankName__c</columns>
+        <columns>Customer__c</columns>
+        <columns>Description__c</columns>
+        <columns>Inactive__c</columns>
+        <columns>Primary__c</columns>
+        <columns>UseForDisbursements__c</columns>
+        <columns>UseForRecurring__c</columns>
+        <columns>StewardshipDisbursementAccountGUID__c</columns>
+        <columns>StewardshipPaymentAccountGUID__c</columns>
+        <columns>StewardshipProcess__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <listViews>
+        <fullName>Awaiting_Tokenization</fullName>
+        <columns>NAME</columns>
+        <columns>BankAccountCategory__c</columns>
+        <columns>BankAccountType__c</columns>
+        <columns>BankName__c</columns>
+        <columns>Customer__c</columns>
+        <columns>Description__c</columns>
+        <columns>Inactive__c</columns>
+        <columns>BankAccountNumber__c</columns>
+        <columns>BankRoutingNumber__c</columns>
+        <columns>StewardshipProcess__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Inactive__c</field>
+            <operation>equals</operation>
+            <value>0</value>
+        </filters>
+        <filters>
+            <field>StewardshipDisbursementAccountGUID__c</field>
+            <operation>equals</operation>
+        </filters>
+        <filters>
+            <field>StewardshipPaymentAccountGUID__c</field>
+            <operation>equals</operation>
+        </filters>
+        <label>Awaiting Tokenization</label>
+    </listViews>
+</CustomObject>

@@ -1,0 +1,10 @@
+  {
+	"edition": "Developer",
+	"orgPreferences" : {
+	"enabled": [
+	        "S1DesktopEnabled"
+			],
+			"disabled": []
+      },
+      "features": ["PersonAccounts"]
+	}

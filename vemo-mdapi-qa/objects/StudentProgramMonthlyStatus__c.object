@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableChangeDataCapture>false</enableChangeDataCapture>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>false</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>Private</externalSharingModel>
+    <label>Student Program Monthly Status</label>
+    <nameField>
+        <displayFormat>SS-{0000000000}</displayFormat>
+        <label>Student Program Monthly Status Name</label>
+        <trackHistory>false</trackHistory>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Student Program Monthly Status</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ReadWrite</sharingModel>
+    <visibility>Public</visibility>
+    <fields>
+        <fullName>Activity__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>For this month, is the Student Program in Grace, Deferment, or Payment?</inlineHelpText>
+        <label>Activity</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>MonthlyStatusActivity</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Agreement__c</fullName>
+        <deleteConstraint>Restrict</deleteConstraint>
+        <externalId>false</externalId>
+        <inlineHelpText>The Agreement related to this Student Program Monthly Status.</inlineHelpText>
+        <label>Agreement</label>
+        <referenceTo>StudentProgram__c</referenceTo>
+        <relationshipLabel>Monthly Status</relationshipLabel>
+        <relationshipName>Student_Program_Monthly_Status</relationshipName>
+        <required>true</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>CountAsDeferment__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>If this field is checked, this month will be calculated as Deferment regardless of the Activity value</description>
+        <externalId>false</externalId>
+        <inlineHelpText>If this field is checked, this month will be calculated as Deferment regardless of the Activity value</inlineHelpText>
+        <label>Count as Deferment</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>CountAsGrace__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>If this field is checked, this month will be calculated as Grace regardless of the Activity value</description>
+        <externalId>false</externalId>
+        <inlineHelpText>If this field is checked, this month will be calculated as Grace regardless of the Activity value</inlineHelpText>
+        <label>Count as Grace</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>CountAsPaymentTerm__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>If this field is checked, the Payment Term for the contract will be reduced, regardless of status.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>If this field is checked, the Payment Term for the contract will be reduced, regardless of status.</inlineHelpText>
+        <label>Count as Payment Term</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>MonthlyStatusGUID__c</fullName>
+        <externalId>true</externalId>
+        <label>MonthlyStatusGUID</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Month__c</fullName>
+        <externalId>false</externalId>
+        <label>Month</label>
+        <required>true</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Month</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Sequence__c</fullName>
+        <externalId>false</externalId>
+        <formula>VALUE(
+TEXT(Year__c) +
+(CASE( TEXT(Month__c) ,
+&quot;January&quot;, &quot;01&quot;,
+&quot;February&quot;, &quot;02&quot;,
+&quot;March&quot;, &quot;03&quot;,
+&quot;April&quot;, &quot;04&quot;,
+&quot;May&quot;, &quot;05&quot;,
+&quot;June&quot;, &quot;06&quot;,
+&quot;July&quot;, &quot;07&quot;,
+&quot;August&quot;, &quot;08&quot;,
+&quot;September&quot;, &quot;09&quot;,
+&quot;October&quot;, &quot;10&quot;,
+&quot;November&quot;, &quot;11&quot;,
+&quot;December&quot;, &quot;12&quot;,
+&quot;99&quot;)))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Sequence</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Year__c</fullName>
+        <externalId>false</externalId>
+        <label>Year</label>
+        <required>true</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Year</valueSetName>
+        </valueSet>
+    </fields>
+</CustomObject>

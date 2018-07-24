@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Pay stubs</fullName>
+        <default>false</default>
+        <label>Pay stubs</label>
+    </customValue>
+    <customValue>
+        <fullName>Letter from employer</fullName>
+        <default>false</default>
+        <label>Letter from employer</label>
+    </customValue>
+    <customValue>
+        <fullName>Consulting agreement</fullName>
+        <default>false</default>
+        <label>Consulting agreement</label>
+    </customValue>
+    <customValue>
+        <fullName>Offer Letter</fullName>
+        <default>false</default>
+        <label>Offer Letter</label>
+    </customValue>
+    <customValue>
+        <fullName>Other types of verifiable documentation</fullName>
+        <default>false</default>
+        <label>Other types of verifiable documentation</label>
+    </customValue>
+    <customValue>
+        <fullName>Signed 4506T authorization</fullName>
+        <default>false</default>
+        <label>Signed 4506T authorization</label>
+    </customValue>
+    <customValue>
+        <fullName>Employment contract</fullName>
+        <default>false</default>
+        <label>Employment contract</label>
+    </customValue>
+    <customValue>
+        <fullName>Type1</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Type1</label>
+    </customValue>
+    <customValue>
+        <fullName>Type2</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Type2</label>
+    </customValue>
+    <masterLabel>Generic Document Type</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

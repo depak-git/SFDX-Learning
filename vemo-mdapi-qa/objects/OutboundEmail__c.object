@@ -1,0 +1,380 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableChangeDataCapture>false</enableChangeDataCapture>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableReports>false</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>ReadWrite</externalSharingModel>
+    <label>Outbound Email</label>
+    <nameField>
+        <displayFormat>Email-{YYYY}-{MM}-{DD}-{0000}</displayFormat>
+        <label>Outbound Email Number</label>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Outbound Emails</pluralLabel>
+    <searchLayouts>
+        <customTabListAdditionalFields>ToAddresses__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>TargetObjectId__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Subject__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>WhatID__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>TemplateID__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Send__c</customTabListAdditionalFields>
+    </searchLayouts>
+    <sharingModel>ReadWrite</sharingModel>
+    <visibility>Public</visibility>
+    <fields>
+        <fullName>BccAddresses__c</fullName>
+        <description>Optional. A list of blind carbon copy (BCC) addresses or object IDs of the contacts, leads, and users you’re sending the email to. The maximum allowed is 25.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Optional. A list of blind carbon copy (BCC) addresses or object IDs of the contacts, leads, and users you’re sending the email to. The maximum allowed is 25.</inlineHelpText>
+        <label>BccAddresses</label>
+        <length>32768</length>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>CcAddresses__c</fullName>
+        <description>Optional. A list of carbon copy (CC) addresses or object IDs of the contacts, leads, and users you’re sending the email to. The maximum allowed is 25.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Optional. A list of carbon copy (CC) addresses or object IDs of the contacts, leads, and users you’re sending the email to. The maximum allowed is 25.</inlineHelpText>
+        <label>CcAddresses</label>
+        <length>32768</length>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Charset__c</fullName>
+        <description>Optional. The character set for the email. If this value is null, the user&#39;s default value is used.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Optional. The character set for the email. If this value is null, the user&#39;s default value is used.</inlineHelpText>
+        <label>Charset</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Complete__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Complete</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>CurrentNumberofAttachments__c</fullName>
+        <externalId>false</externalId>
+        <label>Current Number of Attachments</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>EntityAttachmentIDs__c</fullName>
+        <description>Optional. Array of IDs of Document, ContentVersion, or Attachment items to attach to the email.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Optional. Array of IDs of Document, ContentVersion, or Attachment items to attach to the email.</inlineHelpText>
+        <label>EntityAttachmentIDs</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>ExpectedNumberofAttachements__c</fullName>
+        <externalId>false</externalId>
+        <label>Expected Number of Attachements</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>FileAttachments__c</fullName>
+        <description>Optional. A list containing the file names of the binary and text files you want to attach to the email.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Optional. A list containing the file names of the binary and text files you want to attach to the email.</inlineHelpText>
+        <label>FileAttachments</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>HtmlBody__c</fullName>
+        <description>Optional. The HTML version of the email, specified by the sender. The value is encoded according to the specification associated with the organization. You must specify a value for setTemplateId, setHtmlBody, or setPlainTextBody. Or, you can define both setHtmlBody and setPlainTextBody.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Optional. The HTML version of the email, specified by the sender. The value is encoded according to the specification associated with the organization. You must specify a value for setTemplateId, setHtmlBody, or setPlainTextBody. Or, you can define both</inlineHelpText>
+        <label>HtmlBody</label>
+        <length>131072</length>
+        <trackTrending>false</trackTrending>
+        <type>Html</type>
+        <visibleLines>25</visibleLines>
+    </fields>
+    <fields>
+        <fullName>InReplyToParentMessageIDs__c</fullName>
+        <description>Sets the optional In-Reply-To field of the outgoing email. This field identifies the email or emails to which this email is a reply (parent emails).</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Sets the optional In-Reply-To field of the outgoing email. This field identifies the email or emails to which this email is a reply (parent emails).</inlineHelpText>
+        <label>InReplyToParentMessageIDs</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>MergeTemplate__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Merge Template</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>OptOutPolicy__c</fullName>
+        <description>Optional. If you added recipients by ID instead of email address and the Email Opt Out option is set, this method determines the behavior of the sendEmail() call. If you add recipients by their email addresses, the opt-out settings for those recipients aren’t checked and those recipients always receive the email.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Optional. If you added recipients by ID instead of email address and the Email Opt Out option is set, this method determines the behavior of the sendEmail() call.</inlineHelpText>
+        <label>OptOutPolicy</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>SEND</fullName>
+                    <default>true</default>
+                    <label>SEND</label>
+                </value>
+                <value>
+                    <fullName>FILTER</fullName>
+                    <default>false</default>
+                    <label>FILTER</label>
+                </value>
+                <value>
+                    <fullName>REJECT</fullName>
+                    <default>false</default>
+                    <label>REJECT</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>OrgWideEmailAddressId__c</fullName>
+        <description>Optional. The ID of the organization-wide email address associated with the outgoing email. The object&#39;s DisplayName field cannot be set if the setSenderDisplayName field is already set.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Optional. The ID of the organization-wide email address associated with the outgoing email. The object&#39;s DisplayName field cannot be set if the setSenderDisplayName field is already set.</inlineHelpText>
+        <label>OrgWideEmailAddressId</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>PlainTextBody__c</fullName>
+        <description>Optional. The text version of the email, specified by the sender. You must specify a value for setTemplateId, setHtmlBody, or setPlainTextBody. Or, you can define both setHtmlBody and setPlainTextBody.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Optional. The text version of the email, specified by the sender. You must specify a value for setTemplateId, setHtmlBody, or setPlainTextBody. Or, you can define both setHtmlBody and setPlainTextBody.</inlineHelpText>
+        <label>PlainTextBody</label>
+        <length>131072</length>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>25</visibleLines>
+    </fields>
+    <fields>
+        <fullName>References__c</fullName>
+        <description>Optional. The References field of the outgoing email. Identifies an email thread. Contains the parent emails&#39; References and message IDs, and possibly the In-Reply-To fields.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Optional. The References field of the outgoing email. Identifies an email thread. Contains the parent emails&#39; References and message IDs, and possibly the In-Reply-To fields.</inlineHelpText>
+        <label>References</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SendFromOrgWideEmail__c</fullName>
+        <defaultValue>true</defaultValue>
+        <description>If this field is checked, the system will automatically send the message from the Org Wide Default Email address</description>
+        <externalId>false</externalId>
+        <inlineHelpText>If this field is checked, the system will automatically send the message from the Org Wide Default Email address</inlineHelpText>
+        <label>Send From Org Wide Email</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>SendviaSES__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Send via SES</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>SendWhenAttachmentsExist__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Send When Attachments Exist</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Send__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Send</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Subject__c</fullName>
+        <description>Optional. The email subject line. If you are using an email template, the subject line of the template overrides this value.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Optional. The email subject line. If you are using an email template, the subject line of the template overrides this value.</inlineHelpText>
+        <label>Subject</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TargetObjectId__c</fullName>
+        <description>Required if using a template, optional otherwise. The ID of the contact, lead, or user to which the email will be sent. The ID you specify sets the context and ensures that merge fields in the template contain the correct data.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Required if using a template, optional otherwise. The ID of the contact, lead, or user to which the email will be sent. The ID you specify sets the context and ensures that merge fields in the template contain the correct data.</inlineHelpText>
+        <label>TargetObjectId</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TemplateID__c</fullName>
+        <description>Required if using a template, optional otherwise. The ID of the template used to create the email.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Required if using a template, optional otherwise. The ID of the template used to create the email.</inlineHelpText>
+        <label>TemplateID</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ToAddresses__c</fullName>
+        <description>Optional. A list of email addresses or object IDs of the contacts, leads, and users you’re sending the email to. The maximum number of email addresses allowed is 100.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Optional. A list of email addresses or object IDs of the contacts, leads, and users you’re sending the email to. The maximum number of email addresses allowed is 100.</inlineHelpText>
+        <label>ToAddresses</label>
+        <length>32768</length>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>TreatBodiesAsTemplate__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Optional. If set to true, the subject, plain text, and HTML text bodies of the email are treated as template data.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Optional. If set to true, the subject, plain text, and HTML text bodies of the email are treated as template data.</inlineHelpText>
+        <label>TreatBodiesAsTemplate</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>TreatTargetObjectAsRecipient__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Optional. If set to true, the targetObjectId (a contact, lead, or user) is the recipient of the email. If set to false, the targetObjectId is supplied as the WhoId field for template rendering but isn’t a recipient of the email. The default is true.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Optional. If set to true, the targetObjectId (a contact, lead, or user) is the recipient of the email. If set to false, the targetObjectId is supplied as the WhoId field for template rendering but isn’t a recipient of the email. The default is true.</inlineHelpText>
+        <label>TreatTargetObjectAsRecipient</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>WhatID__c</fullName>
+        <description>If you specify a contact for the targetObjectId field, you can specify an optional whatId as well. This helps to further ensure that merge fields in the template contain the correct data.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>If you specify a contact for the targetObjectId field, you can specify an optional whatId as well. This helps to further ensure that merge fields in the template contain the correct data.</inlineHelpText>
+        <label>WhatID</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <listViews>
+        <fullName>All</fullName>
+        <columns>NAME</columns>
+        <columns>CREATED_DATE</columns>
+        <columns>ToAddresses__c</columns>
+        <columns>Subject__c</columns>
+        <columns>TemplateID__c</columns>
+        <columns>TargetObjectId__c</columns>
+        <columns>WhatID__c</columns>
+        <columns>Send__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+</CustomObject>

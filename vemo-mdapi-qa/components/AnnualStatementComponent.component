@@ -1,0 +1,151 @@
+<apex:component controller="AnnualStatementCTRL" access="global" >
+    <apex:attribute name="AcctId" type="Id" description="Id of the student" assignTo="{!studentId}"/>
+    
+    <!--<apex:repeat value="{!studentPrograms}" var="sp">
+        {!sp.ProgramName__c}
+    </apex:repeat>-->
+    
+    <html>
+        <body>
+            <div>
+                <center>
+                    <apex:image url="https://vemo--qa--c.cs96.content.force.com/servlet/servlet.ImageServer?id=015360000028q9p&oid=00D1g0000004YEV&lastMod=1481618187000" />
+                </center>
+                <p style="text-align:center; font-family: Arial, Helvetica, sans-serif; font-size:1.4em; margin: 4% auto;"><b>Annual Account Summary</b></p>
+                
+                <table style="width:100%; padding-left:20px; font-size:1.2em; font-family: Arial, Helvetica, sans-serif;">
+                    <tr>
+                        <td width="70%"><b>{!Account.name}</b></td>
+                        <td width="30%" style="text-align:left; padding-right: 2%;">
+                        <b>
+                            <apex:outputText value="{0, date, MMMM d','  yyyy}">
+                                <apex:param value="{!NOW()}" />
+                            </apex:outputText>
+                        </b>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td width="70%">{!Account.personMailingStreet}</td>
+                        <td width="30%" style="text-align:left; padding-right: 2%;">Vemo Acct.<b>#{!Account.VemoAccountNumber__c}</b></td>
+                    </tr>
+                    <tr>
+                        <td width="70%">{!Account.personMailingCity} {!Account.personMailingState},</td>
+                        <td width="30%" style="text-align:left; padding-right: 2%;"></td>
+                    </tr>
+                    <tr>
+                        <td width="70%">{!Account.personMailingCountry} {!Account.personMailingPostalCode}</td>
+                        <td width="30%" style="text-align:left; padding-right: 2%;"></td>
+                    </tr>
+                </table>
+                
+                <apex:repeat value="{!studentprograms}" var="sp">
+                
+                    <p style="text-align:center; font-family: Arial, Helvetica, sans-serif; font-size:1.4em; margin: 4% auto; color:gray;">{!sp.ProgramName__c}</p>
+                
+                    <table style="background:blue;float: left; box-sizing: border-box; min-width: 99%; max-width: 100%; width:100%; padding: 10px 15px;font-family: Arial, Helvetica, sans-serif; font-size:1.4em;">
+                    
+                        <tbody>
+                            <tr>
+                               
+                                <td style="padding-left: 2%; padding-right: 2%; color: white;"><b>Contract</b></td>
+                                <td style="padding-left: 2%; padding-right: 2%; color: white;"><b>School</b></td>
+                                <td style="padding-left: 2%; padding-right: 2%; color: white;"><b>Program</b></td>
+                            </tr>
+                            <tr>
+                                <td style="padding-left: 2%; padding-right: 2%; color: white;">{!sp.VemoContractNumber__c}</td>
+                                <td style="padding-left: 2%; padding-right: 2%; color: white;">{!sp.SchoolName__c}</td>
+                                <td colspan="2" style="padding-left: 2%; padding-right: 2%; color: white;">{!sp.ProgramName__c}</td>
+                            </tr>
+                            <tr>
+                                <td style="padding-left: 2%; padding-right: 2%;">&nbsp;</td>
+                                <td style="padding-left: 2%; padding-right: 2%;">&nbsp;</td>
+                                <td style="padding-left: 2%; padding-right: 2%;">&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td style="padding-left: 2%; padding-right: 2%; color: white;"><b>Funding Amount</b></td>
+                                <td style="padding-left: 2%; padding-right: 2%; color: white;"><b>Income Share</b></td>
+                                <td style="padding-left: 2%; padding-right: 2%; color: white;"><b>Payment Term</b></td>
+                                <td style="padding-left: 2%; padding-right: 2%; color: white;"><b>Payment Cap</b></td>
+                            </tr>
+                            
+                            <tr>
+                                <td style="padding-left: 2%; padding-right: 2%; color: white;"><apex:outputField value="{!sp.FundingAmountPostCertification__c}"/></td>
+                                <td style="padding-left: 2%; padding-right: 2%; color: white;"><apex:outputField value="{!sp.IncomeSharePostCertification__c}"/></td>
+                                <td style="padding-left: 2%; padding-right: 2%; color: white;"><apex:outputField value="{!sp.PaymentTermPostCertification__c}"/> Months</td>
+                                <td style="padding-left: 2%; padding-right: 2%; color: white;"><apex:outputField value="{!sp.PaymentCapPostCertification__c}"/></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    
+                    <table border="0" style="display: table;  width: 100%; font-family: Arial, Helvetica, sans-serif; font-size:1.4em; padding-top: 6%;">
+                        <tbody>
+                            <tr>
+                                <td style="padding-left: 2%; padding-right: 2%;"><b>Servicing Start Date </b></td>
+                                <td style="padding-left: 2%; padding-right: 2%;"><b>Remaining Payment Term </b> </td>
+                                <td style="padding-left: 2%; padding-right: 2%;"><b>Monthly Income Threshold</b></td>
+                            </tr>
+                            
+                            <tr>
+                                <td style="padding-left: 2%; padding-right: 2%;">
+                                    <apex:outputText value="{0, date, MMMM d','  yyyy}">
+                                        <apex:param value="{!sp.ServicingStartDate__c}" />
+                                    </apex:outputText>
+                                </td>
+                                <td style="padding-left: 2%; padding-right: 2%;"><apex:outputField value="{!sp.RemainingTerm__c}"/> Months</td>
+                                <td style="padding-left: 2%; padding-right: 2%;"><apex:outputField value="{!sp.MinimumIncomePerMonth__c}"/></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    
+                    <table border="0" style="display: table;  width: 100%; text-align:center; font-family: Arial, Helvetica, sans-serif; font-size:1.4em; padding-top: 5%; ">
+                        <tbody>
+                            <tr>
+                                <td></td>
+                                <td style="padding-left: 2%; padding-right: 2%;"><b>Allowed </b></td>
+                                <td style="padding-left: 2%; padding-right: 2%;"><b>Used</b> </td>
+                                <td style="padding-left: 2%; padding-right: 2%;"><b>Remaining</b></td>
+                            </tr>
+                            <tr>
+                                <td style="padding-left: 2%; padding-right: 2%;"><b>Grace Months</b></td>
+                                <td style="padding-left: 2%; padding-right: 2%;">{!sp.GraceMonthsAllowed__c}</td>
+                                <td style="padding-left: 2%; padding-right: 2%;">{!sp.GraceMonthsUsed__c}</td>
+                                <td style="padding-left: 2%; padding-right: 2%;">{!sp.GraceMonthsRemaining__c}</td>
+                            </tr>
+                            <tr>
+                                <td style="padding-left: 2%; padding-right: 2%;"><b>Deferment Months</b></td>
+                                <td style="padding-left: 2%; padding-right: 2%;">{!sp.DefermentMonthsAllowed__c}</td>
+                                <td style="padding-left: 2%; padding-right: 2%;">{!sp.DefermentMonthsUsed__c}</td>
+                                <td style="padding-left: 2%; padding-right: 2%;">{!sp.DefermentMonthsRemaining__c}</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    
+                    <apex:outputPanel rendered="{!sp.Student_Program_Debits__r != null && sp.Student_Program_Debits__r.size>0}">
+                    <!-- display: {!IF(sp.Student_Program_Debits__r != null && sp.Student_Program_Debits__r.size>0, '', 'none')};-->
+                    <p style="text-align:center; font-family: Arial, Helvetica, sans-serif; background:#DCDCDC; font-size:1.8em;">Payment History</p>
+                    <table border="1" style="display: table;background:#DCDCDC; text-align: center; border-collapse: collapse;  font-family: Arial, Helvetica, sans-serif; font-size:1.4em; border-color: black; width: 100%; ">
+                        <tbody >
+                            <tr style="border-bottom: 1px solid white; border-top: 0px;">
+                                <td style="border: 1px solid white;"><b>Month</b></td>
+                                <td style="border: 1px solid white;"><b>Amount Due</b></td>
+                                <td style="border: 1px solid white;"><b>Paid</b></td>
+                            </tr>
+                            <apex:repeat value="{!sp.Student_Program_Debits__r}" var="adue">
+                                <tr style="border-bottom: 1px solid white; border-top: 0px;">
+                                    <td style="border: 1px solid white;"> 
+                                        <apex:outputText value="{0, date, MMMM d','  yyyy}">
+                                            <apex:param value="{!adue.AssessmentDateTime__c}" />
+                                        </apex:outputText>
+                                    </td>
+                                    <td style="border: 1px solid white;"><apex:outputField value="{!adue.RemainingAllocation__c }"/></td>
+                                    <td style="border: 1px solid white;"><apex:outputField value="{!adue.Amount__c}"/></td>
+                                </tr>
+                            </apex:repeat>
+                        </tbody>
+                    </table> 
+                    </apex:outputPanel> 
+                </apex:repeat>  
+            </div>
+        </body>
+    </html>
+</apex:component>

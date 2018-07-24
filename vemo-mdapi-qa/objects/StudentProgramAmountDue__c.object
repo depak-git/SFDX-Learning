@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableChangeDataCapture>false</enableChangeDataCapture>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>false</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>Private</externalSharingModel>
+    <label>Student Program Amount Due</label>
+    <nameField>
+        <displayFormat>AD-{00000000}</displayFormat>
+        <label>Student Program Amount Due</label>
+        <trackHistory>false</trackHistory>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Student Program Amount Due</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ReadWrite</sharingModel>
+    <visibility>Public</visibility>
+    <fields>
+        <fullName>Agreement__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <inlineHelpText>The Agreement related to this Student Program Amount Due.</inlineHelpText>
+        <label>Agreement</label>
+        <referenceTo>StudentProgram__c</referenceTo>
+        <relationshipLabel>Student Program Amount Due</relationshipLabel>
+        <relationshipName>Student_Program_Debits</relationshipName>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>AmountAllocated__c</fullName>
+        <externalId>false</externalId>
+        <label>Amount Allocated</label>
+        <summarizedField>PaymentAllocationDetail__c.AmountAllocated__c</summarizedField>
+        <summaryForeignKey>PaymentAllocationDetail__c.StudentProgramAmountDue__c</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>Amount__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>The amount due.</inlineHelpText>
+        <label>Amount</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>AssessmentDateTime__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>The date/time stamp of when the amount due was calculated/assessed.</inlineHelpText>
+        <label>Assessment DateTime</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>ExcludeFromBalance__c</fullName>
+        <defaultValue>true</defaultValue>
+        <externalId>false</externalId>
+        <inlineHelpText>Indicates that an amount due should not be included in the account statement summaries. Used primarily for reconciliation amounts that are pre-assessed for future months, but which should not actually show up on the statement/bill until that month arrives</inlineHelpText>
+        <label>Exclude from Balance</label>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>FullyAllocated__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF( AmountAllocated__c = Amount__c , true, false)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Fully Allocated</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>IncomeShare__c</fullName>
+        <description>A snapshot of the Income Share (Post-Certification) at the moment of creation</description>
+        <externalId>false</externalId>
+        <inlineHelpText>A snapshot of the Income Share (Post-Certification) at the moment of creation</inlineHelpText>
+        <label>Income Share</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>4</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>IncomeVerification__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>Income Verification Object used to derive Monthly Income during Assessment</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Income Verification Object used to derive Monthly Income during Assessment</inlineHelpText>
+        <label>Income Verification</label>
+        <referenceTo>IncomeVerification__c</referenceTo>
+        <relationshipLabel>Student Program Amount Due</relationshipLabel>
+        <relationshipName>Student_Program_Amount_Due</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Refund__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Refund</label>
+        <referenceTo>Refund__c</referenceTo>
+        <relationshipLabel>Student Program Amount Due</relationshipLabel>
+        <relationshipName>Student_Program_Amount_Due</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>RemainingAllocation__c</fullName>
+        <externalId>false</externalId>
+        <formula>Amount__c - AmountAllocated__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Remaining Allocation</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>StudentProgramMonthlyStatus__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <inlineHelpText>The Student Program Monthly Status related to this Student Program Amount Due.</inlineHelpText>
+        <label>Student Program Monthly Status</label>
+        <referenceTo>StudentProgramMonthlyStatus__c</referenceTo>
+        <relationshipLabel>Student Program Amount Due</relationshipLabel>
+        <relationshipName>Student_Program_Debits</relationshipName>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Type__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Reconciliation, Monthly Amount, or Fee.</inlineHelpText>
+        <label>Type</label>
+        <required>true</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>DebitType</valueSetName>
+        </valueSet>
+    </fields>
+</CustomObject>

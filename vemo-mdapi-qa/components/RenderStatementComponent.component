@@ -1,0 +1,76 @@
+<apex:component controller="RenderStatementCTRL">
+	<style>
+	
+
+	.bPageBlock .detailList .dataCol{
+		width:10% !important;
+	}
+	</style>
+	<apex:pageBlock id="total_block" mode="detail" >
+		<apex:outputText value="Account Number: "/><apex:outputText value="{!statement.accountNumber}"/><br/>
+		<apex:pageBlockSection columns="10">
+			<!--headers-->
+			<apex:outputText value="Agreements:"/>
+			<apex:outputText value="Date Signed:"/>
+
+
+
+
+			<apex:outputText value="Income Share:"/>
+			<apex:outputText value="Status:"/>
+			<apex:outputText value="Monthy Amount Past Due:"/>
+			<apex:outputText value="Monthly Amount Current Due:"/>
+			<apex:outputText value="Monthly Amount Due:"/>
+			<apex:outputText value="Reconciliation Past Due:"/>
+			<apex:outputText value="Reconciliation Current Due:"/>
+			<apex:outputText value="Reconciliation Due:"/>
+
+			<apex:repeat value="{!statement.agreements}" var="agr">
+				<apex:outputText value="{!agr.agreementNumber}"/>
+
+				<apex:outputText value="{0, date, MMMM d','  yyyy}">
+					<apex:param value="{!agr.dateSigned}"/>
+				</apex:outputText>
+
+				<apex:outputText value="{!agr.incomeShare}"/>
+				<apex:outputText value="{!agr.status}"/>
+				<apex:outputText value="{!agr.monthlyAmountPastDue}"/>
+				<apex:outputText value="{!agr.monthlyAmountCurrentDue}"/>
+				<apex:outputText value="{!agr.monthlyAmountDue}"/>
+				<apex:outputText value="{!agr.reconciliationPastDue}"/>
+				<apex:outputText value="{!agr.reconciliationCurrentDue}"/>
+				<apex:outputText value="{!agr.reconciliationDue}"/>
+			</apex:repeat>
+			
+			<apex:outputText value=""/>
+			<apex:outputText value=""/>
+			<apex:outputText value=""/>
+			<apex:outputText value=""/>
+			<apex:outputText value="{!statement.totalMonthlyAmountPastDue}" style="font-weight: bold;"/>
+			<apex:outputText value="{!statement.totalMonthlyAmountCurrentDue}" style="font-weight: bold;"/>
+			<apex:outputText value="{!statement.totalMonthlyAmountDue}" style="font-weight: bold;"/>
+			<apex:outputText value="{!statement.totalReconciliationPastDue}" style="font-weight: bold;"/>
+			<apex:outputText value="{!statement.totalReconciliationCurrentDue}" style="font-weight: bold;"/>
+			<apex:outputText value="{!statement.totalReconciliationDue}" style="font-weight: bold;"/>
+			
+			
+
+		</apex:pageBlockSection>
+		<apex:outputText value="Total Amount Paid to Date: "/><apex:outputText value="{!statement.totalPaidToDate}"/><br/><br/>	
+		<apex:outputText value="Total Amount Past Due: "/><apex:outputText value="{!statement.totalAmountPastDue}"/><br/>
+		<apex:outputText value="Total Amount Current Due: "/><apex:outputText value="{!statement.totalAmountCurrentDue}"/><br/>
+		<apex:outputText value="Total Amount Due: "/><apex:outputText value="{!statement.totalAmountDue}"/><br/>
+		<apex:outputText value="Total Fees Due: "/><apex:outputText value="{!statement.feesDue}"/><br/>		
+		<br/>
+		<apex:outputText value="Account Credit: "/><apex:outputText value="{!statement.accountCredit}"/><br/>
+		<apex:outputText value="Expected Next Payment: "/><apex:outputText value="{!statement.expectedPayment}"/><br/>
+		<apex:outputText value="Payment Due Date: "/>
+		<apex:outputText value="{0, date, MMMM d','  yyyy}">
+			<apex:param value="{!statement.dueDate}"/>
+		</apex:outputText><br/>
+
+		<apex:outputText value="Remaining Term: "/><apex:outputText value="{!statement.remainingTerm}"/><br/>
+		
+	</apex:pageBlock>
+	
+</apex:component>

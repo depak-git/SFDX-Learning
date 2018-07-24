@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Draft</fullName>
+        <default>false</default>
+        <label>Draft</label>
+    </customValue>
+    <customValue>
+        <fullName>Invited</fullName>
+        <default>false</default>
+        <label>Invited</label>
+    </customValue>
+    <customValue>
+        <fullName>Application Incomplete</fullName>
+        <default>false</default>
+        <label>Application Incomplete</label>
+    </customValue>
+    <customValue>
+        <fullName>Application Complete</fullName>
+        <default>false</default>
+        <label>Application Complete</label>
+    </customValue>
+    <customValue>
+        <fullName>Certified</fullName>
+        <default>false</default>
+        <label>Certified</label>
+    </customValue>
+    <customValue>
+        <fullName>Partially Funded</fullName>
+        <default>false</default>
+        <label>Partially Funded</label>
+    </customValue>
+    <customValue>
+        <fullName>Fully Funded</fullName>
+        <default>false</default>
+        <label>Fully Funded</label>
+    </customValue>
+    <customValue>
+        <fullName>Grace</fullName>
+        <default>false</default>
+        <label>Grace</label>
+    </customValue>
+    <customValue>
+        <fullName>Deferment</fullName>
+        <default>false</default>
+        <label>Deferment</label>
+    </customValue>
+    <customValue>
+        <fullName>Payment</fullName>
+        <default>false</default>
+        <label>Payment</label>
+    </customValue>
+    <customValue>
+        <fullName>Forgiven</fullName>
+        <default>false</default>
+        <label>Forgiven</label>
+    </customValue>
+    <customValue>
+        <fullName>Contract Satisfied</fullName>
+        <default>false</default>
+        <label>Contract Satisfied</label>
+    </customValue>
+    <customValue>
+        <fullName>Default</fullName>
+        <default>false</default>
+        <label>Default</label>
+    </customValue>
+    <customValue>
+        <fullName>Application Under Review</fullName>
+        <default>false</default>
+        <label>Application Under Review</label>
+    </customValue>
+    <customValue>
+        <fullName>Cancelled</fullName>
+        <default>false</default>
+        <label>Cancelled</label>
+    </customValue>
+    <customValue>
+        <fullName>School</fullName>
+        <default>false</default>
+        <label>School</label>
+    </customValue>
+    <customValue>
+        <fullName>Leave of Absence</fullName>
+        <default>false</default>
+        <label>Leave of Absence</label>
+    </customValue>
+    <customValue>
+        <fullName>Internship</fullName>
+        <default>false</default>
+        <label>Internship</label>
+    </customValue>
+    <customValue>
+        <fullName>Refinanced</fullName>
+        <default>false</default>
+        <label>Refinanced</label>
+    </customValue>
+    <customValue>
+        <fullName>Pending Reconciliation</fullName>
+        <default>false</default>
+        <label>Pending Reconciliation</label>
+    </customValue>
+    <customValue>
+        <fullName>Closed</fullName>
+        <default>false</default>
+        <label>Closed</label>
+    </customValue>
+    <customValue>
+        <fullName>Pause</fullName>
+        <default>false</default>
+        <label>Pause</label>
+    </customValue>
+    <customValue>
+        <fullName>Dispute</fullName>
+        <default>false</default>
+        <label>Dispute</label>
+    </customValue>
+    <customValue>
+        <fullName>Application Declined or Ineligible</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Application Declined or Ineligible</label>
+    </customValue>
+    <customValue>
+        <fullName>Cancelled By Student</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Cancelled By Student</label>
+    </customValue>
+    <masterLabel>Agreement Status</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

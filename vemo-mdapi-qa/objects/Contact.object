@@ -1,0 +1,1950 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>AddCampaign</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>AddToCampaign</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CallHighlightAction</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>EmailHighlightAction</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>EnableCustomerPortal</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>EnablePartnerPortalUser</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>EnableSelfService</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>ListClean</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Merge</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>NewContact</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>RequestUpdate</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SmsHighlightAction</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>ViewCustomerPortal</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>ViewPartnerPortalUser</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>ViewSelfService</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <enableEnhancedLookup>true</enableEnhancedLookup>
+    <enableFeeds>true</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <externalSharingModel>ControlledByParent</externalSharingModel>
+    <recordTypeTrackFeedHistory>false</recordTypeTrackFeedHistory>
+    <recordTypeTrackHistory>false</recordTypeTrackHistory>
+    <searchLayouts>
+        <customTabListAdditionalFields>FULL_NAME</customTabListAdditionalFields>
+        <customTabListAdditionalFields>CONTACT.RECORDTYPE</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Student__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>CONTACT.LAST_UPDATE</customTabListAdditionalFields>
+        <lookupDialogsAdditionalFields>FULL_NAME</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>ACCOUNT.NAME</lookupDialogsAdditionalFields>
+        <lookupFilterFields>FULL_NAME</lookupFilterFields>
+        <lookupFilterFields>ACCOUNT.NAME</lookupFilterFields>
+        <lookupPhoneDialogsAdditionalFields>FULL_NAME</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>ACCOUNT.NAME</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>CONTACT.PHONE1</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>CONTACT.PHONE3</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>CONTACT.PHONE4</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>CONTACT.PHONE5</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>CONTACT.PHONE6</lookupPhoneDialogsAdditionalFields>
+        <searchResultsAdditionalFields>FULL_NAME</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>ACCOUNT.NAME</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CONTACT.PHONE1</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CONTACT.EMAIL</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CORE.USERS.ALIAS</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>ControlledByParent</sharingModel>
+    <fields>
+        <fullName>AccountId</fullName>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Age__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF( NOT( ISBLANK( Birthdate ) ) ,
+  IF( DATE( 2000 , MONTH( Birthdate ) , DAY( Birthdate ) ) &lt;= DATE( 2000 , MONTH( TODAY() ) , DAY( TODAY() ) ),
+     YEAR (Today()) - YEAR ( Birthdate ),
+     YEAR (Today()) - YEAR ( Birthdate ) -1 ),
+  null)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>The student&#39;s current age (automatically updates).</inlineHelpText>
+        <label>Age</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>AssistantName</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>AssistantPhone</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>AuthorizedForStudent__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>(Authorized For) Student</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Contacts (Authorized Third Parties)</relationshipLabel>
+        <relationshipName>AuthorizedThirdParty</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>AuthSystemUserID__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <externalId>true</externalId>
+        <inlineHelpText>The ID string identifying this user in the authentication system (currently Auth0).</inlineHelpText>
+        <label>Auth System User ID</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>AutoPaymentDateActivated__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>The date that Auto Payment was activated.</inlineHelpText>
+        <label>Auto Payment Date Activated</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>AutoPaymentDayOfMonth1__c</fullName>
+        <externalId>false</externalId>
+        <label>Auto Payment Day of Month 1</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>DaysOfMonth</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>AutoPaymentDayOfMonth2__c</fullName>
+        <externalId>false</externalId>
+        <label>Auto Payment Day of Month 2</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>DaysOfMonth</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>AutoPaymentFrequency__c</fullName>
+        <externalId>false</externalId>
+        <label>Auto Payment Frequency</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>PaymentFrequency</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>AutoPayment__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <inlineHelpText>The student has an active Payment Method marked as Primary and as Use For Recurring.</inlineHelpText>
+        <label>Auto Payment</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Birthdate</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+    </fields>
+    <fields>
+        <fullName>BypassApproval__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Bypass Approval</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>BypassAutomation__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <inlineHelpText>By checking Bypass Automation, you can make changes to data on the object without triggering any other actions. This would, for instance, allow you to check the &quot;Generate Bill&quot; checkbox without subsequent actions happening.</inlineHelpText>
+        <label>Bypass Automation</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>CommonLineID__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <externalId>true</externalId>
+        <label>CommonLine ID</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>CommunityStatus__c</fullName>
+        <externalId>false</externalId>
+        <label>Community Status</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Not Enrolled</fullName>
+                    <default>false</default>
+                    <label>Not Enrolled</label>
+                </value>
+                <value>
+                    <fullName>Enroll</fullName>
+                    <default>false</default>
+                    <label>Enroll</label>
+                </value>
+                <value>
+                    <fullName>Enrolled</fullName>
+                    <default>false</default>
+                    <label>Enrolled</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Credit__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Amount of money being credited to student.</inlineHelpText>
+        <label>Credit</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>CumulativeIncomeShareCap__c</fullName>
+        <description>The smallest of the Cumulative Income Share Cap values for any programs related to this Student&#39;s Agreements</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The smallest of the Cumulative Income Share Cap values for any programs related to this Student&#39;s Agreements</inlineHelpText>
+        <label>Cumulative Income Share Cap</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>4</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>CumulativeIncomeShare__c</fullName>
+        <externalId>false</externalId>
+        <label>Cumulative Income Share</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>4</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>DateIncomeVerified__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>The date the student&#39;s income was verified (from the most recently verified Income Verification).</inlineHelpText>
+        <label>Date Income Verified</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Department</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Description</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>DoNotCall</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>DriversLicenseOrStateID__c</fullName>
+        <externalId>false</externalId>
+        <label>Drivers License or State ID</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Email</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Fax</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>GenerateBill__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <inlineHelpText>Click to have system automatically generate and send out an account statement.</inlineHelpText>
+        <label>Generate Bill</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>HasOptedOutOfEmail</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>HasOptedOutOfFax</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>HasOptedOutOfText__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <inlineHelpText>Student has indicated they do not want to be texted.</inlineHelpText>
+        <label>HasOptedOutOfText</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>HomePhone</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Jigsaw</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>LastCURequestDate</fullName>
+    </fields>
+    <fields>
+        <fullName>LastCUUpdateDate</fullName>
+    </fields>
+    <fields>
+        <fullName>LeadSource</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>MailingAddress</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+    </fields>
+    <fields>
+        <fullName>MobilePhone</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Name</fullName>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>OtherAddress</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>OtherPhone</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>OwnerId</fullName>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>PendingBirthdate__c</fullName>
+        <externalId>false</externalId>
+        <label>Pending Birthdate</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>PendingDriversLicenseOrStateID__c</fullName>
+        <externalId>false</externalId>
+        <label>Pending Drivers License or State ID</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>PendingEmail__c</fullName>
+        <externalId>false</externalId>
+        <label>Pending Email</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Email</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>PendingFirstName__c</fullName>
+        <externalId>false</externalId>
+        <label>Pending First Name</label>
+        <length>40</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>PendingLastName__c</fullName>
+        <externalId>false</externalId>
+        <label>Pending Last Name</label>
+        <length>80</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>PendingMailingCity__c</fullName>
+        <externalId>false</externalId>
+        <label>Pending Mailing City</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>PendingMailingCountryCode__c</fullName>
+        <externalId>false</externalId>
+        <label>Pending Mailing Country Code</label>
+        <length>10</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>PendingMailingCountry__c</fullName>
+        <externalId>false</externalId>
+        <label>Pending Mailing Country</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>PendingMailingPostalCode__c</fullName>
+        <externalId>false</externalId>
+        <label>Pending Mailing Postal Code</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>PendingMailingStateCode__c</fullName>
+        <externalId>false</externalId>
+        <label>Pending Mailing State Code</label>
+        <length>10</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>PendingMailingState__c</fullName>
+        <externalId>false</externalId>
+        <label>Pending Mailing State</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>PendingMailingStreet__c</fullName>
+        <externalId>false</externalId>
+        <label>Pending Mailing Street</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>PendingMiddleName__c</fullName>
+        <externalId>false</externalId>
+        <label>Pending Middle Name</label>
+        <length>40</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>PendingResidency__c</fullName>
+        <externalId>false</externalId>
+        <label>Pending Residency</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Phone</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>PreferredMethodOfCommunication__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>How does the Student prefer to be contacted? Call, Email, Text, or Letter.</inlineHelpText>
+        <label>Preferred Method of Communication</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Call</fullName>
+                    <default>false</default>
+                    <label>Call</label>
+                </value>
+                <value>
+                    <fullName>Email</fullName>
+                    <default>false</default>
+                    <label>Email</label>
+                </value>
+                <value>
+                    <fullName>Text</fullName>
+                    <default>false</default>
+                    <label>Text</label>
+                </value>
+                <value>
+                    <fullName>Letter</fullName>
+                    <default>false</default>
+                    <label>Letter</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>PrimarySchoolEmail__c</fullName>
+        <externalId>false</externalId>
+        <label>(DEPRECATE)School Email</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Email</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>PrimarySchoolEnrollmentStatus__c</fullName>
+        <externalId>false</externalId>
+        <label>Enrollment Status</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>EnrollmentStatus</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>PrimarySchoolGradeLevel__c</fullName>
+        <externalId>false</externalId>
+        <label>Grade Level</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>GradeLevel</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>PrimarySchoolGraduationDate__c</fullName>
+        <externalId>false</externalId>
+        <label>Graduation Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>PrimarySchoolStudentID__c</fullName>
+        <externalId>false</externalId>
+        <label>Student ID</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>PrimarySchool__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>School</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Students</relationshipLabel>
+        <relationshipName>Students</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>PrivacyOptOut__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <inlineHelpText>Student opted to limit Vemo&#39;s ability to share student&#39;s personal information with affiliates and non-affiliates.</inlineHelpText>
+        <label>Privacy Opt Out</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>RecalculateCumulativeIncomeShare__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Recalculate Cumulative Income Share</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>RecordLabel__c</fullName>
+        <externalId>false</externalId>
+        <formula>FirstName + &#39; &#39;+LastName</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Record Label</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>RecordLink__c</fullName>
+        <externalId>false</externalId>
+        <formula>HYPERLINK(&quot;../&quot;&amp; Id, RecordLabel__c, &quot;_top&quot;)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Record Link</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>RecordStatus__c</fullName>
+        <externalId>false</externalId>
+        <label>Record Status</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>RecordStatus</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Relationship__c</fullName>
+        <externalId>false</externalId>
+        <label>Relationship</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Spouse</fullName>
+                    <default>false</default>
+                    <label>Spouse</label>
+                </value>
+                <value>
+                    <fullName>Parent</fullName>
+                    <default>false</default>
+                    <label>Parent</label>
+                </value>
+                <value>
+                    <fullName>Other Relative</fullName>
+                    <default>false</default>
+                    <label>Other Relative</label>
+                </value>
+                <value>
+                    <fullName>Other Non Relative</fullName>
+                    <default>false</default>
+                    <label>Other Non Relative</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>ReportsToId</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Residency__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>US Citizen, Permanent Resident, etc.</inlineHelpText>
+        <label>Residency</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Residency</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>SchoolProgramOfStudy__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>School Program of Study</label>
+        <referenceTo>SchoolProgramsOfStudy__c</referenceTo>
+        <relationshipLabel>Students</relationshipLabel>
+        <relationshipName>Students</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>SSNTaxID__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Used by Credit Check process to verify identity.</inlineHelpText>
+        <label>SSN / Tax ID</label>
+        <length>175</length>
+        <maskChar>asterisk</maskChar>
+        <maskType>lastFour</maskType>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>EncryptedText</type>
+    </fields>
+    <fields>
+        <fullName>Student__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>(Reference For) Student</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Contacts (References)</relationshipLabel>
+        <relationshipName>References</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>TimeZone__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>The student&#39;s time zone.</inlineHelpText>
+        <label>Time Zone</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>TimeZone</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Title</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>VerifiedAnnualIncome__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>The student&#39;s yearly income (from the most recently verified Income Verification).</inlineHelpText>
+        <label>Verified Annual Income</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Currency</type>
+    </fields>
+    <recordTypes>
+        <fullName>AuthorizedThirdParty</fullName>
+        <active>true</active>
+        <label>Authorized Third Party</label>
+        <picklistValues>
+            <picklist>CommunityStatus__c</picklist>
+            <values>
+                <fullName>Enroll</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Enrolled</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Not Enrolled</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>LeadSource</picklist>
+            <values>
+                <fullName>Advertisement</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Customer Event</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Employee Referral</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Google AdWords</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Partner</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Purchased List</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Trade Show</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Webinar</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Website</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Name</picklist>
+            <values>
+                <fullName>Dr%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Mr%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Mrs%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Ms%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Prof%2E</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>PreferredMethodOfCommunication__c</picklist>
+            <values>
+                <fullName>Call</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Email</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Letter</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Text</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>PrimarySchoolEnrollmentStatus__c</picklist>
+            <values>
+                <fullName>Full Time</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Half Time</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Less than Half Time</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Three Quarter Time</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>PrimarySchoolGradeLevel__c</picklist>
+            <values>
+                <fullName>Fifth Year Senior</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Freshman</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Junior</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Senior</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>RecordStatus__c</picklist>
+            <values>
+                <fullName>Approved</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pending Approval</fullName>
+                <default>true</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Relationship__c</picklist>
+            <values>
+                <fullName>Other Non Relative</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other Relative</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Parent</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Spouse</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Residency__c</picklist>
+            <values>
+                <fullName>Naturalized Citizen</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Non-Immigrant with a US Student Visa</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Non-Immigrant with a US Work Visa</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Non-US Citizen%2FNon-Permanent Resident</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Permanent Resident</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Refugee%2FAsylee</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Temporary resident</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>US Citizen</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>TimeZone__c</picklist>
+            <values>
+                <fullName>%28GMT-0%29 Greenwhich Mean Time %28GMT%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>%28GMT-1%29 Cape Verde Time %28Atlantic%2FCape_Verde%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>%28GMT-10%29 Hawaii-Aleutian Standard Time %28Pacific%2FHonolulu%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>%28GMT-11%29 Niue Time %28Pacific%2FNiue%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>%28GMT-11%29 Samoa Standard Time %28Pacific%2FPago_Pago%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>%28GMT-2%29 Argentine Time %28America%2FBuenos_Aires%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>%28GMT-2%29 South Georgia Standard Time %28Atlantic%2FSouth_Georgia%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>%28GMT-3%29 Brasilia Summer Time %28America%2FSao_Paulo%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>%28GMT-3%29 Chile Summer Time %28America%2FSantiago%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>%28GMT-3%3A30%29 Newfoundland Standard Time %28America%2FSt_Johns%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>%28GMT-4%29 Atlantic Standard Time %28America%2FHalifax%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>%28GMT-4%29 Atlantic Standard Time %28America%2FPuerto_Rico%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>%28GMT-4%29 Atlantic Standard Time %28Atlantic%2FBermuda%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>%28GMT-4%3A30%29 Venezuela Time %28America%2FCaracas%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>%28GMT-5%29 Colombia Time %28America%2FBogota%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>%28GMT-5%29 Eastern Standard Time %28America%2FIndianapolis%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>%28GMT-5%29 Eastern Standard Time %28America%2FNew_York%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>%28GMT-5%29 Eastern Standard Time %28America%2FPanama%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>%28GMT-5%29 Peru Time %28America%2FLima%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>%28GMT-6%29 Central Standard Time %28America%2FChicago%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>%28GMT-6%29 Central Standard Time %28America%2FEl_Salvador%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>%28GMT-6%29 Central Standard Time %28America%2FMexico_City%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>%28GMT-7%29 Mountain Standard Time %28America%2FDenver%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>%28GMT-7%29 Mountain Standard Time %28America%2FPhoenix%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>%28GMT-8%29 Pacific Standard Time %28America%2FLos_Angeles%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>%28GMT-8%29 Pacific Standard Time %28America%2FTijuana%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>%28GMT-9%29 Alaska Standard Time %28America%2FAnchorage%29</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Default</fullName>
+        <active>true</active>
+        <label>Default</label>
+        <picklistValues>
+            <picklist>CommunityStatus__c</picklist>
+            <values>
+                <fullName>Enroll</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Enrolled</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Not Enrolled</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>LeadSource</picklist>
+            <values>
+                <fullName>Advertisement</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Customer Event</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Employee Referral</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Google AdWords</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Partner</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Purchased List</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Trade Show</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Webinar</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Website</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Name</picklist>
+            <values>
+                <fullName>Dr%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Mr%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Mrs%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Ms%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Prof%2E</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>PreferredMethodOfCommunication__c</picklist>
+            <values>
+                <fullName>Call</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Email</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Letter</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Text</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>PrimarySchoolEnrollmentStatus__c</picklist>
+            <values>
+                <fullName>Full Time</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Half Time</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Less than Half Time</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Three Quarter Time</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>PrimarySchoolGradeLevel__c</picklist>
+            <values>
+                <fullName>Fifth Year Senior</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Freshman</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Junior</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Senior</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>RecordStatus__c</picklist>
+            <values>
+                <fullName>Approved</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pending Approval</fullName>
+                <default>true</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Relationship__c</picklist>
+            <values>
+                <fullName>Other Non Relative</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other Relative</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Parent</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Spouse</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Residency__c</picklist>
+            <values>
+                <fullName>Naturalized Citizen</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Non-Immigrant with a US Student Visa</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Non-Immigrant with a US Work Visa</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Non-US Citizen%2FNon-Permanent Resident</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Permanent Resident</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Refugee%2FAsylee</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Temporary resident</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>US Citizen</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>TimeZone__c</picklist>
+            <values>
+                <fullName>%28GMT-0%29 Greenwhich Mean Time %28GMT%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>%28GMT-1%29 Cape Verde Time %28Atlantic%2FCape_Verde%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>%28GMT-10%29 Hawaii-Aleutian Standard Time %28Pacific%2FHonolulu%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>%28GMT-11%29 Niue Time %28Pacific%2FNiue%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>%28GMT-11%29 Samoa Standard Time %28Pacific%2FPago_Pago%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>%28GMT-2%29 Argentine Time %28America%2FBuenos_Aires%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>%28GMT-2%29 South Georgia Standard Time %28Atlantic%2FSouth_Georgia%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>%28GMT-3%29 Brasilia Summer Time %28America%2FSao_Paulo%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>%28GMT-3%29 Chile Summer Time %28America%2FSantiago%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>%28GMT-3%3A30%29 Newfoundland Standard Time %28America%2FSt_Johns%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>%28GMT-4%29 Atlantic Standard Time %28America%2FHalifax%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>%28GMT-4%29 Atlantic Standard Time %28America%2FPuerto_Rico%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>%28GMT-4%29 Atlantic Standard Time %28Atlantic%2FBermuda%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>%28GMT-4%3A30%29 Venezuela Time %28America%2FCaracas%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>%28GMT-5%29 Colombia Time %28America%2FBogota%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>%28GMT-5%29 Eastern Standard Time %28America%2FIndianapolis%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>%28GMT-5%29 Eastern Standard Time %28America%2FNew_York%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>%28GMT-5%29 Eastern Standard Time %28America%2FPanama%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>%28GMT-5%29 Peru Time %28America%2FLima%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>%28GMT-6%29 Central Standard Time %28America%2FChicago%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>%28GMT-6%29 Central Standard Time %28America%2FEl_Salvador%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>%28GMT-6%29 Central Standard Time %28America%2FMexico_City%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>%28GMT-7%29 Mountain Standard Time %28America%2FDenver%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>%28GMT-7%29 Mountain Standard Time %28America%2FPhoenix%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>%28GMT-8%29 Pacific Standard Time %28America%2FLos_Angeles%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>%28GMT-8%29 Pacific Standard Time %28America%2FTijuana%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>%28GMT-9%29 Alaska Standard Time %28America%2FAnchorage%29</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>StudentReference</fullName>
+        <active>true</active>
+        <label>Student Reference</label>
+        <picklistValues>
+            <picklist>CommunityStatus__c</picklist>
+            <values>
+                <fullName>Enroll</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Enrolled</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Not Enrolled</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>LeadSource</picklist>
+            <values>
+                <fullName>Advertisement</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Customer Event</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Employee Referral</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Google AdWords</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Partner</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Purchased List</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Trade Show</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Webinar</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Website</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Name</picklist>
+            <values>
+                <fullName>Dr%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Mr%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Mrs%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Ms%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Prof%2E</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>PreferredMethodOfCommunication__c</picklist>
+            <values>
+                <fullName>Call</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Email</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Letter</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Text</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>PrimarySchoolEnrollmentStatus__c</picklist>
+            <values>
+                <fullName>Full Time</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Half Time</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Less than Half Time</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Three Quarter Time</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>PrimarySchoolGradeLevel__c</picklist>
+            <values>
+                <fullName>Fifth Year Senior</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Freshman</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Junior</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Senior</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>RecordStatus__c</picklist>
+            <values>
+                <fullName>Approved</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pending Approval</fullName>
+                <default>true</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Relationship__c</picklist>
+            <values>
+                <fullName>Other Non Relative</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other Relative</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Parent</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Spouse</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Residency__c</picklist>
+            <values>
+                <fullName>Naturalized Citizen</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Non-Immigrant with a US Student Visa</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Non-Immigrant with a US Work Visa</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Non-US Citizen%2FNon-Permanent Resident</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Permanent Resident</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Refugee%2FAsylee</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Temporary resident</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>US Citizen</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>TimeZone__c</picklist>
+            <values>
+                <fullName>%28GMT-0%29 Greenwhich Mean Time %28GMT%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>%28GMT-1%29 Cape Verde Time %28Atlantic%2FCape_Verde%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>%28GMT-10%29 Hawaii-Aleutian Standard Time %28Pacific%2FHonolulu%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>%28GMT-11%29 Niue Time %28Pacific%2FNiue%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>%28GMT-11%29 Samoa Standard Time %28Pacific%2FPago_Pago%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>%28GMT-2%29 Argentine Time %28America%2FBuenos_Aires%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>%28GMT-2%29 South Georgia Standard Time %28Atlantic%2FSouth_Georgia%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>%28GMT-3%29 Brasilia Summer Time %28America%2FSao_Paulo%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>%28GMT-3%29 Chile Summer Time %28America%2FSantiago%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>%28GMT-3%3A30%29 Newfoundland Standard Time %28America%2FSt_Johns%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>%28GMT-4%29 Atlantic Standard Time %28America%2FHalifax%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>%28GMT-4%29 Atlantic Standard Time %28America%2FPuerto_Rico%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>%28GMT-4%29 Atlantic Standard Time %28Atlantic%2FBermuda%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>%28GMT-4%3A30%29 Venezuela Time %28America%2FCaracas%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>%28GMT-5%29 Colombia Time %28America%2FBogota%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>%28GMT-5%29 Eastern Standard Time %28America%2FIndianapolis%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>%28GMT-5%29 Eastern Standard Time %28America%2FNew_York%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>%28GMT-5%29 Eastern Standard Time %28America%2FPanama%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>%28GMT-5%29 Peru Time %28America%2FLima%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>%28GMT-6%29 Central Standard Time %28America%2FChicago%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>%28GMT-6%29 Central Standard Time %28America%2FEl_Salvador%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>%28GMT-6%29 Central Standard Time %28America%2FMexico_City%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>%28GMT-7%29 Mountain Standard Time %28America%2FDenver%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>%28GMT-7%29 Mountain Standard Time %28America%2FPhoenix%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>%28GMT-8%29 Pacific Standard Time %28America%2FLos_Angeles%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>%28GMT-8%29 Pacific Standard Time %28America%2FTijuana%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>%28GMT-9%29 Alaska Standard Time %28America%2FAnchorage%29</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <webLinks>
+        <fullName>GoogleMaps</fullName>
+        <availability>online</availability>
+        <displayType>link</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <hasMenubar>false</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>false</hasToolbar>
+        <height>600</height>
+        <isResizable>true</isResizable>
+        <linkType>url</linkType>
+        <masterLabel>Google Maps</masterLabel>
+        <openType>newWindow</openType>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>false</showsLocation>
+        <showsStatus>false</showsStatus>
+        <url>http://maps.google.com/maps?f=q&amp;hl=en&amp;q={!Contact_MailingStreet}+{!Contact_MailingCity}+{!Contact_MailingState}&amp;om=1</url>
+    </webLinks>
+    <webLinks>
+        <fullName>GoogleSearch</fullName>
+        <availability>online</availability>
+        <displayType>link</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <hasMenubar>false</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>false</hasToolbar>
+        <height>600</height>
+        <isResizable>true</isResizable>
+        <linkType>url</linkType>
+        <masterLabel>Google Search</masterLabel>
+        <openType>newWindow</openType>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>false</showsLocation>
+        <showsStatus>false</showsStatus>
+        <url>http://www.google.com/search?q={!Contact_FirstName} {!Contact_LastName}</url>
+    </webLinks>
+    <listViews>
+        <fullName>All_Contacts</fullName>
+        <columns>FULL_NAME</columns>
+        <columns>CONTACT.RECORDTYPE</columns>
+        <columns>Student__c</columns>
+        <columns>CONTACT.ADDRESS2_STREET</columns>
+        <columns>CONTACT.ADDRESS2_CITY</columns>
+        <columns>CONTACT.ADDRESS2_ZIP</columns>
+        <columns>CONTACT.PHONE1</columns>
+        <columns>CONTACT.LAST_UPDATE</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CONTACT.RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>Contact.StudentReference,Contact.AuthorizedThirdParty</value>
+        </filters>
+        <label>All Contacts</label>
+        <sharedTo>
+            <allInternalUsers/>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>MyContacts</fullName>
+        <columns>FULL_NAME</columns>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>CONTACT.TITLE</columns>
+        <columns>CONTACT.PHONE1</columns>
+        <columns>CONTACT.EMAIL</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <filterScope>Mine</filterScope>
+        <label>My Contacts</label>
+    </listViews>
+</CustomObject>

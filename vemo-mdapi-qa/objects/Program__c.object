@@ -1,0 +1,809 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableChangeDataCapture>false</enableChangeDataCapture>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>ControlledByParent</externalSharingModel>
+    <label>Program</label>
+    <nameField>
+        <displayFormat>P-{0000}</displayFormat>
+        <label>Program Number</label>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Programs</pluralLabel>
+    <searchLayouts>
+        <customTabListAdditionalFields>ProgramName__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>School__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>ProgramStatus__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>EnrollmentType__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>EnrollmentEndDate__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>LAST_UPDATE</customTabListAdditionalFields>
+        <lookupDialogsAdditionalFields>RecordLabel__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>School__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>ProgramName__c</lookupDialogsAdditionalFields>
+        <searchResultsAdditionalFields>School__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>ProgramName__c</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>ControlledByParent</sharingModel>
+    <visibility>Public</visibility>
+    <fields>
+        <fullName>AgeOfMajorityCollected__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Age of Majority Collected</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>AgeOfMajorityRequired__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Age of Majority Required</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>AgreementTemplate__c</fullName>
+        <deleteConstraint>Restrict</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Agreement Template</label>
+        <referenceTo>APXTConga4__Conga_Template__c</referenceTo>
+        <relationshipLabel>Programs (Agreement Template)</relationshipLabel>
+        <relationshipName>Programs1</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>AllowedSpecialDisbursementTypes__c</fullName>
+        <externalId>false</externalId>
+        <label>Allowed Special Disbursement Types</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>DisbursementSpecialTypes</valueSetName>
+        </valueSet>
+        <visibleLines>4</visibleLines>
+    </fields>
+    <fields>
+        <fullName>ASDAttachmentCleanURL__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(!ISBLANK( ASDAttachmentID__c  ), $Setup.GlobalSettings__c.AttachmentDownloadPrefix__c &amp;  ASDAttachmentID__c  , &quot;&quot;)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>ASD Attachment Clean URL</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ASDAttachmentID__c</fullName>
+        <externalId>false</externalId>
+        <label>ASD Attachment ID</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>AttendanceDateRequired__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>If checked, Attendance Dates will be available during the origination process</description>
+        <externalId>false</externalId>
+        <inlineHelpText>If checked, Attendance Dates will be available during the origination process</inlineHelpText>
+        <label>Attendance Date Required</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>AutomaticallyConfirmTransactions__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Automatically Confirm Transactions</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>CongaTemplate__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>DEPRECATEConga Template</label>
+        <referenceTo>APXTConga4__Conga_Template__c</referenceTo>
+        <relationshipLabel>Programs</relationshipLabel>
+        <relationshipName>Programs</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>CreditApprovalScore__c</fullName>
+        <externalId>false</externalId>
+        <label>Credit Approval Score</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CreditCheckRequired__c</fullName>
+        <defaultValue>true</defaultValue>
+        <description>If this box is checked, a credit check is required during the registration for this program</description>
+        <externalId>false</externalId>
+        <inlineHelpText>If this box is checked, a credit check is required during the registration for this program</inlineHelpText>
+        <label>Credit Check Required</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>CreditModel__c</fullName>
+        <externalId>false</externalId>
+        <label>Credit Model</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Configured in Program</fullName>
+                    <default>false</default>
+                    <label>Configured in Program</label>
+                </value>
+                <value>
+                    <fullName>Detailed Evaluation</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Detailed Evaluation</label>
+                </value>
+                <value>
+                    <fullName>Score Based</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Score Based</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>CumulativeIncomeShareCap__c</fullName>
+        <externalId>false</externalId>
+        <label>Cumulative Income Share Cap</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>DefaultRules__c</fullName>
+        <description>How many months of what kind of (in)activity are required to define an account as being in default?</description>
+        <externalId>false</externalId>
+        <inlineHelpText>How many months of what kind of (in)activity are required to define an account as being in default?</inlineHelpText>
+        <label>Default Rules</label>
+        <length>32768</length>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>5</visibleLines>
+    </fields>
+    <fields>
+        <fullName>DefermentTypeRules__c</fullName>
+        <description>For each deferment type: is payment term extended? is there a duration limit?</description>
+        <externalId>false</externalId>
+        <inlineHelpText>For each deferment type: is payment term extended? is there a duration limit?</inlineHelpText>
+        <label>Deferment Type Rules</label>
+        <length>32768</length>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>5</visibleLines>
+    </fields>
+    <fields>
+        <fullName>DisbursementConfRequiredNotification__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>If this field is checked, the SchoolEmailNotification2__c will be sent a notification email when there is one or more disbursement confirmations awaiting the program.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>If this field is checked, the SchoolEmailNotification2__c will be sent a notification email when there is one or more disbursement confirmations awaiting the program.</inlineHelpText>
+        <label>Disbursement Conf Required Notification</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>DisclosureTemplate__c</fullName>
+        <deleteConstraint>Restrict</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Disclosure Template</label>
+        <referenceTo>APXTConga4__Conga_Template__c</referenceTo>
+        <relationshipLabel>Programs (Disclosure Template)</relationshipLabel>
+        <relationshipName>Programs2</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>EnrollmentBeginDate__c</fullName>
+        <externalId>false</externalId>
+        <label>Enrollment Begin Date</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>EnrollmentDefinition__c</fullName>
+        <description>program must specify what it considers to be enrolled in school for the deferment to be valid</description>
+        <externalId>false</externalId>
+        <inlineHelpText>program must specify what it considers to be enrolled in school for the deferment to be valid</inlineHelpText>
+        <label>Enrollment Definition</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>EnrollmentStatus</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>EnrollmentEndDate__c</fullName>
+        <externalId>false</externalId>
+        <label>Enrollment End Date</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>EnrollmentStatusCollected__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Enrollment Status Collected</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>EnrollmentStatusRequired__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Enrollment Status Required</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>EnrollmentType__c</fullName>
+        <description>If this field is set to &quot;Open&quot; then any student can apply for the program.  If this field is set to &quot;Invite Only&quot; then students must be invited to the program for enrollment first (via &quot;Inivted&quot; StudentProgram__c record)</description>
+        <externalId>false</externalId>
+        <inlineHelpText>If this field is set to &quot;Open&quot; then any student can apply for the program.  If this field is set to &quot;Invite Only&quot; then students must be invited to the program for enrollment first (via &quot;Inivted&quot; StudentProgram__c record)</inlineHelpText>
+        <label>Enrollment Type</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Open</fullName>
+                    <default>true</default>
+                    <label>Open</label>
+                </value>
+                <value>
+                    <fullName>Invite Only</fullName>
+                    <default>false</default>
+                    <label>Invite Only</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>FeeRules__c</fullName>
+        <description>list of fee types and amounts that agreement is subject to</description>
+        <externalId>false</externalId>
+        <inlineHelpText>list of fee types and amounts that agreement is subject to</inlineHelpText>
+        <label>Fee Rules</label>
+        <length>32768</length>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>5</visibleLines>
+    </fields>
+    <fields>
+        <fullName>GracePeriodMonths__c</fullName>
+        <externalId>false</externalId>
+        <label>Grace Period (Months)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>GradeLevelCollected__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Grade Level Collected</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>GradeLevelDescription__c</fullName>
+        <externalId>false</externalId>
+        <label>Grade Level Description</label>
+        <length>32768</length>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>GradeLevelRequired__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Grade Level Required</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>GUID__c</fullName>
+        <externalId>true</externalId>
+        <label>GUID</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ImmediatePayment__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>If checked, Income and Payment Information is mandatory as part of origination process</description>
+        <externalId>false</externalId>
+        <inlineHelpText>If checked, Income and Payment Information is mandatory as part of origination process</inlineHelpText>
+        <label>Immediate Payment</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>IncomeThreshold__c</fullName>
+        <description>minimum income required to make payment</description>
+        <externalId>false</externalId>
+        <inlineHelpText>minimum income required to make payment</inlineHelpText>
+        <label>Income Threshold</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>InformationDefaultDays__c</fullName>
+        <externalId>false</externalId>
+        <label>Information Default Days</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>InstructionText__c</fullName>
+        <externalId>false</externalId>
+        <label>Instruction Text</label>
+        <length>131072</length>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>LongProgramName__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>For example: &quot;Back a Boiler Income Share Agreement (ISA)&quot;.  This field is used to populate the fields in the email notifications related to this program.</inlineHelpText>
+        <label>Long Program Name</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>MinimumIncomePerMonth__c</fullName>
+        <externalId>false</externalId>
+        <label>Minimum Income per Month</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>MinimumIncomePerYear__c</fullName>
+        <externalId>false</externalId>
+        <formula>ROUND( MinimumIncomePerMonth__c * 12,0)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Minimum Income per Year</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>PaymentDefaultDays__c</fullName>
+        <externalId>false</externalId>
+        <label>Payment Default Days</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>PostAgreementFlow__c</fullName>
+        <description>This field is used by the front end to determine what screen to navigate to after the signature is obtained</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This field is used by the front end to determine what screen to navigate to after the signature is obtained</inlineHelpText>
+        <label>Post Agreement Flow</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Default</fullName>
+                    <default>false</default>
+                    <label>Default</label>
+                </value>
+                <value>
+                    <fullName>Income Verification</fullName>
+                    <default>false</default>
+                    <label>Income Verification</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>ProgramName__c</fullName>
+        <externalId>false</externalId>
+        <label>Program Name</label>
+        <length>255</length>
+        <required>true</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ProgramNotes__c</fullName>
+        <description>Capture peculiarities or special conditions of a program.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Capture peculiarities or special conditions of a program.</inlineHelpText>
+        <label>Program Notes</label>
+        <length>131072</length>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>ProgramStatus__c</fullName>
+        <externalId>false</externalId>
+        <label>Program Status</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>ProgramStatus</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>QuizAttemptsBeforeLock__c</fullName>
+        <externalId>false</externalId>
+        <label>Quiz Attempts Before Lock</label>
+        <precision>2</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>QuizLinkID__c</fullName>
+        <description>The ID used for this program&#39;s financial fitness quiz</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The ID used for this program&#39;s financial fitness quiz</inlineHelpText>
+        <label>Quiz Link ID</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>QuizLinkURL__c</fullName>
+        <description>The link used by this program for its financial fitness quiz</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The link used by this program for its financial fitness quiz</inlineHelpText>
+        <label>Quiz Link URL</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Url</type>
+    </fields>
+    <fields>
+        <fullName>QuizPostID__c</fullName>
+        <externalId>false</externalId>
+        <label>Quiz Post ID</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>QuizResultID__c</fullName>
+        <externalId>false</externalId>
+        <label>Quiz Result ID</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>RecordLabel__c</fullName>
+        <externalId>false</externalId>
+        <formula>School__r.RecordLabel__c + &#39; &#39; + ProgramName__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Record Label</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>RecordLink__c</fullName>
+        <externalId>false</externalId>
+        <formula>HYPERLINK(&quot;../&quot;&amp;Id,RecordLabel__c, &quot;_top&quot;)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Record Link</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>RegistrationBeginDate__c</fullName>
+        <externalId>false</externalId>
+        <label>Registration Begin Date</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>RegistrationEndDate__c</fullName>
+        <externalId>false</externalId>
+        <label>Registration End Date</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>ResidencyCollected__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Residency Collected</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>ResidencyRequired__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Residency Required</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>RightToCancelDays__c</fullName>
+        <defaultValue>3</defaultValue>
+        <externalId>false</externalId>
+        <label>Right to Cancel Days</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SchoolEmailNotification1__c</fullName>
+        <description>One of the possible emails used for school notifications.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>One of the possible emails used for school notifications.</inlineHelpText>
+        <label>School Email Notification 1</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Email</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SchoolEmailNotification2__c</fullName>
+        <externalId>false</externalId>
+        <label>School Email Notification 2</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Email</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SchoolName__c</fullName>
+        <externalId>false</externalId>
+        <formula>School__r.InstitutionShortName__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>School Name</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SchoolProgramOfStudyCollected__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>School Program of Study Collected</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>SchoolProgramOfStudyRequired__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>School Program of Study Required</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>School__c</fullName>
+        <externalId>false</externalId>
+        <label>School</label>
+        <lookupFilter>
+            <active>true</active>
+            <errorMessage>Must be associated to a school</errorMessage>
+            <filterItems>
+                <field>Account.RecordType.Name</field>
+                <operation>contains</operation>
+                <value>School</value>
+            </filterItems>
+            <isOptional>false</isOptional>
+        </lookupFilter>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Programs</relationshipLabel>
+        <relationshipName>Programs</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>true</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>SendStudentDisbursementConfirmation__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>If this field is checked, a student will receive a disbursement confirmation notification when disbursements on this program are confirmed.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>If this field is checked, a student will receive a disbursement confirmation notification when disbursements on this program are confirmed.</inlineHelpText>
+        <label>Send Student Disbursement Confirmation</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>StepText__c</fullName>
+        <externalId>false</externalId>
+        <label>Step Text</label>
+        <length>131072</length>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>StudentPortalLink__c</fullName>
+        <externalId>false</externalId>
+        <label>Student Portal Link</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Url</type>
+    </fields>
+    <fields>
+        <fullName>StudentSignedISANotification__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>If this field is checked, SchoolEmailNotification1__c email address will be notified when a student signs the ISA</description>
+        <externalId>false</externalId>
+        <inlineHelpText>If this field is checked, SchoolEmailNotification1__c email address will be notified when a student signs the ISA</inlineHelpText>
+        <label>Student Signed ISA Notification</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>TotalDefermentMonths__c</fullName>
+        <externalId>false</externalId>
+        <label>Total Deferment Months</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <validationRules>
+        <fullName>MinimumRightToCancelDate</fullName>
+        <active>true</active>
+        <errorConditionFormula>OR(RightToCancelDays__c &lt; 3, ISBLANK(RightToCancelDays__c))</errorConditionFormula>
+        <errorDisplayField>RightToCancelDays__c</errorDisplayField>
+        <errorMessage>Right to Cancel Days cannot be less than 3 days</errorMessage>
+    </validationRules>
+    <listViews>
+        <fullName>All</fullName>
+        <columns>ProgramName__c</columns>
+        <columns>NAME</columns>
+        <columns>ProgramStatus__c</columns>
+        <columns>EnrollmentBeginDate__c</columns>
+        <columns>EnrollmentEndDate__c</columns>
+        <columns>EnrollmentType__c</columns>
+        <columns>RegistrationBeginDate__c</columns>
+        <columns>RegistrationEndDate__c</columns>
+        <columns>School__c</columns>
+        <columns>LAST_UPDATE</columns>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+</CustomObject>

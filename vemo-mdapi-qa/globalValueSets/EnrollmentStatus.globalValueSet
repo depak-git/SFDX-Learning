@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Full Time</fullName>
+        <default>false</default>
+        <label>Full Time</label>
+    </customValue>
+    <customValue>
+        <fullName>Three Quarter Time</fullName>
+        <default>false</default>
+        <label>Three Quarter Time</label>
+    </customValue>
+    <customValue>
+        <fullName>Half Time</fullName>
+        <default>false</default>
+        <label>Half Time</label>
+    </customValue>
+    <customValue>
+        <fullName>Less than Half Time</fullName>
+        <default>false</default>
+        <label>Less than Half Time</label>
+    </customValue>
+    <masterLabel>Enrollment Status</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

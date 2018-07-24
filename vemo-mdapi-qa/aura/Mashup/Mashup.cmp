@@ -1,0 +1,139 @@
+<aura:component controller="accountSummaryCTRL" implements="flexipage:availableForRecordHome,force:lightningQuickActionWithoutHeader,force:hasRecordId">
+    <aura:attribute name="recordId" type="Id" />
+
+    <aura:attribute name="record" type="Object"/>
+    <aura:attribute name="accountRecord" type="Object"/>
+    <aura:attribute name="recordError" type="String"/>
+    <force:recordData aura:id="recordLoader"
+      recordId="{!v.recordId}"
+      layoutType="FULL"
+      targetRecord="{!v.record}"
+      targetFields="{!v.accountRecord}"
+      targetError="{!v.recordError}"
+      
+      />
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}" />
+	<aura:attribute type="accountSummaryCTRL.wrapperClass" name="rec" />
+    
+    <div >
+        <p style="font-size:22px;font-weight:bold">{!v.accountRecord.Name}</p>
+        
+        <p>DOB:&nbsp;<ui:outputDate format="MM-dd-yy" value="{!v.accountRecord.PersonBirthdate}"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Zip Code:&nbsp;{!v.accountRecord.PersonMailingPostalCode}</p>
+        <br/>
+       
+       <table class="slds-table " style="border-top: 1px solid rgb(217, 219, 221);">
+       	   <thead>
+                <tr> 
+                    <td >Due on&nbsp;&nbsp;<ui:outputDate format="MM-dd-yy" value="{!v.rec.dueDate}"/></td>
+                    <td >Payment Status</td>
+                    <td >Monthly Income</td>   
+                    <td >Pending Disbursement</td>  
+                    <td> Auto Payment Day of Month 1</td>
+                    <td> Auto Payment Day of Month 2</td>
+                </tr>
+           </thead>	
+           <tbody>
+           	<tr>
+                <td style="font-size:15px;font-weight:bold">$<ui:outputNumber format="#,##0.00" value="{!v.rec.expectedPayment}"/></td><!-- {!v.rec.expectedPayment}-->
+                <td style="font-size:15px;font-weight:bold">{!v.rec.paymentStatus}</td>
+                <td style="font-size:15px;font-weight:bold">$<ui:outputNumber format="#,##0.00" value="{!v.rec.monthlyIncome}"/></td>
+                <td style="font-size:15px;font-weight:bold">$<ui:outputNumber format="#,##0.00" value="{!v.rec.pendingDisbursement}"/> </td>
+                <td style="font-size:15px;font-weight:bold">
+                    <aura:renderIf isTrue="{!v.accountRecord.AutoPayment__pc != true}">
+                        N/A
+					</aura:renderIf>
+                    <aura:renderIf isTrue="{!and(v.accountRecord.Autopayment__pc,v.accountRecord.AutoPaymentFrequency__pc == 'On Due Date')}">
+                    	<ui:outputDate format="MM-dd-yy" value="{!v.rec.dueDate}"/>    
+					</aura:renderIf>
+                    <aura:renderIf isTrue="{!and(v.accountRecord.AutoPayment__pc,or(v.accountRecord.AutoPaymentFrequency__pc == '1 Time Per Month',v.accountRecord.AutoPaymentFrequency__pc == '2 Times Per Month'))}">
+                    	{!v.accountRecord.AutoPaymentDayOfMonth1__pc}
+					</aura:renderIf>
+                    
+                   
+                </td>
+                <td style="font-size:15px;font-weight:bold">
+                	<aura:renderIf isTrue="{!or(v.accountRecord.AutoPayment__pc != true,v.accountRecord.AutoPaymentFrequency__pc == '1 Time Per Month',v.accountRecord.AutoPaymentFrequency__pc == 'On Due Date')}">
+                        N/A
+					</aura:renderIf>
+                    
+                    <aura:renderIf isTrue="{!and(v.accountRecord.AutoPayment__pc,v.accountRecord.AutoPaymentFrequency__pc == '2 Times Per Month')}">
+                    	{!v.accountRecord.AutoPaymentDayOfMonth2__pc}
+					</aura:renderIf>
+                </td>
+            </tr>
+            <tr>
+                <td><ui:outputURL value="{!v.rec.currentStatementURL}" label="Current Statement" target="_blank"/></td>	
+                <td>
+                    <aura:renderif isTrue="{!and(v.rec.paymentStatus != 'Past Due',v.rec.paymentStatus != 'N/A')}">
+                        As of <ui:outputDate format="MM-dd-yy" value="{!v.rec.paymentDate}"/>
+                    </aura:renderif>    
+                    <aura:renderif isTrue="{!v.rec.paymentStatus == 'Past Due'}">
+                        {!v.rec.daysDelinquent} Days
+                    </aura:renderif>
+				</td>
+                <td>Est. on <ui:outputDate format="MM-dd-yy" value="{!v.rec.dateVerified}"/>&nbsp;&nbsp;<ui:outputURL value="{!v.rec.newIncomeVerificationURL}" label="New Income" target="_blank"/></td>
+                <td>Next <ui:outputDate format="MM-dd-yy" value="{!v.rec.nextDisbursementDate}"/></td>
+            </tr>   
+    	   </tbody>
+       </table> 
+        <br/>
+        <div class="slds-scrollable" style="overflow-y: auto; height:200px;">
+        <table class="slds-table " style="border-top: 1px solid rgb(217, 219, 221);">
+        	<tHead>
+                <tr class="slds-text-heading--label" >
+                    <td style="font-weight:bold;font-size:15px">Program Name</td>
+                    <td style="font-weight:bold;font-size:15px">Status</td>
+                    <td style="font-weight:bold;font-size:15px">Days Delinquent</td>
+                    <td style="font-weight:bold;font-size:15px">Funding Amount</td>
+                    <td style="font-weight:bold;font-size:15px">Income Share</td>
+                    <td style="font-weight:bold;font-size:15px">Monthly Amount</td>
+                </tr>    
+            </tHead>
+            
+            <aura:iteration items="{!v.rec.agreements}" var="agr">
+                <tr>
+                    <td style="width:20%;white-space: inherit;"><ui:outputURL value="{!agr.agrUrl}" label="{!agr.programName}" target="_blank"/></td>
+                    <td style="width:20%;white-space: inherit;">{!agr.status} since <ui:outputDate value="{!agr.currentStatusDateTime}" format="MM-dd-yy"/></td>
+                    <td style="width:20%">
+                        	{!agr.daysDelinquent}
+                    </td>
+                    <td style="width:20%;">
+                       <!-- <aura:renderif isTrue="{!agr.fundingAmountPostCertification  > 0}">-->
+                        	$<ui:outputNumber format="#,##0.00" value="{!agr.fundingAmountPostCertification}"/>
+                   		<!--</aura:renderif>-->
+                        
+                    </td>
+                    <td style="width:20%;">
+                       <!-- <aura:renderif isTrue="{!agr.incomeSharePostCertification  >= 0}">-->
+                        	<ui:outputNumber value="{!agr.incomeSharePostCertification }" format="#,##0.00" />%
+                       <!-- </aura:renderif> -->    
+                    </td>
+                    <td style="">
+                        <!--<aura:renderif isTrue="{!agr.paymentAmount  > 0}">-->
+                        	$<ui:outputNumber format="#,##0.00" value="{!agr.paymentAmount}"/>
+                       <!-- </aura:renderif> -->
+                       
+                    </td>
+                </tr>
+           </aura:iteration>
+       </table>
+     </div>
+          
+           
+          <table class="slds-table slds-table--bordered">
+              <thead>
+                   <tr >
+                       <td style="font-weight:bold;width:15%">Total</td>
+                       <td style="width:18%;"></td>
+                       <td style="width:19%;"></td>
+                       <td style="width:18%;padding:0">$<ui:outputNumber format="#,##0.00" value="{!v.rec.totalFundingAmount}"/></td>
+                       <td style="width:18%;padding:0"><ui:outputNumber format="#,##0.00" value="{!v.rec.totalIncomeShare}"/>%</td>
+                       <td style="padding:0">$<ui:outputNumber format="#,##0.00" value="{!v.rec.totalPaymentAmount}"/></td>
+                   </tr>
+               </thead>
+          </table> 
+        <br/>
+        
+   </div>
+
+</aura:component>

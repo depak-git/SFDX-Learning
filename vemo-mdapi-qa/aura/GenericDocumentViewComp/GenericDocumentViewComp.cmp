@@ -1,0 +1,14 @@
+<aura:component access="global" controller="GenericDocumentViewApexCTRL" implements="force:appHostable,flexipage:availableForAllPageTypes,force:hasRecordId">
+<!--Attributes  --> 
+	<aura:attribute name="recordId" type="String" access="global"/> 
+    <aura:attribute name="genericDocumentData" type="Object"/>
+    <aura:attribute name="genericDocumentDataColumns" type="Object"/>
+    <!--Handlers	-->
+	<aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+
+    <lightning:datatable data="{!v.genericDocumentData}" 
+                         columns="{!v.genericDocumentDataColumns}" 
+                         keyField="id" 
+                         onrowSelection="{! c.getSelectedName }"
+                         hideCheckboxColumn="true"/>
+</aura:component>

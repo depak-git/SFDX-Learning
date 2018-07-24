@@ -1,0 +1,2216 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>ChangeStatus</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CloneAsChild</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CloseCase</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>MassClose</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>NewCase</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <enableFeeds>true</enableFeeds>
+    <externalSharingModel>Private</externalSharingModel>
+    <recordTypeTrackFeedHistory>false</recordTypeTrackFeedHistory>
+    <recordTypeTrackHistory>true</recordTypeTrackHistory>
+    <searchLayouts>
+        <customTabListAdditionalFields>CASES.CLOSED</customTabListAdditionalFields>
+        <customTabListAdditionalFields>CASES.CASE_NUMBER</customTabListAdditionalFields>
+        <customTabListAdditionalFields>CASES.TYPE</customTabListAdditionalFields>
+        <customTabListAdditionalFields>CASES.SUBJECT</customTabListAdditionalFields>
+        <customTabListAdditionalFields>CASES.CREATED_DATE</customTabListAdditionalFields>
+        <customTabListAdditionalFields>CASES.LAST_UPDATE</customTabListAdditionalFields>
+        <customTabListAdditionalFields>CASES.PRIORITY</customTabListAdditionalFields>
+        <lookupDialogsAdditionalFields>CASES.CASE_NUMBER</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>CASES.SUBJECT</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>NAME</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>ACCOUNT.NAME</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>CASES.STATUS</lookupDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>CASES.CASE_NUMBER</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>CASES.SUBJECT</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>NAME</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>ACCOUNT.NAME</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>CASES.STATUS</lookupPhoneDialogsAdditionalFields>
+        <searchResultsAdditionalFields>CASES.CASE_NUMBER</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CASES.SUBJECT</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CASES.STATUS</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CASES.CREATED_DATE</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CORE.USERS.ALIAS</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>ReadWriteTransfer</sharingModel>
+    <fields>
+        <fullName>AccountId</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Agreement__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Student Program</label>
+        <referenceTo>StudentProgram__c</referenceTo>
+        <relationshipLabel>Cases</relationshipLabel>
+        <relationshipName>Cases</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>ApplicationAllocatedAmount__c</fullName>
+        <externalId>false</externalId>
+        <label>(DEPRECATE)Application Allocated Amount</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>ApplicationEnrollmentStatus__c</fullName>
+        <externalId>false</externalId>
+        <label>(DEPRECATE)Application Enrollment Status</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>EnrollmentStatus</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>ApplicationExpectedGraduationDate__c</fullName>
+        <externalId>false</externalId>
+        <label>(DEPRECATE) Expected Graduation Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>ApplicationGradeLevel__c</fullName>
+        <externalId>false</externalId>
+        <label>(DEPRECATE)Application Grade Level</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>GradeLevel</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>ApplicationIncomeShare__c</fullName>
+        <externalId>false</externalId>
+        <label>(DEPRECATE)Application Income Share</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>ApplicationPaymentCap__c</fullName>
+        <externalId>false</externalId>
+        <label>(DEPRECATE)Application Payment Cap</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>ApplicationPaymentTerm__c</fullName>
+        <externalId>false</externalId>
+        <label>(DEPRECATE)Application Payment Term</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ApplicationProgramOfStudyDescription__c</fullName>
+        <externalId>false</externalId>
+        <formula>ApplicationSchoolProgramOfStudy__r.Description__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>(DEPRECATE)Program of Study Description</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ApplicationRequestedAmount__c</fullName>
+        <externalId>false</externalId>
+        <label>(DEPRECATE)Requested Amount</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>ApplicationResidency__c</fullName>
+        <externalId>false</externalId>
+        <label>(DEPRECATE)Application Residency</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Residency</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>ApplicationSchoolProgramOfStudy__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>(DEPRECATE)Major (SchoolProgramOfStudy)</label>
+        <referenceTo>SchoolProgramsOfStudy__c</referenceTo>
+        <relationshipLabel>Cases (Application Major)</relationshipLabel>
+        <relationshipName>Cases1</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>AssetId</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>BusinessHoursId</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>CertificationChanges__c</fullName>
+        <externalId>false</externalId>
+        <formula>if( ApplicationRequestedAmount__c != CertifiedAllocatedAmount__c, true, false) || 
+if( Text(ApplicationEnrollmentStatus__c) != Text(CertifiedEnrollmentStatus__c) , true, false) || 
+if( ApplicationExpectedGraduationDate__c != CertifiedExpectedGraduationDate__c , true, false) || 
+if( ApplicationSchoolProgramOfStudy__c != CertifiedSchoolProgramOfStudy__c , true, false) || 
+if( Text(ApplicationResidency__c) != Text(CertifiedResidency__c) , true, false) || 
+if( Text(ApplicationGradeLevel__c) != Text(CertifiedGradeLevel__c) , true, false)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>(DEPRECATE)Certification Changes</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>CertificationProcess__c</fullName>
+        <externalId>false</externalId>
+        <label>(DEPRECATE)Certification Process</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Certified</fullName>
+                    <default>false</default>
+                    <label>Certified</label>
+                </value>
+                <value>
+                    <fullName>Cancelled</fullName>
+                    <default>false</default>
+                    <label>Cancelled</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>CertifiedAllocatedAmount__c</fullName>
+        <defaultValue>0</defaultValue>
+        <externalId>false</externalId>
+        <label>(DEPRECATE)Certified Allocated Amount</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>CertifiedEligibleToReapply__c</fullName>
+        <defaultValue>true</defaultValue>
+        <externalId>false</externalId>
+        <label>(DEPRECATE)Student Eligible to Reapply?</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>CertifiedEnrollmentStatus__c</fullName>
+        <externalId>false</externalId>
+        <label>(DEPRECATE)Certified Enrollment Status</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>EnrollmentStatus</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>CertifiedExpectedGraduationDate__c</fullName>
+        <externalId>false</externalId>
+        <label>((DEPRECATE)Expected Graduation Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>CertifiedGradeLevel__c</fullName>
+        <externalId>false</externalId>
+        <label>(DEPRECATE)Certified Grade Level</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>GradeLevel</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>CertifiedIncomeShare__c</fullName>
+        <externalId>false</externalId>
+        <label>(DEPRECATE)Certified Income Share</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>CertifiedPaymentCap__c</fullName>
+        <externalId>false</externalId>
+        <label>(DEPRECATE)Certified Payment Cap</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>CertifiedPaymentTerm__c</fullName>
+        <externalId>false</externalId>
+        <label>(DEPRECATE)Certified Payment Term</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CertifiedProgramOfStudyDescription__c</fullName>
+        <externalId>false</externalId>
+        <formula>CertifiedSchoolProgramOfStudy__r.Description__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>((DEPRECATE)Program of Study Description</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CertifiedResidency__c</fullName>
+        <externalId>false</externalId>
+        <label>(DEPRECATE)Certified Residency</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Residency</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>CertifiedSchoolProgramOfStudy__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>(DEPRECATE)(Major (SchoolProgramOfStudy)</label>
+        <referenceTo>SchoolProgramsOfStudy__c</referenceTo>
+        <relationshipLabel>Cases</relationshipLabel>
+        <relationshipName>Cases</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>ClosedDate</fullName>
+        <trackTrending>false</trackTrending>
+    </fields>
+    <fields>
+        <fullName>Comments</fullName>
+        <trackTrending>false</trackTrending>
+    </fields>
+    <fields>
+        <fullName>ContactEmail</fullName>
+        <trackTrending>false</trackTrending>
+    </fields>
+    <fields>
+        <fullName>ContactFax</fullName>
+        <trackTrending>false</trackTrending>
+    </fields>
+    <fields>
+        <fullName>ContactId</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>ContactMobile</fullName>
+        <trackTrending>false</trackTrending>
+    </fields>
+    <fields>
+        <fullName>ContactPhone</fullName>
+        <trackTrending>false</trackTrending>
+    </fields>
+    <fields>
+        <fullName>Description</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+    </fields>
+    <fields>
+        <fullName>IsClosedOnCreate</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+    </fields>
+    <fields>
+        <fullName>IsEscalated</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+    </fields>
+    <fields>
+        <fullName>Origin</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>OwnerId</fullName>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>ParentId</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>PaymentInstruction__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Payment Instruction</label>
+        <referenceTo>PaymentInstruction__c</referenceTo>
+        <relationshipLabel>Cases</relationshipLabel>
+        <relationshipName>Cases</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Priority</fullName>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Reason</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>RecordLabel__c</fullName>
+        <externalId>false</externalId>
+        <formula>Account.RecordLabel__c + &#39;:&#39; + Subject</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Record Label</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>RecordLink__c</fullName>
+        <externalId>false</externalId>
+        <formula>HYPERLINK(&quot;../&quot; &amp; Id, RecordLabel__c, &quot;_top&quot;)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Record Link</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>School__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>School</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Student Cases</relationshipLabel>
+        <relationshipName>Cases</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Status</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Subject</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+    </fields>
+    <fields>
+        <fullName>SuppliedCompany</fullName>
+        <trackTrending>false</trackTrending>
+    </fields>
+    <fields>
+        <fullName>SuppliedEmail</fullName>
+        <trackTrending>false</trackTrending>
+    </fields>
+    <fields>
+        <fullName>SuppliedName</fullName>
+        <trackTrending>false</trackTrending>
+    </fields>
+    <fields>
+        <fullName>SuppliedPhone</fullName>
+        <trackTrending>false</trackTrending>
+    </fields>
+    <fields>
+        <fullName>Type</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <businessProcesses>
+        <fullName>Certification</fullName>
+        <description>Certification Process</description>
+        <isActive>true</isActive>
+        <values>
+            <fullName>Cancelled</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Certified</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Requesting Certification</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>School Cancelled</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>School Certified</fullName>
+            <default>false</default>
+        </values>
+    </businessProcesses>
+    <businessProcesses>
+        <fullName>Default</fullName>
+        <description>Default Support Process</description>
+        <isActive>true</isActive>
+        <values>
+            <fullName>Certified</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Closed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Escalated</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>In Process</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>On Hold</fullName>
+            <default>false</default>
+        </values>
+    </businessProcesses>
+    <recordTypes>
+        <fullName>Certification</fullName>
+        <active>true</active>
+        <businessProcess>Certification</businessProcess>
+        <description>Certification Cases</description>
+        <label>Certification</label>
+        <picklistValues>
+            <picklist>ApplicationEnrollmentStatus__c</picklist>
+            <values>
+                <fullName>Full Time</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Half Time</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Less than Half Time</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Three Quarter Time</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>ApplicationGradeLevel__c</picklist>
+            <values>
+                <fullName>Fifth Year Senior</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Freshman</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Junior</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Senior</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sophomore</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>ApplicationResidency__c</picklist>
+            <values>
+                <fullName>Naturalized Citizen</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Non-Immigrant with a US Student Visa</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Non-Immigrant with a US Work Visa</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Non-US Citizen%2FNon-Permanent Resident</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Permanent Resident</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Refugee%2FAsylee</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Temporary resident</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>US Citizen</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>CertificationProcess__c</picklist>
+            <values>
+                <fullName>Cancelled</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Certified</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>CertifiedEnrollmentStatus__c</picklist>
+            <values>
+                <fullName>Full Time</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Half Time</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Less than Half Time</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Three Quarter Time</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>CertifiedGradeLevel__c</picklist>
+            <values>
+                <fullName>Fifth Year Senior</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Freshman</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Junior</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Senior</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sophomore</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>CertifiedResidency__c</picklist>
+            <values>
+                <fullName>Naturalized Citizen</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Non-Immigrant with a US Student Visa</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Non-Immigrant with a US Work Visa</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Non-US Citizen%2FNon-Permanent Resident</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Permanent Resident</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Refugee%2FAsylee</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Temporary resident</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>US Citizen</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Origin</picklist>
+            <values>
+                <fullName>Chat</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Email</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Fax</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Internal Request</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Mail</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Mobile App</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Phone</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Report</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>System</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Text</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Web</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Priority</picklist>
+            <values>
+                <fullName>High</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Low</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Medium</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Urgent</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Reason</picklist>
+            <values>
+                <fullName>Billing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Credit Appeal</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Credit Question</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Death%2FPermanent Disability</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Deferment Request</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Demographic Update</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Disbursement</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Disbursement Changes</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Disbursement Confirmation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Funding Question</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>General Question</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ISA Amount Change</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ISA Cancel - Chose Another Product</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ISA Cancel - Withdrew from School</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Invoice</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Missing or incomplete info</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Monthly Reconciliation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>New Program Request</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Payment Questions</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pool Utilization</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Processing Issue</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Program Update</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Report</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Return Mail%2FEmail</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Return%2FRefund</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Stop Payment</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Student Outreach Notification</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Student Update</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type</picklist>
+            <values>
+                <fullName>Feature Request</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Problem</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Question</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Default</fullName>
+        <active>true</active>
+        <businessProcess>Default</businessProcess>
+        <description>Default Record Type</description>
+        <label>Default</label>
+        <picklistValues>
+            <picklist>ApplicationEnrollmentStatus__c</picklist>
+            <values>
+                <fullName>Full Time</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Half Time</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Less than Half Time</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Three Quarter Time</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>ApplicationGradeLevel__c</picklist>
+            <values>
+                <fullName>Fifth Year Senior</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Freshman</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Junior</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Senior</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>ApplicationResidency__c</picklist>
+            <values>
+                <fullName>Naturalized Citizen</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Non-Immigrant with a US Student Visa</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Non-Immigrant with a US Work Visa</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Non-US Citizen%2FNon-Permanent Resident</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Permanent Resident</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Refugee%2FAsylee</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Temporary resident</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>US Citizen</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>CertificationProcess__c</picklist>
+            <values>
+                <fullName>Cancelled</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Certified</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>CertifiedEnrollmentStatus__c</picklist>
+            <values>
+                <fullName>Full Time</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Half Time</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Less than Half Time</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Three Quarter Time</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>CertifiedGradeLevel__c</picklist>
+            <values>
+                <fullName>Fifth Year Senior</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Freshman</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Junior</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Senior</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>CertifiedResidency__c</picklist>
+            <values>
+                <fullName>Naturalized Citizen</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Non-Immigrant with a US Student Visa</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Non-Immigrant with a US Work Visa</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Non-US Citizen%2FNon-Permanent Resident</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Permanent Resident</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Refugee%2FAsylee</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Temporary resident</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>US Citizen</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Origin</picklist>
+            <values>
+                <fullName>Chat</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Email</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Fax</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Internal Request</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Mail</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Mobile App</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Phone</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Report</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>System</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Text</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Web</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Priority</picklist>
+            <values>
+                <fullName>High</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Low</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Medium</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Urgent</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Reason</picklist>
+            <values>
+                <fullName>Billing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Credit Appeal</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Credit Question</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Death%2FPermanent Disability</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Deferment Request</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Demographic Update</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Disbursement</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Disbursement Changes</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Disbursement Confirmation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Funding Question</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>General Question</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ISA Amount Change</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ISA Cancel - Chose Another Product</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ISA Cancel - Withdrew from School</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Invoice</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Missing or incomplete info</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Monthly Reconciliation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>New Program Request</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Payment Questions</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pool Utilization</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Processing Issue</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Program Update</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Report</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Return Mail%2FEmail</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Return%2FRefund</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Stop Payment</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Student Outreach Notification</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Student Update</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type</picklist>
+            <values>
+                <fullName>Feature Request</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Problem</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Question</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Origination</fullName>
+        <active>true</active>
+        <businessProcess>Default</businessProcess>
+        <description>Origination</description>
+        <label>Origination</label>
+        <picklistValues>
+            <picklist>ApplicationEnrollmentStatus__c</picklist>
+            <values>
+                <fullName>Full Time</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Half Time</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Less than Half Time</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Three Quarter Time</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>ApplicationGradeLevel__c</picklist>
+            <values>
+                <fullName>Fifth Year Senior</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Freshman</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Junior</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Senior</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>ApplicationResidency__c</picklist>
+            <values>
+                <fullName>Naturalized Citizen</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Non-Immigrant with a US Student Visa</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Non-Immigrant with a US Work Visa</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Non-US Citizen%2FNon-Permanent Resident</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Permanent Resident</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Refugee%2FAsylee</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Temporary resident</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>US Citizen</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>CertificationProcess__c</picklist>
+            <values>
+                <fullName>Cancelled</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Certified</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>CertifiedEnrollmentStatus__c</picklist>
+            <values>
+                <fullName>Full Time</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Half Time</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Less than Half Time</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Three Quarter Time</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>CertifiedGradeLevel__c</picklist>
+            <values>
+                <fullName>Fifth Year Senior</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Freshman</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Junior</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Senior</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>CertifiedResidency__c</picklist>
+            <values>
+                <fullName>Naturalized Citizen</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Non-Immigrant with a US Student Visa</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Non-Immigrant with a US Work Visa</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Non-US Citizen%2FNon-Permanent Resident</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Permanent Resident</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Refugee%2FAsylee</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Temporary resident</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>US Citizen</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Origin</picklist>
+            <values>
+                <fullName>Email</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Fax</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Phone</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Web</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Priority</picklist>
+            <values>
+                <fullName>High</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Low</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Medium</fullName>
+                <default>true</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Reason</picklist>
+            <values>
+                <fullName>Billing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>New Program Request</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pool Utilization</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Program Update</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Student Outreach Notification</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type</picklist>
+            <values>
+                <fullName>Feature Request</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Problem</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Question</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>SchoolOriginated</fullName>
+        <active>true</active>
+        <businessProcess>Default</businessProcess>
+        <label>School Originated</label>
+        <picklistValues>
+            <picklist>ApplicationEnrollmentStatus__c</picklist>
+            <values>
+                <fullName>Full Time</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Half Time</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Less than Half Time</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Three Quarter Time</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>ApplicationGradeLevel__c</picklist>
+            <values>
+                <fullName>Fifth Year Senior</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Freshman</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Junior</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Senior</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>ApplicationResidency__c</picklist>
+            <values>
+                <fullName>Naturalized Citizen</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Non-Immigrant with a US Student Visa</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Non-Immigrant with a US Work Visa</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Non-US Citizen%2FNon-Permanent Resident</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Permanent Resident</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Refugee%2FAsylee</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Temporary resident</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>US Citizen</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>CertificationProcess__c</picklist>
+            <values>
+                <fullName>Cancelled</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Certified</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>CertifiedEnrollmentStatus__c</picklist>
+            <values>
+                <fullName>Full Time</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Half Time</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Less than Half Time</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Three Quarter Time</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>CertifiedGradeLevel__c</picklist>
+            <values>
+                <fullName>Fifth Year Senior</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Freshman</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Junior</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Senior</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>CertifiedResidency__c</picklist>
+            <values>
+                <fullName>Naturalized Citizen</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Non-Immigrant with a US Student Visa</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Non-Immigrant with a US Work Visa</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Non-US Citizen%2FNon-Permanent Resident</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Permanent Resident</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Refugee%2FAsylee</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Temporary resident</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>US Citizen</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Origin</picklist>
+            <values>
+                <fullName>Chat</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Email</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Fax</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Internal Request</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Mail</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Mobile App</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Phone</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Report</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>System</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Text</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Web</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Priority</picklist>
+            <values>
+                <fullName>High</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Low</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Medium</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Urgent</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Reason</picklist>
+            <values>
+                <fullName>Billing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Credit Appeal</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Credit Question</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Death%2FPermanent Disability</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Deferment Request</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Demographic Update</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Disbursement</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Disbursement Changes</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Disbursement Confirmation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Funding Question</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>General Question</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ISA Amount Change</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ISA Cancel - Chose Another Product</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ISA Cancel - Withdrew from School</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Invoice</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Missing or incomplete info</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Monthly Reconciliation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>New Program Request</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Payment Questions</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pool Utilization</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Processing Issue</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Program Update</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Report</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Return Mail%2FEmail</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Return%2FRefund</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Stop Payment</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Student Outreach Notification</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Student Update</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type</picklist>
+            <values>
+                <fullName>Feature Request</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Problem</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Question</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <validationRules>
+        <fullName>CertifiedAmtCannotBeGreaterThanRequested</fullName>
+        <active>true</active>
+        <errorConditionFormula>CertifiedAllocatedAmount__c &gt; ApplicationRequestedAmount__c</errorConditionFormula>
+        <errorDisplayField>CertifiedAllocatedAmount__c</errorDisplayField>
+        <errorMessage>The Certified Allocated Amount cannot exceed the Requested Amount from the Application</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>noSchoolEditAfterCertificationProcess</fullName>
+        <active>true</active>
+        <errorConditionFormula>$Setup.GlobalSettings__c.ValidationRules__c &amp;&amp;
+$Profile.Name = &quot;8.0 - College Admin Default&quot; &amp;&amp; 
+ISPICKVAL(PRIORVALUE( CertificationProcess__c ),&quot;Certified&quot;)</errorConditionFormula>
+        <errorMessage>Changes cannot be made to this record after it has been certified or cancelled.  Please open a new case for Vemo Support to request assistance.</errorMessage>
+    </validationRules>
+    <listViews>
+        <fullName>All</fullName>
+        <columns>CASES.CLOSED</columns>
+        <columns>CASES.CASE_NUMBER</columns>
+        <columns>CASES.SUBJECT</columns>
+        <columns>CASES.TYPE</columns>
+        <columns>CASES.STATUS</columns>
+        <columns>CASES.CREATED_DATE</columns>
+        <columns>CASES.LAST_UPDATE</columns>
+        <columns>CASES.PRIORITY</columns>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <listViews>
+        <fullName>AllOpenCases</fullName>
+        <columns>CASES.CASE_NUMBER</columns>
+        <columns>CASES.TYPE</columns>
+        <columns>CASES.SUBJECT</columns>
+        <columns>CASES.STATUS</columns>
+        <columns>OWNER_NAME</columns>
+        <columns>CASES.CREATED_DATE</columns>
+        <columns>CASES.LAST_UPDATE</columns>
+        <columns>CASES.PRIORITY</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CASES.CLOSED</field>
+            <operation>equals</operation>
+            <value>0</value>
+        </filters>
+        <label>All Open Cases</label>
+        <sharedTo>
+            <allInternalUsers/>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>Certification_All</fullName>
+        <columns>CASES.CASE_NUMBER</columns>
+        <columns>CASES.SUBJECT</columns>
+        <columns>CASES.STATUS</columns>
+        <columns>CASES.CREATED_DATE</columns>
+        <columns>CASES.LAST_UPDATE</columns>
+        <columns>CASES.PRIORITY</columns>
+        <filterScope>Queue</filterScope>
+        <filters>
+            <field>CASES.CLOSED</field>
+            <operation>equals</operation>
+            <value>0</value>
+        </filters>
+        <label>Certification All</label>
+        <queue>Certification</queue>
+        <sharedTo>
+            <allInternalUsers/>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>Certification_School</fullName>
+        <columns>CASES.CASE_NUMBER</columns>
+        <columns>CASES.SUBJECT</columns>
+        <columns>CASES.STATUS</columns>
+        <columns>CASES.CREATED_DATE</columns>
+        <columns>CASES.LAST_UPDATE</columns>
+        <columns>CASES.PRIORITY</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CASES.CLOSED</field>
+            <operation>equals</operation>
+            <value>0</value>
+        </filters>
+        <filters>
+            <field>CASES.STATUS</field>
+            <operation>equals</operation>
+            <value>Requesting Certification</value>
+        </filters>
+        <label>Certification School</label>
+    </listViews>
+    <listViews>
+        <fullName>Certification_Vemo</fullName>
+        <columns>CASES.CASE_NUMBER</columns>
+        <columns>CASES.SUBJECT</columns>
+        <columns>CASES.STATUS</columns>
+        <columns>CASES.CREATED_DATE</columns>
+        <columns>CASES.LAST_UPDATE</columns>
+        <columns>CASES.PRIORITY</columns>
+        <filterScope>Queue</filterScope>
+        <filters>
+            <field>CASES.CLOSED</field>
+            <operation>equals</operation>
+            <value>0</value>
+        </filters>
+        <filters>
+            <field>CASES.STATUS</field>
+            <operation>equals</operation>
+            <value>School Certified</value>
+        </filters>
+        <label>Certification Vemo</label>
+        <queue>Certification</queue>
+        <sharedTo>
+            <allInternalUsers/>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>MyCases</fullName>
+        <columns>CASES.CASE_NUMBER</columns>
+        <columns>NAME</columns>
+        <columns>CASES.SUBJECT</columns>
+        <columns>CASES.STATUS</columns>
+        <columns>CASES.PRIORITY</columns>
+        <columns>CASES.RECORDTYPE</columns>
+        <columns>CASES.LAST_UPDATE</columns>
+        <columns>CASES.CREATED_DATE</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <filterScope>Mine</filterScope>
+        <label>My Cases</label>
+    </listViews>
+    <listViews>
+        <fullName>MyOpenCases</fullName>
+        <filterScope>Mine</filterScope>
+        <filters>
+            <field>CASES.CLOSED</field>
+            <operation>equals</operation>
+            <value>0</value>
+        </filters>
+        <label>My Open Cases</label>
+    </listViews>
+    <listViews>
+        <fullName>Origination_Case</fullName>
+        <filterScope>Queue</filterScope>
+        <label>Origination</label>
+        <queue>Origination</queue>
+        <sharedTo>
+            <allInternalUsers/>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>Servicing_Case</fullName>
+        <columns>CASES.CASE_NUMBER</columns>
+        <columns>CASES.TYPE</columns>
+        <columns>CASES.SUBJECT</columns>
+        <columns>CASES.STATUS</columns>
+        <columns>CASES.CREATED_DATE</columns>
+        <columns>CASES.LAST_UPDATE</columns>
+        <columns>CASES.PRIORITY</columns>
+        <filterScope>Queue</filterScope>
+        <filters>
+            <field>CASES.CLOSED</field>
+            <operation>equals</operation>
+            <value>0</value>
+        </filters>
+        <label>Servicing</label>
+        <queue>Servicing</queue>
+        <sharedTo>
+            <allInternalUsers/>
+        </sharedTo>
+    </listViews>
+</CustomObject>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>1 Time Per Month</fullName>
+        <default>false</default>
+        <label>1 Time Per Month</label>
+    </customValue>
+    <customValue>
+        <fullName>2 Times Per Month</fullName>
+        <default>false</default>
+        <label>2 Times Per Month</label>
+    </customValue>
+    <customValue>
+        <fullName>Every Two Weeks</fullName>
+        <default>false</default>
+        <label>Every Two Weeks</label>
+    </customValue>
+    <customValue>
+        <fullName>One Per Week</fullName>
+        <default>false</default>
+        <label>One Per Week</label>
+    </customValue>
+    <customValue>
+        <fullName>On Due Date</fullName>
+        <default>false</default>
+        <label>On Due Date</label>
+    </customValue>
+    <description>Payment frequency can be once a month, twice a month, every two weeks or once a week</description>
+    <masterLabel>Payment Frequency</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

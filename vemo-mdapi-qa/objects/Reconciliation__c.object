@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableChangeDataCapture>false</enableChangeDataCapture>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>ReadWrite</externalSharingModel>
+    <label>Reconciliation</label>
+    <nameField>
+        <displayFormat>REC-{00000}</displayFormat>
+        <label>Reconciliation Number</label>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Reconciliations</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ReadWrite</sharingModel>
+    <visibility>Public</visibility>
+    <fields>
+        <fullName>AdobeSignAgreementID__c</fullName>
+        <externalId>false</externalId>
+        <label>Adobe Sign Agreement ID</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>AdobeSignStatus__c</fullName>
+        <description>The status of the AdobeSign process.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The status of the AdobeSign process.</inlineHelpText>
+        <label>Adobe Sign Status</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>None</fullName>
+                    <default>true</default>
+                    <label>None</label>
+                </value>
+                <value>
+                    <fullName>Begin Signing Process</fullName>
+                    <default>false</default>
+                    <label>Begin Signing Process</label>
+                </value>
+                <value>
+                    <fullName>Document Uploaded to Adobe</fullName>
+                    <default>false</default>
+                    <label>Document Uploaded to Adobe</label>
+                </value>
+                <value>
+                    <fullName>Document Awaiting Signature</fullName>
+                    <default>false</default>
+                    <label>Document Awaiting Signature</label>
+                </value>
+                <value>
+                    <fullName>Signing Widget Created</fullName>
+                    <default>false</default>
+                    <label>Signing Widget Created</label>
+                </value>
+                <value>
+                    <fullName>Document Signed</fullName>
+                    <default>false</default>
+                    <label>Document Signed</label>
+                </value>
+                <value>
+                    <fullName>Signed Document Attached</fullName>
+                    <default>false</default>
+                    <label>Signed Document Attached</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>AdobeSignURL__c</fullName>
+        <externalId>false</externalId>
+        <label>Adobe Sign URL</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Url</type>
+    </fields>
+    <fields>
+        <fullName>AgreementSigned__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>When the associated Adobe Sign Agreement is SIgned, this box should be checked</description>
+        <externalId>false</externalId>
+        <label>Agreement Signed</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>DateFrom__c</fullName>
+        <externalId>false</externalId>
+        <label>DateFrom</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>DateThrough__c</fullName>
+        <externalId>false</externalId>
+        <label>DateThrough</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Email__c</fullName>
+        <externalId>false</externalId>
+        <formula>Student__r.PersonContact.Email</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Email</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SendKickOffEmail__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Send Kick-Off Email</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>SendSubmissionConfirmation__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Send Submission Confirmation</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>ShouldHaveDetail__c</fullName>
+        <defaultValue>true</defaultValue>
+        <description>This field is used by the front end to indicate whether or not the student is required to put in detail records for this reconciliation.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This field is used by the front end to indicate whether or not the student is required to put in detail records for this reconciliation.</inlineHelpText>
+        <label>Should Have Detail</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Status__c</fullName>
+        <externalId>false</externalId>
+        <label>Status</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>None</fullName>
+                    <default>true</default>
+                    <label>None</label>
+                </value>
+                <value>
+                    <fullName>Eligible</fullName>
+                    <default>false</default>
+                    <label>Eligible</label>
+                </value>
+                <value>
+                    <fullName>Not started</fullName>
+                    <default>false</default>
+                    <label>Not started</label>
+                </value>
+                <value>
+                    <fullName>Documents submitted</fullName>
+                    <default>false</default>
+                    <label>Documents submitted</label>
+                </value>
+                <value>
+                    <fullName>Follow-up required</fullName>
+                    <default>false</default>
+                    <label>Follow-up required</label>
+                </value>
+                <value>
+                    <fullName>Reconciled</fullName>
+                    <default>false</default>
+                    <label>Reconciled</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Student__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Student</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Reconciliation</relationshipLabel>
+        <relationshipName>Reconciliation</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+</CustomObject>

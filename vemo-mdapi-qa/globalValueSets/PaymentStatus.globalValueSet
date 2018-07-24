@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>None</fullName>
+        <default>true</default>
+        <label>None</label>
+    </customValue>
+    <customValue>
+        <fullName>Created By Student</fullName>
+        <default>false</default>
+        <label>Created By Student</label>
+    </customValue>
+    <customValue>
+        <fullName>Automatically Created</fullName>
+        <default>false</default>
+        <label>Automatically Created</label>
+    </customValue>
+    <customValue>
+        <fullName>Scheduled</fullName>
+        <default>false</default>
+        <label>Scheduled</label>
+    </customValue>
+    <customValue>
+        <fullName>Processing</fullName>
+        <default>false</default>
+        <label>Processing</label>
+    </customValue>
+    <customValue>
+        <fullName>Processed by Vemo</fullName>
+        <default>false</default>
+        <label>Processed by Vemo</label>
+    </customValue>
+    <customValue>
+        <fullName>Cleared</fullName>
+        <default>false</default>
+        <label>Cleared</label>
+    </customValue>
+    <customValue>
+        <fullName>Bounced</fullName>
+        <default>false</default>
+        <label>Bounced</label>
+    </customValue>
+    <customValue>
+        <fullName>Complete</fullName>
+        <default>false</default>
+        <label>Complete</label>
+    </customValue>
+    <customValue>
+        <fullName>Cancelled</fullName>
+        <default>false</default>
+        <label>Cancelled</label>
+    </customValue>
+    <masterLabel>Payment Status</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

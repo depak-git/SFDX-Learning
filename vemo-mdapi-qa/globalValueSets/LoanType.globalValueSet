@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Perkins</fullName>
+        <default>false</default>
+        <label>Perkins</label>
+    </customValue>
+    <customValue>
+        <fullName>Stafford Unsubsidized</fullName>
+        <default>false</default>
+        <label>Stafford Unsubsidized</label>
+    </customValue>
+    <customValue>
+        <fullName>Stafford Subsidized</fullName>
+        <default>false</default>
+        <label>Stafford Subsidized</label>
+    </customValue>
+    <customValue>
+        <fullName>Stafford Graduate</fullName>
+        <default>false</default>
+        <label>Stafford Graduate</label>
+    </customValue>
+    <customValue>
+        <fullName>PLUS</fullName>
+        <default>false</default>
+        <label>PLUS</label>
+    </customValue>
+    <customValue>
+        <fullName>Private</fullName>
+        <default>false</default>
+        <label>Private</label>
+    </customValue>
+    <customValue>
+        <fullName>Test</fullName>
+        <default>false</default>
+        <label>Test</label>
+    </customValue>
+    <masterLabel>Loan Type</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

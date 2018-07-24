@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Contract satisfied</fullName>
+        <default>false</default>
+        <label>Contract satisfied</label>
+    </customValue>
+    <customValue>
+        <fullName>Forgiven</fullName>
+        <default>false</default>
+        <label>Forgiven</label>
+    </customValue>
+    <customValue>
+        <fullName>Write off</fullName>
+        <default>false</default>
+        <label>Write off</label>
+    </customValue>
+    <customValue>
+        <fullName>Default</fullName>
+        <default>false</default>
+        <label>Default</label>
+    </customValue>
+    <customValue>
+        <fullName>Refinanced</fullName>
+        <default>false</default>
+        <label>Refinanced</label>
+    </customValue>
+    <customValue>
+        <fullName>Transferred servicer</fullName>
+        <default>false</default>
+        <label>Transferred servicer</label>
+    </customValue>
+    <masterLabel>Agreement Closed Reason</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

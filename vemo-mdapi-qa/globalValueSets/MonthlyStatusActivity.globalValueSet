@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Grace</fullName>
+        <default>false</default>
+        <label>Grace</label>
+    </customValue>
+    <customValue>
+        <fullName>Deferment</fullName>
+        <default>false</default>
+        <label>Deferment</label>
+    </customValue>
+    <customValue>
+        <fullName>Payment</fullName>
+        <default>false</default>
+        <label>Payment</label>
+    </customValue>
+    <customValue>
+        <fullName>Pause</fullName>
+        <default>false</default>
+        <label>Pause</label>
+    </customValue>
+    <customValue>
+        <fullName>Internship</fullName>
+        <default>false</default>
+        <label>Internship</label>
+    </customValue>
+    <customValue>
+        <fullName>School</fullName>
+        <default>false</default>
+        <label>School</label>
+    </customValue>
+    <customValue>
+        <fullName>Leave of Absence</fullName>
+        <default>false</default>
+        <label>Leave of Absence</label>
+    </customValue>
+    <masterLabel>Monthly Status Activity</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

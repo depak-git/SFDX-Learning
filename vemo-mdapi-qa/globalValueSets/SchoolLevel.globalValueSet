@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>At least 2 but less than 4 years</fullName>
+        <default>false</default>
+        <label>At least 2 but less than 4 years</label>
+    </customValue>
+    <customValue>
+        <fullName>Four or more years</fullName>
+        <default>false</default>
+        <label>Four or more years</label>
+    </customValue>
+    <customValue>
+        <fullName>Less than 2 years (below associate)</fullName>
+        <default>false</default>
+        <label>Less than 2 years (below associate)</label>
+    </customValue>
+    <masterLabel>School Level</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>
