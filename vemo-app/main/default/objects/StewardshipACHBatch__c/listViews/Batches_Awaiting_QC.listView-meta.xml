@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Batches_Awaiting_QC</fullName>
+    <columns>NAME</columns>
+    <columns>BatchType__c</columns>
+    <columns>ScheduledDate__c</columns>
+    <columns>Status__c</columns>
+    <columns>BatchGUID__c</columns>
+    <columns>StewardshipProcess__c</columns>
+    <columns>StewardshipStatus__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Status__c</field>
+        <operation>equals</operation>
+        <value>Created</value>
+    </filters>
+    <label>Batches Awaiting QC</label>
+</ListView>

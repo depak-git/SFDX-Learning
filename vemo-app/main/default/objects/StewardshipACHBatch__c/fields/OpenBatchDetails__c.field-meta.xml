@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>OpenBatchDetails__c</fullName>
+    <externalId>false</externalId>
+    <label>Open Batch Details</label>
+    <summaryFilterItems>
+        <field>StewardshipACHBatchDetail__c.TransactionStatus__c</field>
+        <operation>notEqual</operation>
+        <value>C, B</value>
+    </summaryFilterItems>
+    <summaryFilterItems>
+        <field>StewardshipACHBatchDetail__c.StewardshipStatus__c</field>
+        <operation>notContain</operation>
+        <value>Cancelled</value>
+    </summaryFilterItems>
+    <summaryForeignKey>StewardshipACHBatchDetail__c.StewardshipACHBatch__c</summaryForeignKey>
+    <summaryOperation>count</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Summary</type>
+</CustomField>

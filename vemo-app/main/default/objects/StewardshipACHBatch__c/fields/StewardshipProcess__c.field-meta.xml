@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>StewardshipProcess__c</fullName>
+    <externalId>false</externalId>
+    <label>Stewardship Process</label>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>PaymentBatchOpen</fullName>
+                <default>false</default>
+                <label>PaymentBatchOpen</label>
+            </value>
+            <value>
+                <fullName>PaymentBatchSelect</fullName>
+                <default>false</default>
+                <label>PaymentBatchSelect</label>
+            </value>
+            <value>
+                <fullName>PaymentBatchApprove</fullName>
+                <default>false</default>
+                <label>PaymentBatchApprove</label>
+            </value>
+            <value>
+                <fullName>PaymentBatchCancel</fullName>
+                <default>false</default>
+                <label>PaymentBatchCancel</label>
+            </value>
+            <value>
+                <fullName>CreditBatchOpen</fullName>
+                <default>false</default>
+                <label>CreditBatchOpen</label>
+            </value>
+            <value>
+                <fullName>PaymentBatch Created</fullName>
+                <default>false</default>
+                <label>PaymentBatch Created</label>
+            </value>
+            <value>
+                <fullName>CreditBatch Created</fullName>
+                <default>false</default>
+                <label>CreditBatch Created</label>
+            </value>
+            <value>
+                <fullName>Batch Selected</fullName>
+                <default>false</default>
+                <label>Batch Selected</label>
+            </value>
+            <value>
+                <fullName>Batch Approved</fullName>
+                <default>false</default>
+                <label>Batch Approved</label>
+            </value>
+            <value>
+                <fullName>Batch Cancelled</fullName>
+                <default>false</default>
+                <label>Batch Cancelled</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>
