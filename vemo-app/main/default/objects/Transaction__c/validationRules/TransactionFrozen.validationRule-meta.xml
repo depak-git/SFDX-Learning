@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TransactionFrozen</fullName>
+    <active>true</active>
+    <errorConditionFormula>$Setup.GlobalSettings__c.ValidationRules__c &amp;&amp;
+ !$Setup.ApprovalSettings__c.BypassTransactionFreeze__c &amp;&amp;
+  ISPICKVAL(TransactionBatch__r.TransactionBatchStatus__c , "Freeze Transactions")</errorConditionFormula>
+    <errorMessage>This transaction has been frozen at the batch level.  Please unfreeze the transactions before proceeding.</errorMessage>
+</ValidationRule>

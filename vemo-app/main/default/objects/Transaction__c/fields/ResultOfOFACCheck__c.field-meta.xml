@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ResultOfOFACCheck__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>The result of the Office of Foreign Assets Control (OFAC) check.</inlineHelpText>
+    <label>Result of OFAC Check</label>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>TextArea</type>
+</CustomField>
