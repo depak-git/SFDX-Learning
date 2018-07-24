@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>QuizLinkURL__c</fullName>
+    <description>The link used by this program for its financial fitness quiz</description>
+    <externalId>false</externalId>
+    <inlineHelpText>The link used by this program for its financial fitness quiz</inlineHelpText>
+    <label>Quiz Link URL</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Url</type>
+</CustomField>

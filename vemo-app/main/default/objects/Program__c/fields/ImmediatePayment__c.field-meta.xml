@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ImmediatePayment__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>If checked, Income and Payment Information is mandatory as part of origination process</description>
+    <externalId>false</externalId>
+    <inlineHelpText>If checked, Income and Payment Information is mandatory as part of origination process</inlineHelpText>
+    <label>Immediate Payment</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

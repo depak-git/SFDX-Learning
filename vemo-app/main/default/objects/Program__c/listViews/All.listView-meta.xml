@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All</fullName>
+    <columns>ProgramName__c</columns>
+    <columns>NAME</columns>
+    <columns>ProgramStatus__c</columns>
+    <columns>EnrollmentBeginDate__c</columns>
+    <columns>EnrollmentEndDate__c</columns>
+    <columns>EnrollmentType__c</columns>
+    <columns>RegistrationBeginDate__c</columns>
+    <columns>RegistrationEndDate__c</columns>
+    <columns>School__c</columns>
+    <columns>LAST_UPDATE</columns>
+    <filterScope>Everything</filterScope>
+    <label>All</label>
+</ListView>

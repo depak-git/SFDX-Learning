@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MinimumRightToCancelDate</fullName>
+    <active>true</active>
+    <errorConditionFormula>OR(RightToCancelDays__c &lt; 3, ISBLANK(RightToCancelDays__c))</errorConditionFormula>
+    <errorDisplayField>RightToCancelDays__c</errorDisplayField>
+    <errorMessage>Right to Cancel Days cannot be less than 3 days</errorMessage>
+</ValidationRule>

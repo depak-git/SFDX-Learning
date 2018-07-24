@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All</fullName>
+    <columns>NAME</columns>
+    <columns>CIPCode__c</columns>
+    <columns>CIPDefinition__c</columns>
+    <columns>CIPFamily__c</columns>
+    <columns>CIPTitle__c</columns>
+    <columns>GUID__c</columns>
+    <columns>RecordLabel__c</columns>
+    <columns>RecordLink__c</columns>
+    <columns>RECORDTYPE</columns>
+    <filterScope>Everything</filterScope>
+    <label>All</label>
+</ListView>

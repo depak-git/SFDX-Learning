@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SendStudentDisbursementConfirmation__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>If this field is checked, a student will receive a disbursement confirmation notification when disbursements on this program are confirmed.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>If this field is checked, a student will receive a disbursement confirmation notification when disbursements on this program are confirmed.</inlineHelpText>
+    <label>Send Student Disbursement Confirmation</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>
