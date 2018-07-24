@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ReturnCode__c</fullName>
+    <description>C05        Incorrect Bank Account Type - Incorrect Transaction Code
+P15        Rejected
+R01        Insufficient Funds
+R02        Account Closed
+R03        Unable to Locate Account.  Please verify the account number was typed correctly.
+R04        Invalid Account Number
+R05
+R06        Returned Per ODFI
+R07        Authorization Revoked
+R08        Payment Stopped
+R09        Uncollected Funds Balance
+R10        No Authorization
+R11        Check Truncation Entry Returned
+R12        Branch Sold Account
+R13        Routing number is not valid
+R14        Account Holder Deceased or Unable to Continue in that Capacity
+R15        Beneficiary or Account Holder Deceased
+R16        Account Frozen
+R17        Invalid Account Information - File Record Edit Criteria
+R20        Non Transaction Account
+R23        Payment Refused by Account Holder
+R24        Duplicate Entry
+R26        Mandatory field error
+R29        Corporate Not Authorized
+R31        Permisible Return E</description>
+    <externalId>false</externalId>
+    <label>ReturnCode</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>C05</fullName>
+                <default>false</default>
+                <label>C05</label>
+            </value>
+            <value>
+                <fullName>P15</fullName>
+                <default>false</default>
+                <label>P15</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

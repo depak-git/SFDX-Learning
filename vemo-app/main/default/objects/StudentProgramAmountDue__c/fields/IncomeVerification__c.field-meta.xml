@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>IncomeVerification__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>Income Verification Object used to derive Monthly Income during Assessment</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Income Verification Object used to derive Monthly Income during Assessment</inlineHelpText>
+    <label>Income Verification</label>
+    <referenceTo>IncomeVerification__c</referenceTo>
+    <relationshipLabel>Student Program Amount Due</relationshipLabel>
+    <relationshipName>Student_Program_Amount_Due</relationshipName>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

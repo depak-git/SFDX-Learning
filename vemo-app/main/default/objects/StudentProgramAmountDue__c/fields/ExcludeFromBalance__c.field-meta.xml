@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ExcludeFromBalance__c</fullName>
+    <defaultValue>true</defaultValue>
+    <externalId>false</externalId>
+    <inlineHelpText>Indicates that an amount due should not be included in the account statement summaries. Used primarily for reconciliation amounts that are pre-assessed for future months, but which should not actually show up on the statement/bill until that month arrives</inlineHelpText>
+    <label>Exclude from Balance</label>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

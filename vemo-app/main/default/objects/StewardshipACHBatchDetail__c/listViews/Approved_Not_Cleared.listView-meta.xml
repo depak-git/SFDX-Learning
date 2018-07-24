@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Approved_Not_Cleared</fullName>
+    <columns>NAME</columns>
+    <columns>StewardshipACHBatch__c</columns>
+    <columns>Account__c</columns>
+    <columns>AccountScheduleGUID__c</columns>
+    <columns>Status__c</columns>
+    <columns>ScheduledDate__c</columns>
+    <columns>StewardshipProcess__c</columns>
+    <columns>StewardshipStatus__c</columns>
+    <columns>TransactionStatus__c</columns>
+    <columns>TransactionType__c</columns>
+    <columns>PaymentMethod__c</columns>
+    <columns>PaymentInstruction__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>TransactionStatus__c</field>
+        <operation>equals</operation>
+    </filters>
+    <filters>
+        <field>Status__c</field>
+        <operation>equals</operation>
+        <value>Approved</value>
+    </filters>
+    <label>Approved Not Cleared</label>
+</ListView>
