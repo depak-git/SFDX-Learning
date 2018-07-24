@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ResponseBody</fullName>
+    <columns>NAME</columns>
+    <columns>DateTimeLogged__c</columns>
+    <columns>SecondsLogged__c</columns>
+    <columns>MillisecondsLogged__c</columns>
+    <columns>Critical__c</columns>
+    <columns>CREATEDBY_USER</columns>
+    <columns>RelatedTo__c</columns>
+    <columns>Log__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>RelatedTo__c</field>
+        <operation>equals</operation>
+        <value>Response Body</value>
+    </filters>
+    <label>ResponseBody</label>
+</ListView>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>IncomeUpdateReason__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>The reason the student gave for the update to their income (New job, Promotion, etc).</inlineHelpText>
+    <label>Income Update Reason</label>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetName>IncomeVerificationUpdateReason</valueSetName>
+    </valueSet>
+</CustomField>

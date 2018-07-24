@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All</fullName>
+    <columns>NAME</columns>
+    <columns>BankAccountCategory__c</columns>
+    <columns>BankAccountType__c</columns>
+    <columns>BankName__c</columns>
+    <columns>Customer__c</columns>
+    <columns>Description__c</columns>
+    <columns>Inactive__c</columns>
+    <columns>Primary__c</columns>
+    <columns>UseForDisbursements__c</columns>
+    <columns>UseForRecurring__c</columns>
+    <columns>StewardshipDisbursementAccountGUID__c</columns>
+    <columns>StewardshipPaymentAccountGUID__c</columns>
+    <columns>StewardshipProcess__c</columns>
+    <filterScope>Everything</filterScope>
+    <label>All</label>
+</ListView>

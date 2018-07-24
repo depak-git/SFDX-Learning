@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Awaiting_Tokenization</fullName>
+    <columns>NAME</columns>
+    <columns>BankAccountCategory__c</columns>
+    <columns>BankAccountType__c</columns>
+    <columns>BankName__c</columns>
+    <columns>Customer__c</columns>
+    <columns>Description__c</columns>
+    <columns>Inactive__c</columns>
+    <columns>BankAccountNumber__c</columns>
+    <columns>BankRoutingNumber__c</columns>
+    <columns>StewardshipProcess__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Inactive__c</field>
+        <operation>equals</operation>
+        <value>0</value>
+    </filters>
+    <filters>
+        <field>StewardshipDisbursementAccountGUID__c</field>
+        <operation>equals</operation>
+    </filters>
+    <filters>
+        <field>StewardshipPaymentAccountGUID__c</field>
+        <operation>equals</operation>
+    </filters>
+    <label>Awaiting Tokenization</label>
+</ListView>

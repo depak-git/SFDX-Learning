@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ResponseBody2</fullName>
+    <columns>NAME</columns>
+    <columns>DateTimeLogged__c</columns>
+    <columns>Log__c</columns>
+    <columns>SecondsLogged__c</columns>
+    <columns>MillisecondsLogged__c</columns>
+    <columns>Critical__c</columns>
+    <columns>CREATEDBY_USER</columns>
+    <columns>RelatedTo__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>RelatedTo__c</field>
+        <operation>equals</operation>
+        <value>CreateDonor</value>
+    </filters>
+    <filters>
+        <field>CREATED_DATE</field>
+        <operation>equals</operation>
+        <value>2/2/2018 12:00 AM</value>
+    </filters>
+    <label>ResponseBody2</label>
+</ListView>
