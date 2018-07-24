@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>EnrollmentDefinition__c</fullName>
+    <description>program must specify what it considers to be enrolled in school for the deferment to be valid</description>
+    <externalId>false</externalId>
+    <inlineHelpText>program must specify what it considers to be enrolled in school for the deferment to be valid</inlineHelpText>
+    <label>Enrollment Definition</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetName>EnrollmentStatus</valueSetName>
+    </valueSet>
+</CustomField>

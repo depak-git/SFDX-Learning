@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>requireProgramOutlineOnDecision</fullName>
+    <active>true</active>
+    <errorConditionFormula>$Setup.GlobalSettings__c.ValidationRules__c &amp;&amp;
+ ISPICKVAL( StageName , "Decision") &amp;&amp;  ISBLANK(  ProgramOutline__c )</errorConditionFormula>
+    <errorDisplayField>ProgramOutline__c</errorDisplayField>
+    <errorMessage>This field is required at this stage</errorMessage>
+</ValidationRule>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DisbursementConfRequiredNotification__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>If this field is checked, the SchoolEmailNotification2__c will be sent a notification email when there is one or more disbursement confirmations awaiting the program.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>If this field is checked, the SchoolEmailNotification2__c will be sent a notification email when there is one or more disbursement confirmations awaiting the program.</inlineHelpText>
+    <label>Disbursement Conf Required Notification</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

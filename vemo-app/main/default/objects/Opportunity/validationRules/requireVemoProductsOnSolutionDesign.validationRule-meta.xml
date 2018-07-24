@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>requireVemoProductsOnSolutionDesign</fullName>
+    <active>true</active>
+    <errorConditionFormula>$Setup.GlobalSettings__c.ValidationRules__c &amp;&amp;
+ ISPICKVAL( StageName , "Solution Design") &amp;&amp;  ISBLANK( VemoProducts__c )</errorConditionFormula>
+    <errorDisplayField>VemoProducts__c</errorDisplayField>
+    <errorMessage>This field is required at this stage</errorMessage>
+</ValidationRule>

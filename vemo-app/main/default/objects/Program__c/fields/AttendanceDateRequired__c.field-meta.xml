@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AttendanceDateRequired__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>If checked, Attendance Dates will be available during the origination process</description>
+    <externalId>false</externalId>
+    <inlineHelpText>If checked, Attendance Dates will be available during the origination process</inlineHelpText>
+    <label>Attendance Date Required</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

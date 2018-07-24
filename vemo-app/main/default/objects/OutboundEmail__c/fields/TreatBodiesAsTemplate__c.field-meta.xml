@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TreatBodiesAsTemplate__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Optional. If set to true, the subject, plain text, and HTML text bodies of the email are treated as template data.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Optional. If set to true, the subject, plain text, and HTML text bodies of the email are treated as template data.</inlineHelpText>
+    <label>TreatBodiesAsTemplate</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

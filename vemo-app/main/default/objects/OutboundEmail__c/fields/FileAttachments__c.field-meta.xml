@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FileAttachments__c</fullName>
+    <description>Optional. A list containing the file names of the binary and text files you want to attach to the email.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Optional. A list containing the file names of the binary and text files you want to attach to the email.</inlineHelpText>
+    <label>FileAttachments</label>
+    <length>255</length>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>HtmlBody__c</fullName>
+    <description>Optional. The HTML version of the email, specified by the sender. The value is encoded according to the specification associated with the organization. You must specify a value for setTemplateId, setHtmlBody, or setPlainTextBody. Or, you can define both setHtmlBody and setPlainTextBody.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Optional. The HTML version of the email, specified by the sender. The value is encoded according to the specification associated with the organization. You must specify a value for setTemplateId, setHtmlBody, or setPlainTextBody. Or, you can define both</inlineHelpText>
+    <label>HtmlBody</label>
+    <length>131072</length>
+    <trackTrending>false</trackTrending>
+    <type>Html</type>
+    <visibleLines>25</visibleLines>
+</CustomField>

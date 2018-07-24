@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>EntityAttachmentIDs__c</fullName>
+    <description>Optional. Array of IDs of Document, ContentVersion, or Attachment items to attach to the email.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Optional. Array of IDs of Document, ContentVersion, or Attachment items to attach to the email.</inlineHelpText>
+    <label>EntityAttachmentIDs</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>TextArea</type>
+</CustomField>

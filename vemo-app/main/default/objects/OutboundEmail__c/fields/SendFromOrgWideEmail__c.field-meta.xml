@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SendFromOrgWideEmail__c</fullName>
+    <defaultValue>true</defaultValue>
+    <description>If this field is checked, the system will automatically send the message from the Org Wide Default Email address</description>
+    <externalId>false</externalId>
+    <inlineHelpText>If this field is checked, the system will automatically send the message from the Org Wide Default Email address</inlineHelpText>
+    <label>Send From Org Wide Email</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

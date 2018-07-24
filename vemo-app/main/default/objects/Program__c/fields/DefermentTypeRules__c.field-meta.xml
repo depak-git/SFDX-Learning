@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DefermentTypeRules__c</fullName>
+    <description>For each deferment type: is payment term extended? is there a duration limit?</description>
+    <externalId>false</externalId>
+    <inlineHelpText>For each deferment type: is payment term extended? is there a duration limit?</inlineHelpText>
+    <label>Deferment Type Rules</label>
+    <length>32768</length>
+    <trackTrending>false</trackTrending>
+    <type>LongTextArea</type>
+    <visibleLines>5</visibleLines>
+</CustomField>

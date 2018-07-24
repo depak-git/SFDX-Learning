@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FeeRules__c</fullName>
+    <description>list of fee types and amounts that agreement is subject to</description>
+    <externalId>false</externalId>
+    <inlineHelpText>list of fee types and amounts that agreement is subject to</inlineHelpText>
+    <label>Fee Rules</label>
+    <length>32768</length>
+    <trackTrending>false</trackTrending>
+    <type>LongTextArea</type>
+    <visibleLines>5</visibleLines>
+</CustomField>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TemplateID__c</fullName>
+    <description>Required if using a template, optional otherwise. The ID of the template used to create the email.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Required if using a template, optional otherwise. The ID of the template used to create the email.</inlineHelpText>
+    <label>TemplateID</label>
+    <length>255</length>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

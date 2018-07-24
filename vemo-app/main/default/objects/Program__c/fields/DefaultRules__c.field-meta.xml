@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DefaultRules__c</fullName>
+    <description>How many months of what kind of (in)activity are required to define an account as being in default?</description>
+    <externalId>false</externalId>
+    <inlineHelpText>How many months of what kind of (in)activity are required to define an account as being in default?</inlineHelpText>
+    <label>Default Rules</label>
+    <length>32768</length>
+    <trackTrending>false</trackTrending>
+    <type>LongTextArea</type>
+    <visibleLines>5</visibleLines>
+</CustomField>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Subject__c</fullName>
+    <description>Optional. The email subject line. If you are using an email template, the subject line of the template overrides this value.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Optional. The email subject line. If you are using an email template, the subject line of the template overrides this value.</inlineHelpText>
+    <label>Subject</label>
+    <length>255</length>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>
