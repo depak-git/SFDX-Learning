@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MajorPreCertification__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <externalId>false</externalId>
+    <inlineHelpText>The student's Major, also known as 'School Program of Study'. (Pre-Certification) fields are only used for school initiated flow, and store temporary values entered by the School Admin during certification.</inlineHelpText>
+    <label>Major (Pre-Certification)</label>
+    <referenceTo>SchoolProgramsOfStudy__c</referenceTo>
+    <relationshipLabel>Major (Pre-Certification)</relationshipLabel>
+    <relationshipName>Student_Programs1</relationshipName>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NextAssessmentDate__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Indicates next date that the account should be assessed. Assessor job looks at this to confirm the set of agreements it should act on any particular day. This field is updated during assessment to be the Assessment Day of the Month of the following month.</inlineHelpText>
+    <label>Next Assessment Date</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Date</type>
+</CustomField>

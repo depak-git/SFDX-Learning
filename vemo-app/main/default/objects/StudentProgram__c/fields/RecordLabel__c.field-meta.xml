@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>RecordLabel__c</fullName>
+    <externalId>false</externalId>
+    <formula>Program__r.RecordLabel__c + ':' + Student__r.RecordLabel__c</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>This field is a formula field that would allow Vemo users to define a pretty "label" for the record. It can then be surfaced in reports and on page layouts.</inlineHelpText>
+    <label>Record Label</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MajorStudent__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <externalId>false</externalId>
+    <inlineHelpText>The student's Major, also known as 'School Program of Study'. (Student) fields store the values entered by the Student during application/registration.</inlineHelpText>
+    <label>Major (Student)</label>
+    <referenceTo>SchoolProgramsOfStudy__c</referenceTo>
+    <relationshipLabel>Major (Student)</relationshipLabel>
+    <relationshipName>Student_Programs2</relationshipName>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

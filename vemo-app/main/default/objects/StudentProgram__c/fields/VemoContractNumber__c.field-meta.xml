@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>VemoContractNumber__c</fullName>
+    <displayFormat>{0000000000}</displayFormat>
+    <externalId>false</externalId>
+    <inlineHelpText>Automatically generated number identifying the Contract/Student Program. It is independent of any particular system (Salesforce, Auth0, CampusDoor, ATOM1, etc) and can be given to customers.</inlineHelpText>
+    <label>Vemo Contract Number</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>AutoNumber</type>
+</CustomField>

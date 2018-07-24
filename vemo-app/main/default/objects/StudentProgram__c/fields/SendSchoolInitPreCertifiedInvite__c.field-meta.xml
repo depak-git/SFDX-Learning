@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SendSchoolInitPreCertifiedInvite__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>If this field is checked the system will generate the All Schools School Initiated Invitation</description>
+    <externalId>false</externalId>
+    <inlineHelpText>If this field is checked the system will generate the All Schools School Initiated Invitation</inlineHelpText>
+    <label>Send School Init Pre-Certified Invite</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

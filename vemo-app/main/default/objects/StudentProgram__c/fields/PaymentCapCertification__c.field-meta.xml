@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PaymentCapCertification__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>The maximum amount student will pay over the payment term. (Certification) fields are only used for student initiated flow, and store temporary values entered by the School Admin during certification.</inlineHelpText>
+    <label>Payment Cap (Certification)</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Currency</type>
+</CustomField>
