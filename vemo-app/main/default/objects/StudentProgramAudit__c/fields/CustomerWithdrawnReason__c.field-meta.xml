@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CustomerWithdrawnReason__c</fullName>
+    <externalId>false</externalId>
+    <label>Customer Withdrawn Reason</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>No longer need funds</fullName>
+                <default>false</default>
+                <label>No longer need funds</label>
+            </value>
+            <value>
+                <fullName>No longer attending school</fullName>
+                <default>false</default>
+                <label>No longer attending school</label>
+            </value>
+            <value>
+                <fullName>Applying for private loan</fullName>
+                <default>false</default>
+                <label>Applying for private loan</label>
+            </value>
+            <value>
+                <fullName>Applying for PLUS loan</fullName>
+                <default>false</default>
+                <label>Applying for PLUS loan</label>
+            </value>
+            <value>
+                <fullName>Do not meet eligibility criteria</fullName>
+                <default>false</default>
+                <label>Do not meet eligibility criteria</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

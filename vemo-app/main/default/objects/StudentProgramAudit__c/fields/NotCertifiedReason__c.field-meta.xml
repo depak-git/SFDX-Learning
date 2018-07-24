@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NotCertifiedReason__c</fullName>
+    <externalId>false</externalId>
+    <label>Not Certified Reason</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Not eligible</fullName>
+                <default>false</default>
+                <label>Not eligible</label>
+            </value>
+            <value>
+                <fullName>Not attending</fullName>
+                <default>false</default>
+                <label>Not attending</label>
+            </value>
+            <value>
+                <fullName>Unsatisfactory academic performance</fullName>
+                <default>false</default>
+                <label>Unsatisfactory academic performance</label>
+            </value>
+            <value>
+                <fullName>Funding no longer needed</fullName>
+                <default>false</default>
+                <label>Funding no longer needed</label>
+            </value>
+            <value>
+                <fullName>Applying for a private loan</fullName>
+                <default>false</default>
+                <label>Applying for a private loan</label>
+            </value>
+            <value>
+                <fullName>Applying for a PLUS loan</fullName>
+                <default>false</default>
+                <label>Applying for a PLUS loan</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>
