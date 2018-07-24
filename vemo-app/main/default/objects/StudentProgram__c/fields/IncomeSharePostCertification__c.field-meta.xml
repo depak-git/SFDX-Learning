@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>IncomeSharePostCertification__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>The percent of student's total earned income that they will share each month. (Post-Certification) fields store the final values entered by the School Admin during certification.</inlineHelpText>
+    <label>Income Share (Post-Certification)</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>4</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Percent</type>
+</CustomField>

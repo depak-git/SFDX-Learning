@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>BirthdatePreCertification__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>(Pre-Certification) fields are only used for school initiated flow, and store temporary values entered by the School Admin during certification.</inlineHelpText>
+    <label>Birthdate (Pre-Certification)</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Date</type>
+</CustomField>

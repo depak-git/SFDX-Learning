@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AssessContract__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>If this field is checked, Assessment will run for this Student Program record regardless of Assessment Date</description>
+    <externalId>false</externalId>
+    <inlineHelpText>If this field is checked, Assessment will run for this Student Program record regardless of Assessment Date</inlineHelpText>
+    <label>Assess Contract</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

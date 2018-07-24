@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CountRemainingISAs__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(
+(
+ISPICKVAL(Status__c, "Certified") ||
+ISPICKVAL(Status__c, "Partially Funded") ||
+ISPICKVAL(Status__c, "Fully Funded") ||
+ISPICKVAL(Status__c, "Grace") ||
+ISPICKVAL(Status__c, "Deferment") ||
+ISPICKVAL(Status__c, "Payment") ||
+ISPICKVAL(Status__c, "School") ||
+ISPICKVAL(Status__c, "Leave of Absence") ||
+ISPICKVAL(Status__c, "Internship")
+),
+1,
+0
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Count Remaining ISAs</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>
